@@ -1,0 +1,109 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:xsd:pain.001.003.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.003.01>
+		<GrpHdr>
+			<GrpId>MU001</GrpId>
+			<CreDtTm>2005-10-24T14:15:00+01:00</CreDtTm>
+			<BtchBookg>true</BtchBookg>
+			<Grpg>true</Grpg>
+			<InitgPty>
+				<Nm>MULLER</Nm>
+				<PstlAdr>
+					<StrtNm>NEUE MAINZER STRASSE</StrtNm>
+					<BldgNb>42</BldgNb>
+					<PstCd>60255</PstCd>
+					<TwnNm>FRANKFURT AM MAIN</TwnNm>
+					<Ctry>DE</Ctry>
+				</PstlAdr>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<ReqdExctnDt>2005-10-26</ReqdExctnDt>
+			<CdtTrfTpId>
+				<Cd>SUPP</Cd>
+			</CdtTrfTpId>
+			<Dbtr>
+				<Nm>MULLER</Nm>
+				<PstlAdr>
+					<StrtNm>NEUE MAINZER STRASSE</StrtNm>
+					<BldgNb>42</BldgNb>
+					<PstCd>60255</PstCd>
+					<TwnNm>FRANKFURT AM MAIN</TwnNm>
+					<Ctry>DE</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>DE5320130037040044</IBAN>
+				</Id>
+			</DbtrAcct>
+			<FrstAgt>
+				<BIC>AAAADEFF</BIC>
+			</FrstAgt>
+			<PmtTx>
+				<PmtId>
+					<InstrId>MULL/00001</InstrId>
+					<EndToEndId>BIO123456</EndToEndId>
+				</PmtId>
+				<Purp>
+					<Cd>SUPP</Cd>
+				</Purp>
+				<Amt>
+					<InstdAmt Ccy = "EUR">5098</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>BIODATA INC.</Nm>
+					<PstlAdr>
+						<StrtNm>HERENGRACHT</StrtNm>
+						<BldgNb>24</BldgNb>
+						<PstCd>1017 CB</PstCd>
+						<TwnNm>AMSTERDAM</TwnNm>
+						<Ctry>NL</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<FnlAgt>
+					<BIC>BBBBNL2A</BIC>
+				</FnlAgt>
+				<ChrgBr>SHA</ChrgBr>
+				<CdtrAcct>
+					<IBAN>NL76502664959</IBAN>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>INV05/097</Ustrd>
+				</RmtInf>
+			</PmtTx>
+			<PmtTx>
+				<PmtId>
+					<InstrId>MULL/00002</InstrId>
+					<EndToEndId>JAN/INVAB</EndToEndId>
+				</PmtId>
+				<Purp>
+					<Cd>SUPP</Cd>
+				</Purp>
+				<Amt>
+					<InstdAmt Ccy = "EUR">78653</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>JANSSEN</Nm>
+					<PstlAdr>
+						<StrtNm>CARNEGIEPLEIN</StrtNm>
+						<BldgNb>26</BldgNb>
+						<PstCd>2517 KJ</PstCd>
+						<TwnNm>DEN HAAG</TwnNm>
+						<Ctry>NL</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<FnlAgt>
+					<BIC>CCCCNL2A</BIC>
+				</FnlAgt>
+				<ChrgBr>SHA</ChrgBr>
+				<CdtrAcct>
+					<IBAN>NL57723491524</IBAN>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>INV AB/09/876//INV AB/09/877</Ustrd>
+				</RmtInf>
+			</PmtTx>
+		</PmtInf>
+	</pain.001.003.01>
+</Document>

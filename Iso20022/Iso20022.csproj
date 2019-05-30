@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    
+    <Copyright>Copyright (c) Nivaes Systems</Copyright>
+    <PackageLicenseUrl>http://opensource.org/licenses/ms-pl</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Nivaes/Xamarin.Droid.Wdullaer.MaterialDataTimePicker</PackageProjectUrl>
+    <PackageIconUrl>https://i.imgur.com/D3CfFea.png</PackageIconUrl>
+    <Owners>Nivaes</Owners>
+    <Authors>Nivaes Systems</Authors>
+    <Company>Pain_002_001_03</Company>
+    <RepositoryUrl>https://github.com/Nivaes/Iso20022</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' and '$(IsTestProject)' != 'true'">true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>
