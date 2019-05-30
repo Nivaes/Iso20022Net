@@ -9,12 +9,14 @@
     <PackageIconUrl>https://i.imgur.com/D3CfFea.png</PackageIconUrl>
     <Owners>Nivaes</Owners>
     <Authors>Nivaes Systems</Authors>
-    <Company>Pain_002_001_03</Company>
+    <Company>Nivaes Systems</Company>
     <RepositoryUrl>https://github.com/Nivaes/Iso20022</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
 
     <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
     <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' and '$(IsTestProject)' != 'true'">true</GeneratePackageOnBuild>
+    <Description>Data Contracts for (de)serialize ISO20022 XML messages</Description>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>

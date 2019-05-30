@@ -11,10 +11,10 @@ namespace Iso20022.Test
         [InlineData("./Resources/Pain/pain.001.003.01.xml")]
         public void Pain_001_003_01(string fileName)
         {
-            var serializder = new XmlSerializer(typeof(Sepa.Models.Entities.XsdSchemas.Pain_001_003_01.Document));
+            var serializder = new XmlSerializer(typeof(Iso20022.Contracts.PainM001V00301.Document));
             using (var file = File.OpenRead(fileName))
             {
-                var document = (Sepa.Models.Entities.XsdSchemas.Pain_001_003_01.Document)serializder.Deserialize(file);
+                var document = (Iso20022.Contracts.PainM001V00301.Document)serializder.Deserialize(file);
                 Assert.NotNull(document);
             }
         }
@@ -24,10 +24,10 @@ namespace Iso20022.Test
         [InlineData("./Resources/Pain/pain.002.001.03_2.xml")]
         public void Pain_002_001_03(string fileName)
         {
-            var serializder = new XmlSerializer(typeof(Sepa.Models.Entities.XsdSchemas.Pain_002_001_03.Document));
+            var serializder = new XmlSerializer(typeof(Iso20022.Contracts.PainM002V00103.Document));
             using (var file = File.OpenRead(fileName))
             {
-                var document = (Sepa.Models.Entities.XsdSchemas.Pain_002_001_03.Document)serializder.Deserialize(file);
+                var document = (Iso20022.Contracts.PainM002V00103.Document)serializder.Deserialize(file);
                 Assert.NotNull(document);
             }
         }
@@ -36,10 +36,10 @@ namespace Iso20022.Test
         [InlineData("./Resources/Pain/pain.008.001.02.xml")]
         public void Pain_008_001_02(string fileName)
         {
-            var serializder = new XmlSerializer(typeof(Sepa.Models.Entities.XsdSchemas.Pain_008_001_02.Document));
+            var serializder = new XmlSerializer(typeof(Iso20022.Contracts.PainM008V00102.Document));
             using (var file = File.OpenRead(fileName))
             {
-                var document = (Sepa.Models.Entities.XsdSchemas.Pain_008_001_02.Document)serializder.Deserialize(file);
+                var document = (Iso20022.Contracts.PainM008V00102.Document)serializder.Deserialize(file);
                 Assert.NotNull(document);
             }
         }
