@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.007.001.02">
+	<CstmrPmtRvsl>
+		<GrpHdr>
+			<MsgId>RIT-REV-20100617-456f</MsgId>
+			<CreDtTm>2010-06-17T15:38:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<InitgPty>
+				<Nm>Ritcom</Nm>
+				<PstlAdr>
+					<StrtNm>Schueman Strasse</StrtNm>
+					<BldgNb>18</BldgNb>
+					<PstCd>60017</PstCd>
+					<TwnNm>Frankfurt am Main</TwnNm>
+					<Ctry>DE</Ctry>
+				</PstlAdr>
+			</InitgPty>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>BBBBDE33</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtrAgt>
+				<FinInstnId>
+					<BIC>CCCCDE31</BIC>
+				</FinInstnId>
+			</CdtrAgt>
+		</GrpHdr>
+		<OrgnlGrpInf>
+			<OrgnlMsgId>RITCOM1234</OrgnlMsgId>
+			<OrgnlMsgNmId>pain.008.001.02</OrgnlMsgNmId>
+			<OrgnlCreDtTm>2010-06-09T09:18:00</OrgnlCreDtTm>
+		</OrgnlGrpInf>
+		<OrgnlPmtInfAndRvsl>
+			<OrgnlPmtInfId>RIT/0053</OrgnlPmtInfId>
+			<TxInf>
+				<RvslId>RIT5467</RvslId>
+				<OrgnlEndToEndId>RIT/012010-256C26</OrgnlEndToEndId>
+				<OrgnlInstdAmt Ccy="EUR">286</OrgnlInstdAmt>
+				<RvsdInstdAmt Ccy="EUR">286</RvsdInstdAmt>
+				<RvslRsnInf>
+					<Orgtr>
+						<Nm>Ritcom</Nm>
+						<PstlAdr>
+							<StrtNm>Schueman Strasse</StrtNm>
+							<BldgNb>18</BldgNb>
+							<PstCd>60017</PstCd>
+							<TwnNm>Frankfurt am Main</TwnNm>
+							<Ctry>DE</Ctry>
+						</PstlAdr>
+					</Orgtr>
+					<Rsn>
+						<Cd>AM05</Cd>
+					</Rsn>
+				</RvslRsnInf>
+				<OrgnlTxRef>
+					<ReqdColltnDt>2010-06-16</ReqdColltnDt>
+					<MndtRltdInf>
+						<MndtId>RIT04/av002</MndtId>
+					</MndtRltdInf>
+					<Dbtr>
+						<Nm>Schneider</Nm>
+						<PstlAdr>
+							<StrtNm>Kuertman Strasse</StrtNm>
+							<BldgNb>45</BldgNb>
+							<PstCd>50475</PstCd>
+							<TwnNm>Koeln</TwnNm>
+							<Ctry>DE</Ctry>
+						</PstlAdr>
+					</Dbtr>
+					<DbtrAcct>
+						<Id>
+							<IBAN>DE89370400440332013000</IBAN>
+						</Id>
+					</DbtrAcct>
+					<Cdtr>
+						<Nm>Ritcom</Nm>
+						<PstlAdr>
+							<StrtNm>Schueman Strasse</StrtNm>
+							<BldgNb>18</BldgNb>
+							<PstCd>60017</PstCd>
+							<TwnNm>Frankfurt am Main</TwnNm>
+							<Ctry>DE</Ctry>
+						</PstlAdr>
+					</Cdtr>
+				</OrgnlTxRef>
+			</TxInf>
+		</OrgnlPmtInfAndRvsl>
+	</CstmrPmtRvsl>
+</Document>

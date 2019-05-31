@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Standards Smart Test Messages for SEPA Credit Transfer Scheme product version 3.0?>
+<?valid true?>
+<?description ABC Corporation, New York has received three invoices:
+1. An invoice with number 4562, dated 08 September 2012 from DEF Electronics, London: 10 million JPY needs to be paid to DEF Electronics account 23683707994215 with AAAA Bank, London (AAAAGB2L). ABC Corporation assigns reference ABC/4562/2012-09-08 to the payment. Payment transaction
+charges are shared between ABC Corporation and DEF Electronics.
+2. An invoice with number ABC-13679, dated 15 September 2012 from GHI Semiconductors, Brussels: 500,000 EUR needs to be paid to GHI Semiconductors account E30001216371411 with DDDD Bank, Belgium (DDDDBEBB). ABC Corporation assigns reference ABC/ABC-13679/2012-09-15 to the payment. The accounts receivable department of GHI Semiconductors needs to be advised when the funds have been credited on the account on telephone number +32/2/2222222. GHI Semiconductors will bear all
+payment transaction charges. 
+3. An invoice with number 987-AC, dated 27 September 2012, from their branch ABC Corporation, California: 1 million USD needs to be paid to the branch account 4895623
+with BBBB Bank, San Francisco (BBBBUS66). ABC assigns a reference ABC/987-AC/2012-09-27 to the payment. Payment transaction charges are shared. 
+ABC Corporation holds an account 00125574999 with BBBB Bank, New York (BBBBUS33) and instructs its bank to execute payment of the invoices with a CustomerCreditTransferInitiation
+message.?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.04">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>ABC/120928/CCT001</MsgId>
+			<CreDtTm>2012-09-28T14:07:00</CreDtTm>
+			<NbOfTxs>3</NbOfTxs>
+			<CtrlSum>11500000</CtrlSum>
+			<InitgPty>
+				<Nm>ABC Corporation</Nm>
+				<PstlAdr>
+					<StrtNm>Times Square</StrtNm>
+					<BldgNb>7</BldgNb>
+					<PstCd>NY 10036</PstCd>
+					<TwnNm>New York</TwnNm>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>ABC/086</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>false</BtchBookg>
+			<ReqdExctnDt>2012-09-29</ReqdExctnDt>
+			<Dbtr>
+				<Nm>ABC Corporation</Nm>
+				<PstlAdr>
+					<StrtNm>Times Square</StrtNm>
+					<BldgNb>7</BldgNb>
+					<PstCd>NY 10036</PstCd>
+					<TwnNm>New York</TwnNm>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>00125574999</Id>
+					</Othr>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BICFI>BBBBUS33</BICFI>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>ABC/120928/CCT001/01</InstrId>
+					<EndToEndId>ABC/4562/2012-09-08</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="JPY">10000000</InstdAmt>
+				</Amt>
+				<ChrgBr>SHAR</ChrgBr>
+				<CdtrAgt>
+					<FinInstnId>
+						<BICFI>AAAAGB2L</BICFI>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>DEF Electronics</Nm>
+					<PstlAdr>
+						<AdrLine>Corn Exchange 5th Floor</AdrLine>
+						<AdrLine>Mark Lane 55</AdrLine>
+						<AdrLine>EC3R7NE London</AdrLine>
+						<AdrLine>GB</AdrLine>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>23683707994125</Id>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<Purp>
+					<Cd>CINV</Cd>
+				</Purp>
+				<RmtInf>
+					<Strd>
+						<RfrdDocInf>
+							<Nb>4562</Nb>
+							<RltdDt>2012-09-08</RltdDt>
+						</RfrdDocInf>
+					</Strd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>ABC/120928/CCT001/2</InstrId>
+					<EndToEndId>ABC/ABC-13679/2012-09-15</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">500000</InstdAmt>
+				</Amt>
+				<ChrgBr>CRED</ChrgBr>
+				<CdtrAgt>
+					<FinInstnId>
+						<BICFI>DDDDBEBB</BICFI>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>GHI Semiconductors</Nm>
+					<PstlAdr>
+						<StrtNm>Avenue Brugmann</StrtNm>
+						<BldgNb>415</BldgNb>
+						<PstCd>1180</PstCd>
+						<TwnNm>Brussels</TwnNm>
+						<Ctry>BE</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>BE30001216371411</IBAN>
+					</Id>
+				</CdtrAcct>
+				<InstrForCdtrAgt>
+					<Cd>PHOB</Cd>
+					<InstrInf>+32/2/2222222</InstrInf>
+				</InstrForCdtrAgt>
+				<Purp>
+					<Cd>GDDS</Cd>
+				</Purp>
+				<RmtInf>
+					<Strd>
+						<RfrdDocInf>
+							<Tp>
+								<CdOrPrtry>
+									<Cd>CINV</Cd>
+								</CdOrPrtry>
+							</Tp>
+							<Nb>ABC-13679</Nb>
+							<RltdDt>2012-09-15</RltdDt>
+						</RfrdDocInf>
+					</Strd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>ABC/120928/CCT001/3</InstrId>
+					<EndToEndId>ABC/987-AC/2012-09-27</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="USD">1000000</InstdAmt>
+				</Amt>
+				<ChrgBr>SHAR</ChrgBr>
+				<CdtrAgt>
+					<FinInstnId>
+						<BICFI>BBBBUS66</BICFI>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>ABC Corporation</Nm>
+					<PstlAdr>
+						<Dept>Treasury department</Dept>
+						<StrtNm>Bush Street</StrtNm>
+						<BldgNb>13</BldgNb>
+						<PstCd>CA 94108</PstCd>
+						<TwnNm>San Francisco</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>4895623</Id>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<Purp>
+					<Cd>INTC</Cd>
+				</Purp>
+				<RmtInf>
+					<Strd>
+						<RfrdDocInf>
+							<Tp>
+								<CdOrPrtry>
+									<Cd>CINV</Cd>
+								</CdOrPrtry>
+							</Tp>
+							<Nb>987-AC</Nb>
+							<RltdDt>2012-09-27</RltdDt>
+						</RfrdDocInf>
+					</Strd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

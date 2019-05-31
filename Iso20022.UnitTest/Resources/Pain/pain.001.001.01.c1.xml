@@ -1,0 +1,143 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:xsd:pain.001.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.01>
+		<GrpHdr>
+			<GrpId>PFSM1234</GrpId>
+			<CreDtTm>2005-10-04T13:20:00+01:00</CreDtTm>
+			<BtchBookg>true</BtchBookg>
+			<NbOfTxs>2</NbOfTxs>
+			<Grpg>false</Grpg>
+			<InitgPty>
+				<Nm>PENSION FUND VITAPLUS</Nm>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<ReqdExctnDt>2005-10-06</ReqdExctnDt>
+			<PmtMtdByFrstAgt>TRF</PmtMtdByFrstAgt>
+			<CdtTrfTpId>
+				<Cd>PENS</Cd>
+			</CdtTrfTpId>
+			<Dbtr>
+				<Nm>PENSION FUND VITAPLUS</Nm>
+				<PstlAdr>
+					<StrtNm>BLVD DE LENTREPOT</StrtNm>
+					<BldgNb>56</BldgNb>
+					<PstCd>59000</PstCd>
+					<TwnNm>LILLE</TwnNm>
+					<Ctry>FR</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<DmstAcct>
+						<Id>123456789</Id>
+					</DmstAcct>
+				</Id>
+			</DbtrAcct>
+			<FrstAgt>
+				<FinInstnId>
+					<BIC>AAAAFRPP</BIC>
+				</FinInstnId>
+			</FrstAgt>
+			<PmtTx>
+				<PmtId>
+					<InstrId>PMSM001</InstrId>
+					<EndToEndId>PEN/OCT/05/REF456789</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy = "EUR">2000</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>M DUPONT</Nm>
+					<PstlAdr>
+						<StrtNm>RUE DES COMBATTANTS</StrtNm>
+						<BldgNb>12</BldgNb>
+						<PstCd>11100</PstCd>
+						<TwnNm>NARBONNE</TwnNm>
+						<Ctry>FR</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<DmstAcct>
+							<Id>123456</Id>
+						</DmstAcct>
+					</Id>
+				</CdtrAcct>
+				<FnlAgt>
+					<FinInstnId>
+						<BIC>BBBBFRPPNAR</BIC>
+					</FinInstnId>
+				</FnlAgt>
+				<ChrgBr>SHA</ChrgBr>
+				<RmtInf>
+					<Ustrd>PENSION PAYMENT OCTOBER 2005</Ustrd>
+				</RmtInf>
+			</PmtTx>
+		</PmtInf>
+		<PmtInf>
+			<ReqdExctnDt>2005-10-06</ReqdExctnDt>
+			<PmtMtdByFrstAgt>TRF</PmtMtdByFrstAgt>
+			<CdtTrfTpId>
+				<Cd>PENS</Cd>
+			</CdtTrfTpId>
+			<Dbtr>
+				<Nm>PENSION FUND VITAPLUS</Nm>
+				<PstlAdr>
+					<StrtNm>BLVD DE LENTREPOT</StrtNm>
+					<BldgNb>56</BldgNb>
+					<PstCd>59000</PstCd>
+					<TwnNm>LILLE</TwnNm>
+					<Ctry>FR</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<DmstAcct>
+						<Id>123456789</Id>
+					</DmstAcct>
+				</Id>
+			</DbtrAcct>
+			<FrstAgt>
+				<FinInstnId>
+					<BIC>AAAAFRPP</BIC>
+				</FinInstnId>
+			</FrstAgt>
+			<PmtTx>
+				<PmtId>
+					<InstrId>PMSM002</InstrId>
+					<EndToEndId>PEN/OCT/05/REF123456</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy = "EUR">1785</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>ARTOIS</Nm>
+					<PstlAdr>
+						<StrtNm>AV DU PRESIDENT KENNEDY</StrtNm>
+						<BldgNb>22</BldgNb>
+						<PstCd>68050</PstCd>
+						<TwnNm>MULHOUSE</TwnNm>
+						<Ctry>FR</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<DmstAcct>
+							<Id>98765</Id>
+						</DmstAcct>
+					</Id>
+				</CdtrAcct>
+				<FnlAgt>
+					<FinInstnId>
+						<BIC>CCCCFRPPMUL</BIC>
+					</FinInstnId>
+				</FnlAgt>
+				<ChrgBr>SHA</ChrgBr>
+				<RmtInf>
+					<Ustrd>PENSION PAYMENT OCTOBER 2005</Ustrd>
+				</RmtInf>
+			</PmtTx>
+		</PmtInf>
+	</pain.001.001.01>
+</Document>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Standards Smart Test Messages for SEPA Credit Transfer Scheme product version 3.0?>
+<?valid true?>
+<?description As follow-up to the payment initiation by ABC Corporation, BBBBUS33 sends a CustomerPaymentStatusReport to acknowledge that the message passed technical validation and was accepted based on the customer profile. 
+Note : the original CustomerCreditTransferInitiation
+sent by ABC Corporation to BBBBUS33 is documented in the business example section of the CustomerCreditTransferInitiation message.?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.04">
+	<CstmrPmtStsRpt>
+		<GrpHdr>
+			<MsgId>BBBB/120928-PSR/001</MsgId>
+			<CreDtTm>2012-09-28T14:09:00</CreDtTm>
+			<InitgPty>
+				<Nm>ABC Corporation</Nm>
+				<PstlAdr>
+					<StrtNm>Times Square</StrtNm>
+					<BldgNb>7</BldgNb>
+					<PstCd>NY 10036</PstCd>
+					<TwnNm>New York</TwnNm>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</InitgPty>
+			<DbtrAgt>
+				<FinInstnId>
+					<BICFI>BBBBUS33</BICFI>
+				</FinInstnId>
+			</DbtrAgt>
+		</GrpHdr>
+		<OrgnlGrpInfAndSts>
+			<OrgnlMsgId>ABC/120928/CCT001</OrgnlMsgId>
+			<OrgnlMsgNmId>pain.001.001.04</OrgnlMsgNmId>
+			<OrgnlCreDtTm>2012-09-28T14:07:00</OrgnlCreDtTm>
+			<OrgnlNbOfTxs>3</OrgnlNbOfTxs>
+			<OrgnlCtrlSum>11500000</OrgnlCtrlSum>
+			<GrpSts>ACCP</GrpSts>
+		</OrgnlGrpInfAndSts>
+	</CstmrPmtStsRpt>
+</Document>

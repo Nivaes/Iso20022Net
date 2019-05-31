@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:pain.002.001.02" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<pain.002.001.02>
+		<GrpHdr>
+			<MsgId>BBBB/060928-PSR/001</MsgId>
+			<CreDtTm>2006-09-28T14:09:00</CreDtTm>
+			<InitgPty>
+				<Nm>ABC Corporation</Nm>
+				<PstlAdr>
+					<StrtNm>Times Square</StrtNm>
+					<BldgNb>7</BldgNb>
+					<PstCd>NY 10036</PstCd>
+					<TwnNm>New York</TwnNm>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</InitgPty>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>BBBBUS33</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+		</GrpHdr>
+		<OrgnlGrpInfAndSts>
+			<OrgnlMsgId>ABC/060928/CCT001</OrgnlMsgId>
+			<OrgnlMsgNmId>pain.001.001.02</OrgnlMsgNmId>
+			<OrgnlCreDtTm>2006-09-28T14:07:00</OrgnlCreDtTm>
+			<OrgnlNbOfTxs>3</OrgnlNbOfTxs>
+			<OrgnlCtrlSum>11500000</OrgnlCtrlSum>
+			<GrpSts>ACCP</GrpSts>
+		</OrgnlGrpInfAndSts>
+	</pain.002.001.02>
+</Document>

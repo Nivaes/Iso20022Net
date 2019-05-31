@@ -1,0 +1,158 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:xsd:pain.001.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.01>
+		<GrpHdr>
+			<GrpId>ZEN001</GrpId>
+			<CreDtTm>2005-10-10T16:10:00-05:00</CreDtTm>
+			<BtchBookg>false</BtchBookg>
+			<Grpg>false</Grpg>
+			<InitgPty>
+				<Nm>ZDI</Nm>
+				<PstlAdr>
+					<StrtNm>5TH AVENUE</StrtNm>
+					<BldgNb>567</BldgNb>
+					<PstCd>10048</PstCd>
+					<TwnNm>NEW YORK</TwnNm>
+					<CtrySubDvsn>NY</CtrySubDvsn>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<ReqdExctnDt>2005-10-12</ReqdExctnDt>
+			<PmtMtdByFrstAgt>TRF</PmtMtdByFrstAgt>
+			<Dbtr>
+				<Nm>ZENDI CO.</Nm>
+				<PstlAdr>
+					<AdrLine>IDS TOWER</AdrLine>
+					<StrtNm>MARQUETTE AVENUE</StrtNm>
+					<BldgNb>654</BldgNb>
+					<PstCd>55402</PstCd>
+					<TwnNm>MINNEAPOLIS</TwnNm>
+					<CtrySubDvsn>MN</CtrySubDvsn>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<DmstAcct>
+						<Id>123123123</Id>
+					</DmstAcct>
+				</Id>
+				<Tp>CACC</Tp>
+			</DbtrAcct>
+			<FrstAgt>
+				<FinInstnId>
+					<BIC>AAAAUS33</BIC>
+				</FinInstnId>
+			</FrstAgt>
+			<ChrgsAcct>
+				<Id>
+					<DmstAcct>
+						<Id>456456456</Id>
+					</DmstAcct>
+				</Id>
+			</ChrgsAcct>
+			<PmtTx>
+				<PmtId>
+					<InstrId>ZENDI-00001</InstrId>
+					<EndToEndId>12345/98765</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy = "USD">7800</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>ARTIS</Nm>
+					<PstlAdr>
+						<AdrLine>LAND TOWER 09-00</AdrLine>
+						<StrtNm>RAFFLES PLACE</StrtNm>
+						<BldgNb>50</BldgNb>
+						<PstCd>049320</PstCd>
+						<TwnNm>SINGAPORE</TwnNm>
+						<Ctry>SG</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<DmstAcct>
+							<Id>987654</Id>
+						</DmstAcct>
+					</Id>
+				</CdtrAcct>
+				<FnlAgt>
+					<FinInstnId>
+						<BIC>BBBBSGSG</BIC>
+					</FinInstnId>
+				</FnlAgt>
+				<ChrgBr>SHA</ChrgBr>
+				<RmtInf>
+					<Ustrd>INVOICES 7890/7891/7892</Ustrd>
+				</RmtInf>
+			</PmtTx>
+		</PmtInf>
+		<PmtInf>
+			<ReqdExctnDt>2005-10-12</ReqdExctnDt>
+			<PmtMtdByFrstAgt>TRF</PmtMtdByFrstAgt>
+			<Dbtr>
+				<Nm>ZENDI CO.</Nm>
+				<PstlAdr>
+					<AdrLine>IDS TOWER</AdrLine>
+					<StrtNm>MARQUETTE AVENUE</StrtNm>
+					<BldgNb>654</BldgNb>
+					<PstCd>55402</PstCd>
+					<TwnNm>MINNEAPOLIS</TwnNm>
+					<CtrySubDvsn>MN</CtrySubDvsn>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<DmstAcct>
+						<Id>123123123</Id>
+					</DmstAcct>
+				</Id>
+				<Tp>CACC</Tp>
+			</DbtrAcct>
+			<FrstAgt>
+				<FinInstnId>
+					<BIC>AAAAUS33</BIC>
+				</FinInstnId>
+			</FrstAgt>
+			<ChrgsAcct>
+				<Id>
+					<DmstAcct>
+						<Id>456456456</Id>
+					</DmstAcct>
+				</Id>
+			</ChrgsAcct>
+			<PmtTx>
+				<PmtId>
+					<InstrId>ZENDI-00002</InstrId>
+					<EndToEndId>NRTE876</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy = "USD">7865</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>SAKAMOTO</Nm>
+					<PstlAdr>
+						<AdrLine>8-5 YAESU 2 CHOME</AdrLine>
+						<AdrLine>CHUO-KU</AdrLine>
+						<PstCd>104-0028</PstCd>
+						<TwnNm>TOKYO</TwnNm>
+						<Ctry>JP</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<FnlAgt>
+					<FinInstnId>
+						<BIC>CCCCJPJT</BIC>
+					</FinInstnId>
+				</FnlAgt>
+				<ChrgBr>SHA</ChrgBr>
+				<InstrForFnlAgt>
+					<Cd>CHQB</Cd>
+				</InstrForFnlAgt>
+			</PmtTx>
+		</PmtInf>
+	</pain.001.001.01>
+</Document>

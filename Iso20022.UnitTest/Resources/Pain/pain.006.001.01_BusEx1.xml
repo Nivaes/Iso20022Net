@@ -1,0 +1,73 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:pain.006.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<pain.006.001.01>
+		<GrpHdr>
+			<MsgId>ABC/060928/PCR001</MsgId>
+			<CreDtTm>2006-09-28T15:07:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<GrpCxl>false</GrpCxl>
+			<InitgPty>
+				<Nm>ABC Corporation</Nm>
+				<PstlAdr>
+					<StrtNm>Times Square</StrtNm>
+					<BldgNb>7</BldgNb>
+					<PstCd>NY 10036</PstCd>
+					<TwnNm>New York</TwnNm>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</InitgPty>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>BBBBUS33</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+		</GrpHdr>
+		<OrgnlGrpInf>
+			<OrgnlMsgId>ABC/060928/CCT001</OrgnlMsgId>
+			<OrgnlMsgNmId>pain.001.001.02</OrgnlMsgNmId>
+			<OrgnlCreDtTm>2006-09-28T14:07:00</OrgnlCreDtTm>
+		</OrgnlGrpInf>
+		<TxInf>
+			<CxlId>ABC/060928/PCR001/1</CxlId>
+			<OrgnlInstrId>ABC/060928/CCT001/3</OrgnlInstrId>
+			<OrgnlEndToEndId>ABC/987-AC/2006-09-27</OrgnlEndToEndId>
+			<OrgnlInstdAmt Ccy = "USD">1000000</OrgnlInstdAmt>
+			<CxlRsnInf>
+				<CxlOrgtr>
+					<Nm>ABC Corporation</Nm>
+				</CxlOrgtr>
+				<CxlRsn>
+					<Cd>UPAY</Cd>
+				</CxlRsn>
+			</CxlRsnInf>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy = "USD">1000000</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2006-09-29</ReqdExctnDt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>BBBBUS66</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>ABC Corporation</Nm>
+					<PstlAdr>
+						<StrtNm>Times Square</StrtNm>
+						<BldgNb>7</BldgNb>
+						<PstCd>NY 10036</PstCd>
+						<TwnNm>New York</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<PrtryAcct>
+							<Id>1234567</Id>
+						</PrtryAcct>
+					</Id>
+				</CdtrAcct>
+			</OrgnlTxRef>
+		</TxInf>
+	</pain.006.001.01>
+</Document>
