@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.026.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<UblToApply>
+		<Assgnmt>
+			<Id>FWUTA1239876540123090316</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BIC>UUUUUS33</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BIC>ZZZZUS33</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2009-03-16T09:02:45</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>1239876540123090316001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSBDEMM</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<IntrBk>
+				<OrgnlInstrId>123458760903</OrgnlInstrId>
+				<OrgnlIntrBkSttlmAmt Ccy="EUR">12439.57</OrgnlIntrBkSttlmAmt>
+				<OrgnlIntrBkSttlmDt>2009-03-16</OrgnlIntrBkSttlmDt>
+			</IntrBk>
+		</Undrlyg>
+		<Justfn>
+			<AnyInf>true</AnyInf>
+		</Justfn>
+	</UblToApply>
+</Document>

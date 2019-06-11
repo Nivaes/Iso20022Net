@@ -1,0 +1,59 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:pacs.004.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<pacs.004.001.01>
+		<GrpHdr>
+			<MsgId>CCCC/061121-PR007</MsgId>
+			<CreDtTm>2006-11-21T10:37:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<SttlmInf>
+				<SttlmMtd>CLRG</SttlmMtd>
+				<ClrSys>
+					<ClrSysId>CBJ</ClrSysId>
+				</ClrSys>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BIC>CCCCIE2D</BIC>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BIC>BBBBIE2D</BIC>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<OrgnlGrpInf>
+			<OrgnlMsgId>BBBB/061109-CBJ056</OrgnlMsgId>
+			<OrgnlMsgNmId>pacs.008.001.01</OrgnlMsgNmId>
+			<OrgnlCreDtTm>2006-11-09T10:13:00</OrgnlCreDtTm>
+		</OrgnlGrpInf>
+		<TxInf>
+			<RtrId>CCCC/061121-PR007/1</RtrId>
+			<OrgnlInstrId>BBBB/061109-CBJ056/1</OrgnlInstrId>
+			<OrgnlEndToEndId>CROPS/SX-25T/2006-10-13</OrgnlEndToEndId>
+			<OrgnlTxId>AAAA/061109-CCT/EUR443/1</OrgnlTxId>
+			<OrgnlIntrBkSttlmAmt Ccy = "EUR">74900.00</OrgnlIntrBkSttlmAmt>
+			<RtrdIntrBkSttlmAmt Ccy = "EUR">74750</RtrdIntrBkSttlmAmt>
+			<IntrBkSttlmDt>2006-11-21</IntrBkSttlmDt>
+			<RtrdInstdAmt Ccy = "EUR">74850</RtrdInstdAmt>
+			<ChrgBr>CRED</ChrgBr>
+			<ChrgsInf>
+				<ChrgsAmt Ccy = "EUR">100</ChrgsAmt>
+				<ChrgsPty>
+					<FinInstnId>
+						<BIC>CCCCIE2D</BIC>
+					</FinInstnId>
+				</ChrgsPty>
+			</ChrgsInf>
+			<RtrRsnInf>
+				<RtrOrgtr>
+					<Nm>Seed Inc.</Nm>
+				</RtrOrgtr>
+				<RtrRsn>
+					<Cd>NARR</Cd>
+				</RtrRsn>
+				<AddtlRtrRsnInf>ACCEPTED PAYMENT CANCELLATION REQUEST</AddtlRtrRsnInf>
+			</RtrRsnInf>
+		</TxInf>
+	</pacs.004.001.01>
+</Document>

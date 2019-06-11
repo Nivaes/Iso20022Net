@@ -1,0 +1,41 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:acmt.009.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<AcctOpngAddtlInfReq>
+		<Refs>
+			<MsgId>
+				<Id>BBBBUS/2010/AB1</Id>
+				<CreDtTm>2010-09-28T15:07:00</CreDtTm>
+			</MsgId>
+			<ReqToBeCmpltdId>
+				<Id>ABC/090928/CCT001</Id>
+				<CreDtTm>2010-09-28T14:07:00</CreDtTm>
+			</ReqToBeCmpltdId>
+			<PrcId>
+				<Id>ABC/090928/CCT001</Id>
+				<CreDtTm>2010-09-28T14:07:00</CreDtTm>
+			</PrcId>
+			<ReqRsn>missing account purpose</ReqRsn>
+		</Refs>
+		<OrgId/>
+		<Acct>
+			<Id>
+				<Othr>
+					<Id>NOREF</Id>
+				</Othr>
+			</Id>
+			<Tp>
+				<Cd>CASH</Cd>
+			</Tp>
+			<Ccy>USD</Ccy>
+			<MnthlyRcvdVal>200000</MnthlyRcvdVal>
+			<MnthlyTxNb>100</MnthlyTxNb>
+			<AvrgBal>10000</AvrgBal>
+			<StmtCycl>WEEK</StmtCycl>
+		</Acct>
+		<AcctSvcrId>
+			<FinInstnId>
+				<BIC>BBBBUS33</BIC>
+			</FinInstnId>
+		</AcctSvcrId>
+	</AcctOpngAddtlInfReq>
+</Document>

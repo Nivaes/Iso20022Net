@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.055.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrPmtCxlReq>
+		<Assgnmt>
+			<Id>AB20120317CANC</Id>
+			<Assgnr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>EEEEUS33</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BICFI>NNNNUS33</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2012-03-26T09:10:30</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>EEEE20120325001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>EEEEUS33</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<OrgnlPmtInfAndCxl>
+				<OrgnlPmtInfId>CECOMSUP001003</OrgnlPmtInfId>
+				<TxInf>
+					<OrgnlInstrId>CECOMSUP001003</OrgnlInstrId>
+					<OrgnlInstdAmt Ccy="USD">10234.56</OrgnlInstdAmt>
+					<OrgnlReqdExctnDt>2012-03-25</OrgnlReqdExctnDt>
+					<CxlRsnInf>
+						<Rsn>
+							<Cd>CUST</Cd>
+						</Rsn>
+					</CxlRsnInf>
+				</TxInf>
+			</OrgnlPmtInfAndCxl>
+		</Undrlyg>
+	</CstmrPmtCxlReq>
+</Document>

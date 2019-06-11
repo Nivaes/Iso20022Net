@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Business samples for ISO submission?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:semt.020.001.01">
+	<SctiesMsgCxlAdvc>
+		<Id>
+			<Id>FTGRTKD45678</Id>
+		</Id>
+		<Dtls>
+			<Ref>
+				<SctiesSttlmTxConfId>C9876XYZC2</SctiesSttlmTxConfId>
+			</Ref>
+			<SfkpgAcct>
+				<Id>222S</Id>
+			</SfkpgAcct>
+		</Dtls>
+	</SctiesMsgCxlAdvc>
+</Document>

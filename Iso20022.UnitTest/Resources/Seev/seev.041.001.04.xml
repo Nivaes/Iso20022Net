@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:seev.041.001.04">
+	<CorpActnInstrCxlReqStsAdvc>
+		<InstrCxlReqId>
+			<Id>987-654-35</Id>
+		</InstrCxlReqId>
+		<CorpActnGnlInf>
+			<CorpActnEvtId>DIVGLAX123</CorpActnEvtId>
+			<OffclCorpActnEvtId>BI01593212345</OffclCorpActnEvtId>
+			<EvtTp>
+				<Cd>DVOP</Cd>
+			</EvtTp>
+		</CorpActnGnlInf>
+		<InstrCxlReqSts>
+			<CxlCmpltd>
+				<NoSpcfdRsn>NORE</NoSpcfdRsn>
+			</CxlCmpltd>
+		</InstrCxlReqSts>
+		<CorpActnInstr>
+			<OptnNb>
+				<Nb>002</Nb>
+			</OptnNb>
+			<OptnTp>
+				<Cd>SECU</Cd>
+			</OptnTp>
+			<StsQtyOrQtyToRcv>
+				<StsQty>
+					<Qty>
+						<Unit>80000</Unit>
+					</Qty>
+				</StsQty>
+			</StsQtyOrQtyToRcv>
+		</CorpActnInstr>
+	</CorpActnInstrCxlReqStsAdvc>
+</Document>

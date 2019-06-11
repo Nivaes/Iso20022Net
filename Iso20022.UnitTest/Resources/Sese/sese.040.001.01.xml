@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Business Samples for ISO submission?>
+<?valid true?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:sese.040.001.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SctiesSttlmTxCtrPtyRspn>
+		<TxId>
+			<AcctOwnrTxId>A4321BCD1SA1</AcctOwnrTxId>
+		</TxId>
+		<RspnSts>
+			<Pdg>
+				<UdrInvstgtn>
+					<NoSpcfdRsn>NORE</NoSpcfdRsn>
+				</UdrInvstgtn>
+			</Pdg>
+		</RspnSts>
+	</SctiesSttlmTxCtrPtyRspn>
+</Document>

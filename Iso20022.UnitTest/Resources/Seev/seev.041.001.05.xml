@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?For ISO Submission?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:DRAFT1seev.041.001.05" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:DRAFT1seev.041.001.05 file://BE-FILE01/jlittre$/MyData/01.%20STANDARDS/01.%20STD%20DEVELOPMENT%20DOMAINS/1.%20Securities/02.%20Corporate%20Actions/03.%20CA%20MT%2015022%20Maint/SR2015_CRs/8.%20ISO%20or%20MX%20Subset/Schemas/DRAFT1seev.041.001.05.xsd">
+	<CorpActnInstrCxlReqStsAdvc>
+		<InstrCxlReqId>
+			<Id>987-654-35</Id>
+		</InstrCxlReqId>
+		<CorpActnGnlInf>
+			<CorpActnEvtId>DIVGLAX123</CorpActnEvtId>
+			<OffclCorpActnEvtId>BI01593212345</OffclCorpActnEvtId>
+			<EvtTp>
+				<Cd>DVOP</Cd>
+			</EvtTp>
+		</CorpActnGnlInf>
+		<InstrCxlReqSts>
+			<CxlCmpltd>
+				<NoSpcfdRsn>NORE</NoSpcfdRsn>
+			</CxlCmpltd>
+		</InstrCxlReqSts>
+		<CorpActnInstr>
+			<OptnNb>
+				<Nb>002</Nb>
+			</OptnNb>
+			<OptnTp>
+				<Cd>SECU</Cd>
+			</OptnTp>
+			<StsQtyOrQtyToRcv>
+				<StsQty>
+					<Qty>
+						<Unit>80000</Unit>
+					</Qty>
+				</StsQty>
+			</StsQtyOrQtyToRcv>
+		</CorpActnInstr>
+	</CorpActnInstrCxlReqStsAdvc>
+</Document>

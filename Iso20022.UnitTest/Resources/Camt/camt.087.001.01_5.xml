@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.087.001.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ReqToModfyPmt>
+		<Assgnmt>
+			<Id>ABCDEFGHIJKLMNOPQRST123456789012345</Id>
+			<Assgnr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>CCCCJPJT</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BICFI>VVVVJPJT</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2001-12-17T09:30:47.0Z</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>MOD123JPY20050123</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>CCCCJPJT</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<Initn>
+				<OrgnlInstrId>123JPY20120323</OrgnlInstrId>
+				<OrgnlInstdAmt Ccy="JPY">4257567</OrgnlInstdAmt>
+				<ReqdExctnDt>2012-03-27</ReqdExctnDt>
+			</Initn>
+		</Undrlyg>
+		<Mod>
+			<SttlmInf>
+				<InstdRmbrsmntAgt>
+					<FinInstnId>
+						<BICFI>LLLLJPJT</BICFI>
+					</FinInstnId>
+				</InstdRmbrsmntAgt>
+			</SttlmInf>
+		</Mod>
+	</ReqToModfyPmt>
+</Document>

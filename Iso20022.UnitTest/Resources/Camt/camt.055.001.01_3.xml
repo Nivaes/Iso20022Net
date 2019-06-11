@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.055.001.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrPmtCxlReq>
+		<Assgnmt>
+			<Id>UTACANC10301123456789</Id>
+			<Assgnr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSAGB2L</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BIC>CCCCGB2L</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2009-03-24T11:13:10</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSBGB2L-20090323-001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSBGB2L</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+			<ReopCaseIndctn>true</ReopCaseIndctn>
+		</Case>
+		<Undrlyg>
+			<OrgnlPmtInfAndCxl>
+				<OrgnlPmtInfId>200903219887234</OrgnlPmtInfId>
+				<OrgnlGrpInf>
+					<OrgnlMsgId>200903219887234</OrgnlMsgId>
+					<OrgnlMsgNmId>MT101</OrgnlMsgNmId>
+				</OrgnlGrpInf>
+				<TxInf>
+					<OrgnlInstrId>200903219887234</OrgnlInstrId>
+					<OrgnlInstdAmt Ccy="GBP">52317.48</OrgnlInstdAmt>
+					<OrgnlReqdColltnDt>2009-03-23</OrgnlReqdColltnDt>
+					<CxlRsnInf>
+						<Rsn>
+							<Cd>UPAY</Cd>
+						</Rsn>
+					</CxlRsnInf>
+				</TxInf>
+			</OrgnlPmtInfAndCxl>
+		</Undrlyg>
+	</CstmrPmtCxlReq>
+</Document>

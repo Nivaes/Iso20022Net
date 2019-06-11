@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?BusExample camt.059?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:camt.059.001.02">
+	<NtfctnToRcvStsRpt>
+		<GrpHdr>
+			<MsgId>EXAMPLE camt.059</MsgId>
+			<CreDtTm>2011-01-27T10:05:00</CreDtTm>
+		</GrpHdr>
+		<OrgnlNtfctnAndSts>
+			<OrgnlMsgId>EXAMPLE camt.057</OrgnlMsgId>
+			<OrgnlNtfctnId>SAMPLE camt.057</OrgnlNtfctnId>
+			<OrgnlNtfctnRef>
+				<Dbtr>
+					<Agt>
+						<FinInstnId>
+							<BICFI>XXXXUS33</BICFI>
+						</FinInstnId>
+					</Agt>
+				</Dbtr>
+				<OrgnlItmAndSts>
+					<OrgnlItmId>FX29006/1234</OrgnlItmId>
+					<Amt Ccy="USD">15000000</Amt>
+					<ItmSts>RCVD</ItmSts>
+				</OrgnlItmAndSts>
+			</OrgnlNtfctnRef>
+		</OrgnlNtfctnAndSts>
+	</NtfctnToRcvStsRpt>
+</Document>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Business sample for ISO submission?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:sese.030.001.04">
+	<SctiesSttlmCondsModReq>
+		<SfkpgAcct>
+			<Id>222S</Id>
+		</SfkpgAcct>
+		<ReqDtls>
+			<Ref>
+				<AcctOwnrTxId>FRTJ123REC2</AcctOwnrTxId>
+			</Ref>
+			<HldInd>
+				<Ind>false</Ind>
+			</HldInd>
+		</ReqDtls>
+	</SctiesSttlmCondsModReq>
+</Document>

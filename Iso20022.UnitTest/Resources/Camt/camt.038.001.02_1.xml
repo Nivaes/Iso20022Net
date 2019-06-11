@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.038.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CaseStsRptReq>
+		<ReqHdr>
+			<Id>CSRRCUSGMOD090327001</Id>
+			<Fr>
+				<Pty><Id>
+					<OrgId><BICOrBEI>CUSGHKHH</BICOrBEI></OrgId>
+				</Id></Pty>
+			</Fr>
+			<To>
+				<Agt>
+					<FinInstnId><BIC>GGGGHKHH</BIC></FinInstnId>
+				</Agt>
+			</To>
+			<CreDtTm>2009-03-28T10:35:30</CreDtTm>
+		</ReqHdr>
+		<Case>
+			<Id>CUSGMOD090327001</Id>
+			<Cretr>
+				<Pty><Id>
+					<OrgId><BICOrBEI>CUSGHKHH</BICOrBEI></OrgId>
+				</Id></Pty>
+			</Cretr>
+		</Case>
+	</CaseStsRptReq>
+</Document>

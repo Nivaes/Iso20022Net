@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.027.001.04" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ClmNonRct>
+		<Assgnmt>
+			<Id>CNRVVVVGB2L200506020001</Id>
+			<Assgnr>
+				<Pty><Id><OrgId><AnyBIC>CUSAFRPP</AnyBIC></OrgId></Id></Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt><FinInstnId><BICFI>FFFFFRPP</BICFI></FinInstnId></Agt>
+			</Assgne>
+			<CreDtTm>2012-03-06T10:35:23</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CNR0505PAY09876543</Id>
+			<Cretr>
+				<Pty><Id><OrgId><AnyBIC>CUSAFRPP</AnyBIC></OrgId></Id></Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<Initn>
+				<OrgnlGrpInf>
+					<OrgnlMsgId>0903PAY09876543</OrgnlMsgId>
+					<OrgnlMsgNmId>FAX</OrgnlMsgNmId>
+				</OrgnlGrpInf><OrgnlInstrId>0903PAY09876543</OrgnlInstrId>
+				<OrgnlInstdAmt Ccy="GBP">13498.52</OrgnlInstdAmt><ReqdExctnDt>2012-03-01</ReqdExctnDt>
+			</Initn>
+		</Undrlyg>
+	</ClmNonRct>
+</Document>
+

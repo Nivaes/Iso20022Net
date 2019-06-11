@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:trea.005.001.02" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<AmdNDFValtnV02>
+		<TradInf>
+			<TradDt>2007-04-02</TradDt>
+			<NtfctnId>ND123</NtfctnId>
+			<RltdRef>ND789</RltdRef>
+		</TradInf>
+		<TradgSdId>
+			<SubmitgPty>
+				<BICOrBEI>
+					<BICOrBEI>BANAGB2L</BICOrBEI>
+				</BICOrBEI>
+			</SubmitgPty>
+			<TradPty>
+				<BICOrBEI>
+					<BICOrBEI>BANAGB2L</BICOrBEI>
+				</BICOrBEI>
+			</TradPty>
+		</TradgSdId>
+		<CtrPtySdId>
+			<SubmitgPty>
+				<BICOrBEI>
+					<BICOrBEI>CSTCUS33</BICOrBEI>
+				</BICOrBEI>
+			</SubmitgPty>
+			<TradPty>
+				<BICOrBEI>
+					<BICOrBEI>CSTCUS33</BICOrBEI>
+				</BICOrBEI>
+			</TradPty>
+		</CtrPtySdId>
+		<TradAmts>
+			<TradgSdBuyAmt Ccy = "THB">100000000</TradgSdBuyAmt>
+			<TradgSdSellAmt Ccy = "GBP">1400000</TradgSdSellAmt>
+			<SttlmDt>2007-04-04</SttlmDt>
+		</TradAmts>
+		<ValtnRate>
+			<XchgRate>0.014</XchgRate>
+		</ValtnRate>
+		<ValtnInf>
+			<ValtnRef>ND456</ValtnRef>
+		</ValtnInf>
+	</AmdNDFValtnV02>
+</Document>

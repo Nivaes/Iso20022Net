@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.035.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PrtryFrmtInvstgtn>
+		<Assgnmt>
+			<Id>AAAACUSA20090327004</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BIC>AAAAGB2L</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSAGB2L</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgne>
+			<CreDtTm>2009-03-27T08:50:45</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSTA200903001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSAGB2L</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<PrtryData>
+			<Tp>HREF</Tp>
+			<Data>
+				<HyperLink>http://www.iso20022.org/</HyperLink>
+			</Data>
+		</PrtryData>
+	</PrtryFrmtInvstgtn>
+</Document>

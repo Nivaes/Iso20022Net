@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "urn:iso:std:iso:20022:tech:xsd:camt.036.001.01">
+	<camt.036.001.01>
+		<Assgnmt>
+			<Id>RBNPRFDA20050419001</Id>
+			<Assgnr>CUSCFRPP</Assgnr>
+			<Assgne>BNPAFRPP</Assgne>
+			<CreDtTm>2005-04-19T12:17:43</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSB200504001</Id>
+			<Cretr>CUSBFRPP</Cretr>
+		</Case>
+		<Conf>
+			<DbtAuthstn>true</DbtAuthstn>
+		</Conf>
+	</camt.036.001.01>
+</Document>

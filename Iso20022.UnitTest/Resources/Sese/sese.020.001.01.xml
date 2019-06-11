@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Business samples for ISO submission?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:sese.020.001.01">
+	<SctiesTxCxlReq>
+		<Id>
+			<Id>FRTJ123DEL2CANC</Id>
+		</Id>
+		<Dtls>
+			<AcctOwnrTxId>
+				<SctiesSttlmTxId>
+					<TxId>FRTJ123DEL2</TxId>
+					<SctiesMvmntTp>DELI</SctiesMvmntTp>
+					<Pmt>APMT</Pmt>
+				</SctiesSttlmTxId>
+			</AcctOwnrTxId>
+			<SfkpgAcct>
+				<Id>222S</Id>
+			</SfkpgAcct>
+			<TxDtls>
+				<FinInstrmId>
+					<Id>
+						<ISIN>BE0123456789</ISIN>
+					</Id>
+					<Desc>Belgium Company XYZ</Desc>
+				</FinInstrmId>
+				<TradDt>
+					<Dt>
+						<Dt>2010-01-05</Dt>
+					</Dt>
+				</TradDt>
+				<SttlmDt>
+					<Dt>
+						<Dt>2010-01-08</Dt>
+					</Dt>
+				</SttlmDt>
+				<SttlmQty>
+					<Qty>
+						<FaceAmt>5000000</FaceAmt>
+					</Qty>
+				</SttlmQty>
+				<SttlmAmt>
+					<Amt Ccy="EUR">5057200</Amt>
+					<CdtDbtInd>CRDT</CdtDbtInd>
+				</SttlmAmt>
+				<RcvgSttlmPties>
+					<Dpstry>
+						<Id>
+							<BICOrBEI>NBBEBEBB</BICOrBEI>
+						</Id>
+					</Dpstry>
+					<Pty1>
+						<Id>
+							<BICOrBEI>CITIBEBB</BICOrBEI>
+						</Id>
+					</Pty1>
+					<Pty2>
+						<Id>
+							<BICOrBEI>CFPIDEFF</BICOrBEI>
+						</Id>
+						<SfkpgAcct>
+							<Id>321654</Id>
+						</SfkpgAcct>
+					</Pty2>
+				</RcvgSttlmPties>
+			</TxDtls>
+		</Dtls>
+	</SctiesTxCxlReq>
+</Document>

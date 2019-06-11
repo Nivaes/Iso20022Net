@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Standards Smart Test Messages for SEPA Credit Transfer Scheme product version 3.0?>
+<?valid true?>
+<?description FFFF sends a FinancialInstitutionCreditTransfer to the next party which is the creditor agent DDDD, Luxemburg, for whom they service a SEK account. On receipt, DDDD will credit the SEK account of its client BBBBITTT.?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.009.001.03">
+	<FinInstnCdtTrf>
+		<GrpHdr>
+			<MsgId>FFFF/121022-SEK/110</MsgId>
+			<CreDtTm>2012-10-22T10:11:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<SttlmInf>
+				<SttlmMtd>INGA</SttlmMtd>
+				<SttlmAcct>
+					<Id>
+						<Othr>
+							<Id>245388877443</Id>
+						</Othr>
+					</Id>
+				</SttlmAcct>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BICFI>FFFFSESS</BICFI>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BICFI>DDDDLULL</BICFI>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>FFFF/121022-SEK/110/1</InstrId>
+				<EndToEndId>BBBBTT4148AAAAPP</EndToEndId>
+				<TxId>AAAA/121020-SEK/005/1</TxId>
+			</PmtId>
+			<IntrBkSttlmAmt Ccy="SEK">100000000</IntrBkSttlmAmt>
+			<IntrBkSttlmDt>2012-10-22</IntrBkSttlmDt>
+			<Dbtr>
+				<FinInstnId>
+					<BICFI>AAAAFRPP</BICFI>
+				</FinInstnId>
+			</Dbtr>
+			<DbtrAgt>
+				<FinInstnId>
+					<BICFI>CCCCSESS</BICFI>
+				</FinInstnId>
+			</DbtrAgt>
+			<Cdtr>
+				<FinInstnId>
+					<BICFI>BBBBITTT</BICFI>
+				</FinInstnId>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<Othr>
+						<Id>995566ZZ876</Id>
+					</Othr>
+				</Id>
+				<Ccy>SEK</Ccy>
+			</CdtrAcct>
+		</CdtTrfTxInf>
+	</FinInstnCdtTrf>
+</Document>

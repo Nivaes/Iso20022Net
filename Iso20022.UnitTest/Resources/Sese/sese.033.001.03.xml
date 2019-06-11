@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Business sample for ISO submission?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:sese.033.001.03">
+	<SctiesFincgInstr>
+		<TxId>REPOINSTR123</TxId>
+		<TxTpAndAddtlParams>
+			<SctiesFincgTxTp>REPU</SctiesFincgTxTp>
+			<Pmt>APMT</Pmt>
+		</TxTpAndAddtlParams>
+		<TradDtls>
+			<TradDt>
+				<Dt>
+					<Dt>2010-03-05</Dt>
+				</Dt>
+			</TradDt>
+			<OpngSttlmDt>
+				<Dt>2010-03-08</Dt>
+			</OpngSttlmDt>
+		</TradDtls>
+		<FinInstrmId>
+			<ISIN>FR0000294034</ISIN>
+		</FinInstrmId>
+		<QtyAndAcctDtls>
+			<SttlmQty>
+				<Qty>
+					<FaceAmt>100050000</FaceAmt>
+				</Qty>
+			</SttlmQty>
+			<SfkpgAcct>
+				<Id>111111111</Id>
+			</SfkpgAcct>
+		</QtyAndAcctDtls>
+		<SctiesFincgDtls>
+			<SctiesFincgTradId>REPO12345</SctiesFincgTradId>
+			<TermntnDt>
+				<Dt>
+					<Dt>2010-03-15</Dt>
+				</Dt>
+			</TermntnDt>
+			<TermntnTxAmt>
+				<Amt Ccy="EUR">9910780</Amt>
+			</TermntnTxAmt>
+		</SctiesFincgDtls>
+		<RcvgSttlmPties>
+			<Dpstry>
+				<Id>
+					<AnyBIC>NCSDXX21</AnyBIC>
+				</Id>
+			</Dpstry>
+			<Pty1>
+				<Id>
+					<AnyBIC>SUBCYY34</AnyBIC>
+				</Id>
+			</Pty1>
+			<Pty2>
+				<Id>
+					<AnyBIC>BUYRGB22</AnyBIC>
+				</Id>
+			</Pty2>
+		</RcvgSttlmPties>
+		<OpngSttlmAmt>
+			<Amt Ccy="EUR">9900000</Amt>
+			<CdtDbtInd>CRDT</CdtDbtInd>
+		</OpngSttlmAmt>
+	</SctiesFincgInstr>
+</Document>

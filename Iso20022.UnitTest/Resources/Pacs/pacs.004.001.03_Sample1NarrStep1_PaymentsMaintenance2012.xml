@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Standards Smart Test Messages for SEPA Credit Transfer Scheme product version 3.0?>
+<?valid true?>
+<?description On receipt of a FIToFIPaymentCancellationRequest message from BBBB Bank, CCCC Bank checks with Seed Inc. whether it is willing to return the credited funds. Seed Inc. accepts to return the amount credited onto its account (EUR 74850) without requesting compensation. CCCC Bank sends a PaymentReturn message to BBBB Bank.?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.004.001.03">
+	<PmtRtr>
+		<GrpHdr>
+			<MsgId>CCCC/121122-PR007</MsgId>
+			<CreDtTm>2012-11-22T10:37:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<SttlmInf>
+				<SttlmMtd>CLRG</SttlmMtd>
+				<ClrSys>
+					<Prtry>CBJ</Prtry>
+				</ClrSys>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BICFI>CCCCIE2D</BICFI>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BICFI>BBBBIE2D</BICFI>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<OrgnlGrpInf>
+			<OrgnlMsgId>BBBB/121109-CBJ056</OrgnlMsgId>
+			<OrgnlMsgNmId>pacs.008.001.03</OrgnlMsgNmId>
+			<OrgnlCreDtTm>2012-11-09T10:13:00</OrgnlCreDtTm>
+		</OrgnlGrpInf>
+		<TxInf>
+			<RtrId>CCCC/121122-PR007</RtrId>
+			<OrgnlInstrId>BBBB/121109-CBJ056/1</OrgnlInstrId>
+			<OrgnlEndToEndId>CROPS/SX-25T/2012-10-13</OrgnlEndToEndId>
+			<OrgnlTxId>AAAA/121109-CCT/EUR443/1</OrgnlTxId>
+			<OrgnlIntrBkSttlmAmt Ccy="EUR">74900</OrgnlIntrBkSttlmAmt>
+			<RtrdIntrBkSttlmAmt Ccy="EUR">74750</RtrdIntrBkSttlmAmt>
+			<IntrBkSttlmDt>2012-11-22</IntrBkSttlmDt>
+			<RtrdInstdAmt Ccy="EUR">74850</RtrdInstdAmt>
+			<ChrgBr>CRED</ChrgBr>
+			<ChrgsInf>
+				<Amt Ccy="EUR">100</Amt>
+				<Agt>
+					<FinInstnId>
+						<BICFI>CCCCIE2D</BICFI>
+					</FinInstnId>
+				</Agt>
+			</ChrgsInf>
+			<RtrRsnInf>
+				<Orgtr>
+					<Nm>Seed Inc.</Nm>
+				</Orgtr>
+				<Rsn>
+					<Cd>NARR</Cd>
+				</Rsn>
+				<AddtlInf>RETURN AFTER ACCEPTED FITOFI PAYMENT CANCELLATION REQUEST</AddtlInf>
+			</RtrRsnInf>
+		</TxInf>
+	</PmtRtr>
+</Document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.055.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrPmtCxlReq>
+		<Assgnmt>
+			<Id>CD20120323CANC</Id>
+			<Assgnr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>CUSDDEFF</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BICFI>FFFFDEFF</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2012-03-22T10:17:32</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSD20120323001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>CUSDDEFF</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<OrgnlPmtInfAndCxl>
+				<OrgnlPmtInfId>CDPAY20120323001</OrgnlPmtInfId>
+				<OrgnlGrpInf>
+					<OrgnlMsgId>CDPAY20120323001</OrgnlMsgId>
+					<OrgnlMsgNmId>MT103</OrgnlMsgNmId>
+				</OrgnlGrpInf>
+				<TxInf>
+					<OrgnlInstrId>CDPAY20120323001</OrgnlInstrId>
+					<OrgnlInstdAmt Ccy="EUR">175000.00</OrgnlInstdAmt>
+					<OrgnlReqdExctnDt>2012-03-23</OrgnlReqdExctnDt>
+					<CxlRsnInf>
+						<Rsn>
+							<Cd>UPAY</Cd>
+						</Rsn>
+					</CxlRsnInf>
+				</TxInf>
+			</OrgnlPmtInfAndCxl>
+		</Undrlyg>
+	</CstmrPmtCxlReq>
+</Document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.037.001.04" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<DbtAuthstnReq>
+		<Assgnmt>
+			<Id>UTACUSB090323-D</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BICFI>MMMMGB2L</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>CUSBGB2L</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgne>
+			<CreDtTm>2012-03-24T11:30:06</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSBGB2L-20120323-001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>CUSBGB2L</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+			<ReopCaseIndctn>true</ReopCaseIndctn>
+		</Case>
+		<Undrlyg>
+			<Initn>
+				<OrgnlInstrId>COMPAY12345090323001</OrgnlInstrId>
+				<OrgnlInstdAmt Ccy="GBP">52317.48</OrgnlInstdAmt>
+				<ReqdColltnDt>2012-03-23</ReqdColltnDt>
+			</Initn>
+		</Undrlyg>
+		<Dtl>
+			<CxlRsn>
+				<Cd>UPAY</Cd>
+			</CxlRsn>
+		</Dtl>
+	</DbtAuthstnReq>
+</Document>

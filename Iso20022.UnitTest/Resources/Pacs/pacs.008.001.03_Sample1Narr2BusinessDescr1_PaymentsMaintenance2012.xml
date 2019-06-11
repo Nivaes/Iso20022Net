@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Standards Smart Test Messages for SEPA Credit Transfer Scheme product version 3.0?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.03">
+	<FIToFICstmrCdtTrf>
+		<GrpHdr>
+			<MsgId>EEEE/100929-EUR/059</MsgId>
+			<CreDtTm>2012-09-29T09:00:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<SttlmInf>
+				<SttlmMtd>CLRG</SttlmMtd>
+				<ClrSys>
+					<Prtry>XYZ</Prtry>
+				</ClrSys>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BICFI>EEEEDEFF</BICFI>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BICFI>DDDDBEBB</BICFI>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>EEEE/120929-EUR/059/1</InstrId>
+				<EndToEndId>ABC/ABC-13679/2012-09-15</EndToEndId>
+				<TxId>BBBB/120928-CCT/EUR/912/1</TxId>
+			</PmtId>
+			<PmtTpInf>
+				<InstrPrty>NORM</InstrPrty>
+			</PmtTpInf>
+			<IntrBkSttlmAmt Ccy="EUR">499250</IntrBkSttlmAmt>
+			<IntrBkSttlmDt>2012-09-29</IntrBkSttlmDt>
+			<InstdAmt Ccy="EUR">500000</InstdAmt>
+			<ChrgBr>CRED</ChrgBr>
+			<ChrgsInf>
+				<Amt Ccy="EUR">500</Amt>
+				<Agt>
+					<FinInstnId>
+						<BICFI>BBBBUS33</BICFI>
+					</FinInstnId>
+				</Agt>
+			</ChrgsInf>
+			<Dbtr>
+				<Nm>ABC Corporation</Nm>
+				<PstlAdr>
+					<StrtNm>Times Square</StrtNm>
+					<BldgNb>7</BldgNb>
+					<PstCd>NY 10036</PstCd>
+					<TwnNm>New York</TwnNm>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>00125574999</Id>
+					</Othr>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BICFI>BBBBUS33</BICFI>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtrAgt>
+				<FinInstnId>
+					<BICFI>DDDDBEBB</BICFI>
+				</FinInstnId>
+			</CdtrAgt>
+			<Cdtr>
+				<Nm>GHI Semiconductors</Nm>
+				<PstlAdr>
+					<StrtNm>Avenue Brugmann</StrtNm>
+					<BldgNb>415</BldgNb>
+					<PstCd>1180</PstCd>
+					<TwnNm>Brussels</TwnNm>
+					<Ctry>BE</Ctry>
+				</PstlAdr>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<IBAN>BE30001216371411</IBAN>
+				</Id>
+			</CdtrAcct>
+			<Purp>
+				<Cd>GDDS</Cd>
+			</Purp>
+			<RmtInf>
+				<Strd>
+					<RfrdDocInf>
+						<Tp>
+							<CdOrPrtry>
+								<Cd>CINV</Cd>
+							</CdOrPrtry>
+						</Tp>
+						<Nb>ABC-13679</Nb>
+						<RltdDt>2012-09-15</RltdDt>
+					</RfrdDocInf>
+				</Strd>
+			</RmtInf>
+		</CdtTrfTxInf>
+	</FIToFICstmrCdtTrf>
+</Document>

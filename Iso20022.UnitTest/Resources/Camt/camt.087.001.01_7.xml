@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.087.001.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ReqToModfyPmt>
+		<Assgnmt>
+			<Id>C103AAAAKKKK20120327001</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BICFI>AAAAGB2L</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BICFI>KKKKGB2L</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2012-03-27T08:43:30</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>AUSP-MOD-20120327-0001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>CUSAGB2L</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<IntrBk>
+				<OrgnlGrpInf>
+					<OrgnlMsgId>1030123456789</OrgnlMsgId>
+					<OrgnlMsgNmId>MT103</OrgnlMsgNmId>
+				</OrgnlGrpInf>
+				<OrgnlInstrId>1030123456789</OrgnlInstrId>
+				<OrgnlEndToEndId>1030123456789</OrgnlEndToEndId>
+				<OrgnlIntrBkSttlmAmt Ccy="GBP">52317.48</OrgnlIntrBkSttlmAmt>
+				<OrgnlIntrBkSttlmDt>2012-03-27</OrgnlIntrBkSttlmDt>
+			</IntrBk>
+		</Undrlyg>
+		<Mod>
+			<RmtInf>
+				<Ustrd>/INV/20041212/GBP23257./20120300104712//20120324/29060.48/20120300204712/</Ustrd>
+			</RmtInf>
+		</Mod>
+	</ReqToModfyPmt>
+</Document>

@@ -1,0 +1,55 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:trea.007.001.02" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<NDFNtfctnV02>
+		<TradgSdId>
+			<SubmitgPty>
+				<BICOrBEI>
+					<BICOrBEI>BANAGB2L</BICOrBEI>
+				</BICOrBEI>
+			</SubmitgPty>
+			<TradPty>
+				<BICOrBEI>
+					<BICOrBEI>BANAGB2L</BICOrBEI>
+				</BICOrBEI>
+			</TradPty>
+		</TradgSdId>
+		<CtrPtySdId>
+			<SubmitgPty>
+				<BICOrBEI>
+					<BICOrBEI>CSTCUS33</BICOrBEI>
+				</BICOrBEI>
+			</SubmitgPty>
+			<TradPty>
+				<BICOrBEI>
+					<BICOrBEI>FUMBUS33</BICOrBEI>
+				</BICOrBEI>
+			</TradPty>
+		</CtrPtySdId>
+		<OpngData>
+			<TradDt>2006-01-27</TradDt>
+			<NtfctnId>ND123</NtfctnId>
+			<CmonRef>BANA2L0141FUMB33</CmonRef>
+			<TradAmts>
+				<TradgSdBuyAmt Ccy = "GBP">1410000</TradgSdBuyAmt>
+				<TradgSdSellAmt Ccy = "THB">100000000</TradgSdSellAmt>
+				<SttlmDt>2007-04-08</SttlmDt>
+			</TradAmts>
+			<AgrdRate>
+				<XchgRate>0.0141</XchgRate>
+			</AgrdRate>
+			<ValtnConds>
+				<SttlmCcy>GBP</SttlmCcy>
+				<ValtnDt>2007-04-06</ValtnDt>
+				<SttlmPty>
+					<BICOrBEI>
+						<BICOrBEI>CLSBUS33</BICOrBEI>
+					</BICOrBEI>
+				</SttlmPty>
+			</ValtnConds>
+		</OpngData>
+		<TradInfAndSts>
+			<MtchgSysUnqRef>CENT123098</MtchgSysUnqRef>
+			<StsSubTp>Invalid Settlement Date</StsSubTp>
+		</TradInfAndSts>
+	</NDFNtfctnV02>
+</Document>

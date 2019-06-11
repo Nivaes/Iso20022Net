@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.036.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<DbtAuthstnRspn>
+		<Assgnmt>
+			<Id>UTACOMPAY12345090323002</Id>
+			<Assgnr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSBGB2L</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BIC>MMMMGB2L</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2009-03-24T11:45:06</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSBGB2L-20090323-001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSBGB2L</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+			<ReopCaseIndctn>true</ReopCaseIndctn>
+		</Case>
+		<Conf>
+			<DbtAuthstn>true</DbtAuthstn>
+		</Conf>
+	</DbtAuthstnRspn>
+</Document>

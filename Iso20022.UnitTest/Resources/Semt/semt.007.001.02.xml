@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:semt.007.001.02" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<StmtOfInvstmtFndTxsCxlV02>
+		<MsgId>
+			<Id>StmntInvmntFundTrnCxl001</Id>
+			<CreDtTm>2007-02-08T09:30:47</CreDtTm>
+		</MsgId>
+		<PrvsRef>
+			<Ref>StmntInvmntFundTrn001</Ref>
+			<MsgNm>semt.002.001.02</MsgNm>
+		</PrvsRef>
+		<MsgPgntn>
+			<PgNb>1</PgNb>
+			<LastPgInd>true</LastPgInd>
+		</MsgPgntn>
+	</StmtOfInvstmtFndTxsCxlV02>
+</Document>

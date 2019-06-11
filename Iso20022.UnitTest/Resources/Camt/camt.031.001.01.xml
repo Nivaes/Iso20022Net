@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns:Doc = "urn:iso:std:iso:20022:tech:xsd:camt.031.001.01" xmlns = "urn:iso:std:iso:20022:tech:xsd:camt.031.001.01">
+	<camt.031.001.01>
+		<Assgnmt>
+			<Id>ABCDEFGHIJKLMNOPQRST123456789012345</Id>
+			<Assgnr>KKKKJPJT</Assgnr>
+			<Assgne>CUSJJPJT</Assgne>
+			<CreDtTm>2005-01-25T11:07:38</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>MOD123JPY20050123</Id>
+			<Cretr>CUSJJPJT</Cretr>
+		</Case>
+		<Justfn>
+			<RjctnRsn>NFND</RjctnRsn>
+		</Justfn>
+	</camt.031.001.01>
+</Document>

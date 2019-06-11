@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.087.001.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ReqToModfyPmt>
+		<Assgnmt>
+			<Id>MODIVVVVGB2L201203020001</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BICFI>UUUUGB2L</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BICFI>VVVVGB2L</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2012-03-06T10:53:42</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CNR0903PAY09876543</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>CUSAFRPP</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<Initn>
+				<OrgnlInstrId>201203020001</OrgnlInstrId>
+				<OrgnlInstdAmt Ccy="GBP">13498.52</OrgnlInstdAmt>
+				<ReqdExctnDt>2012-03-01</ReqdExctnDt>
+			</Initn>
+		</Undrlyg>
+		<Mod>
+			<RmtInf>
+				<Ustrd>/INV/20120216/GBP8257.43/20120200102356//20120212/GBP5241.09/20120200202356/</Ustrd>
+			</RmtInf>
+		</Mod>
+	</ReqToModfyPmt>
+</Document>

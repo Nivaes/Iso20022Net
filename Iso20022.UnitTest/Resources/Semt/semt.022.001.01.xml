@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated using Volante STM Webforms (http://www.volantetech.com) by EVELYNE.PIRON@SWIFT.COM on 2012 Mar 29 14:47:54-->
+<?Standards Smart Test Messages for SEPA Credit Transfer Scheme product version 3.0?>
+<?valid true?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:semt.022.001.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SctiesSttlmTxAudtTrlRpt>
+		<Pgntn>
+			<PgNb>1</PgNb>
+			<LastPgInd>true</LastPgInd>
+		</Pgntn>
+		<QryRef>
+			<Id>SecTransStatusQuery1</Id>
+		</QryRef>
+		<TxId>
+			<AcctOwnrTxId>FRTJ123DEL1</AcctOwnrTxId>
+		</TxId>
+		<SfkpgAcct>
+			<Id>222S</Id>
+		</SfkpgAcct>
+		<AcctOwnr>
+			<AnyBIC>DRESDEFF</AnyBIC>
+		</AcctOwnr>
+		<StsTrl>
+			<StsDt>2010-01-14T15:00:00</StsDt>
+			<SttlmSts>
+				<Pdg>
+					<Rsn>
+						<Cd>
+							<Cd>COLL</Cd>
+						</Cd>
+					</Rsn>
+				</Pdg>
+			</SttlmSts>
+		</StsTrl>
+		<StsTrl>
+			<StsDt>2010-01-15T15:00:00</StsDt>
+			<Sttld>
+				<AddtlRsnInf>no further info</AddtlRsnInf>
+			</Sttld>
+		</StsTrl>
+	</SctiesSttlmTxAudtTrlRpt>
+</Document>

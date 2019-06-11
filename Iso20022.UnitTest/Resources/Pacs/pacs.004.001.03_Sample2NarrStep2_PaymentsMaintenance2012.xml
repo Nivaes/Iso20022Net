@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Standards Smart Test Messages for SEPA Credit Transfer Scheme product version 3.0?>
+<?valid true?>
+<?description On 29 June 2010, upon receipt of a PaymentReturn message from BBBBUS39, ABABUS23 forwards the PaymentReturn instruction to AAAAUS29, the account servicer for creditor Virgay. It forwards the reason for the return and takes USD 35 for charges.  Virgay will be informed about the debit on its account through its statement.?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.004.001.03">
+	<PmtRtr>
+		<GrpHdr>
+			<MsgId>ABABUS23RETURN-546</MsgId>
+			<CreDtTm>2012-06-29T13:28:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<SttlmInf>
+				<SttlmMtd>INGA</SttlmMtd>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BICFI>ABABUS23</BICFI>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BICFI>AAAAUS29</BICFI>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<OrgnlGrpInf>
+			<OrgnlMsgId>AAAA060327-123v</OrgnlMsgId>
+			<OrgnlMsgNmId>pacs.003.001.03</OrgnlMsgNmId>
+			<OrgnlCreDtTm>2012-06-28T10:05:00</OrgnlCreDtTm>
+		</OrgnlGrpInf>
+		<TxInf>
+			<RtrId>ABABUS23/RETURN765</RtrId>
+			<RtrdIntrBkSttlmAmt Ccy="USD">1110</RtrdIntrBkSttlmAmt>
+			<IntrBkSttlmDt>2012-06-29</IntrBkSttlmDt>
+			<ChrgBr>CRED</ChrgBr>
+			<ChrgsInf>
+				<Amt Ccy="USD">50</Amt>
+				<Agt>
+					<FinInstnId>
+						<BICFI>BBBBUS39</BICFI>
+					</FinInstnId>
+				</Agt>
+			</ChrgsInf>
+			<ChrgsInf>
+				<Amt Ccy="USD">35</Amt>
+				<Agt>
+					<FinInstnId>
+						<BICFI>ABABUS23</BICFI>
+					</FinInstnId>
+				</Agt>
+			</ChrgsInf>
+			<RtrRsnInf>
+				<Orgtr>
+					<Id>
+						<OrgId>
+							<AnyBIC>BBBBUS39</AnyBIC>
+						</OrgId>
+					</Id>
+				</Orgtr>
+				<Rsn>
+					<Cd>AG01</Cd>
+				</Rsn>
+			</RtrRsnInf>
+			<OrgnlTxRef>
+				<IntrBkSttlmAmt Ccy="USD">1025</IntrBkSttlmAmt>
+				<IntrBkSttlmDt>2012-06-28</IntrBkSttlmDt>
+				<ReqdColltnDt>2012-07-13</ReqdColltnDt>
+				<MndtRltdInf>
+					<MndtId>VIRGAY123</MndtId>
+				</MndtRltdInf>
+				<Dbtr>
+					<Nm>Jones</Nm>
+					<PstlAdr>
+						<StrtNm>Hudson Street</StrtNm>
+						<BldgNb>19</BldgNb>
+						<PstCd>NJ 07302</PstCd>
+						<TwnNm>Jersey City</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+				</Dbtr>
+				<Cdtr>
+					<Nm>Virgay</Nm>
+					<PstlAdr>
+						<StrtNm>Virginia Lane</StrtNm>
+						<BldgNb>36</BldgNb>
+						<PstCd>NJ 07311</PstCd>
+						<TwnNm>Jersey City</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInf>
+	</PmtRtr>
+</Document>

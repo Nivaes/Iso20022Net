@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?SWIFTStandards Smart Test Messages for Proxy Voting product version 1.1?>
+<?valid true?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:seev.007.001.04" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:seev.007.001.04 ..\..\..\..\gen\Injection\seev.007.001.04.xsd">
+	<MtgVoteExctnConf>
+		<Id>
+			<Id>GCC005</Id>
+			<CreDtTm>2007-05-01T10:00:00</CreDtTm>
+		</Id>
+		<RltdRef>
+			<Id>I001</Id>
+		</RltdRef>
+		<MtgRef>
+			<IssrMtgId>LS001</IssrMtgId>
+			<MtgDtAndTm>2007-04-28T11:00:00</MtgDtAndTm>
+			<Tp>GMET</Tp>
+			<Lctn>
+				<AdrLine>Great Hall at Kensington Town Hall</AdrLine>
+				<StrtNm>Hornton Street</StrtNm>
+				<PstCd>W87NX</PstCd>
+				<TwnNm>London</TwnNm>
+				<Ctry>GB</Ctry>
+			</Lctn>
+		</MtgRef>
+		<RptgPty>
+			<BICOrBEI>GLOBUS33</BICOrBEI>
+		</RptgPty>
+		<SctyId>
+			<Id>
+				<ISIN>GB3333A53L22</ISIN>
+			</Id>
+		</SctyId>
+		<VoteInstrs>
+			<InstrId>ABC123</InstrId>
+			<StgInstr>true</StgInstr>
+			<VotePerRsltn>
+				<IssrLabl>1</IssrLabl>
+				<For>250</For>
+			</VotePerRsltn>
+			<VotePerRsltn>
+				<IssrLabl>2</IssrLabl>
+				<Agnst>80</Agnst>
+				<Abstn>170</Abstn>
+			</VotePerRsltn>
+			<VotePerRsltn>
+				<IssrLabl>3</IssrLabl>
+				<For>170</For>
+				<Agnst>30</Agnst>
+				<Abstn>50</Abstn>
+			</VotePerRsltn>
+		</VoteInstrs>
+	</MtgVoteExctnConf>
+</Document>

@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "urn:iso:std:iso:20022:tech:xsd:camt.026.001.01">
+	<camt.026.001.01>
+		<Assgnmt>
+			<Id>UTACOMPAY12345050523001</Id>
+			<Assgnr>BOXLGB2L</Assgnr>
+			<Assgne>BARCGB2L</Assgne>
+			<CreDtTm>2005-05-24T08:35:30</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>20050523001</Id>
+			<Cretr>BOXLGB2L</Cretr>
+		</Case>
+		<Undrlyg>
+			<AssgnrInstrId>COMPAY12345050523001</AssgnrInstrId>
+			<AssgneInstrId>2005052304217018</AssgneInstrId>
+			<CcyAmt Ccy = "GBP">52317.48</CcyAmt>
+			<ValDt>2005-05-23T00:00:00</ValDt>
+		</Undrlyg>
+		<Justfn>
+			<AnyInf>true</AnyInf>
+		</Justfn>
+	</camt.026.001.01>
+</Document>

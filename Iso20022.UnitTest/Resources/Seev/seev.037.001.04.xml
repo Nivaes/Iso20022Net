@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:seev.037.001.04">
+	<CorpActnMvmntRvslAdvc>
+		<MvmntConfId>
+			<Id>253147817</Id>
+		</MvmntConfId>
+		<RvslRsn>
+			<Rsn>
+				<Cd>FNRC</Cd>
+			</Rsn>
+		</RvslRsn>
+		<CorpActnGnlInf>
+			<CorpActnEvtId>DIVGLAX125</CorpActnEvtId>
+			<OffclCorpActnEvtId>BI01593212345</OffclCorpActnEvtId>
+			<EvtTp>
+				<Cd>DVOP</Cd>
+			</EvtTp>
+			<FinInstrmId>
+				<ISIN>GB0007123466</ISIN>
+				<Desc>GLAXO HOLDINGS</Desc>
+			</FinInstrmId>
+		</CorpActnGnlInf>
+		<AcctDtls>
+			<SfkpgAcct>98-0112441-05</SfkpgAcct>
+			<ConfdBal>
+				<Bal>
+					<ShrtLngPos>LONG</ShrtLngPos>
+					<QtyChc>
+						<Qty>
+							<Unit>80000</Unit>
+						</Qty>
+					</QtyChc>
+				</Bal>
+			</ConfdBal>
+		</AcctDtls>
+		<CorpActnConfDtls>
+			<OptnNb>
+				<Nb>002</Nb>
+			</OptnNb>
+			<OptnTp>
+				<Cd>SECU</Cd>
+			</OptnTp>
+			<SctiesMvmntDtls>
+				<FinInstrmId>
+					<ISIN>GB0007633421</ISIN>
+					<Desc>GLAXO WELLCOME</Desc>
+				</FinInstrmId>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<PstngQty>
+					<Qty>
+						<Unit>2162</Unit>
+					</Qty>
+				</PstngQty>
+				<PstngDt>
+					<Dt>2010-10-03</Dt>
+				</PstngDt>
+				<OrgnlPstngDt>
+					<Dt>2010-10-02</Dt>
+				</OrgnlPstngDt>
+			</SctiesMvmntDtls>
+			<CshMvmntDtls>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<PstngDt>
+					<Dt>2010-10-03</Dt>
+				</PstngDt>
+				<OrgnlPstngDt>
+					<Dt>2010-10-02</Dt>
+				</OrgnlPstngDt>
+				<PstngAmt Ccy="GBP">0.10</PstngAmt>
+			</CshMvmntDtls>
+		</CorpActnConfDtls>
+	</CorpActnMvmntRvslAdvc>
+</Document>

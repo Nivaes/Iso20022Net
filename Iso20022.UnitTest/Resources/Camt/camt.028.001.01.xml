@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "urn:iso:std:iso:20022:tech:xsd:camt.028.001.01">
+	<camt.028.001.01>
+		<Assgnmt>
+			<Id>INFOCFRAGB2L200506020001</Id>
+			<Assgnr>CITIGB2L</Assgnr>
+			<Assgne>CFRAGB2L</Assgne>
+			<CreDtTm>2005-06-06T10:53:42</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CNR0505PAY09876543</Id>
+			<Cretr>MARIFRPP</Cretr>
+		</Case>
+		<Undrlyg>
+			<AssgneInstrId>200506020001</AssgneInstrId>
+			<CcyAmt Ccy = "GBP">13498.52</CcyAmt>
+			<ValDt>2005-06-01T00:00:00</ValDt>
+		</Undrlyg>
+		<Inf>
+			<RmtChc>
+				<Ustrd>/INV/20050516/GBP8257,43/20050500102356//20050412/GBP5241,09/20050500202356/</Ustrd>
+			</RmtChc>
+			<Dbtr>
+				<Nm>Marine Interiors SARL</Nm>
+				<Id>
+					<OrgId>
+						<BEI>MARIFRPP</BEI>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<Cdtr>
+				<Id>
+					<OrgId>
+						<BEI>CFRAGB2L</BEI>
+					</OrgId>
+				</Id>
+			</Cdtr>
+		</Inf>
+	</camt.028.001.01>
+</Document>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.028.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AddtlPmtInf>
+		<Assgnmt>
+			<Id>MOD1030123456789-B</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BIC>KKKKGB2L</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>ASUPGB2L</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgne>
+			<CreDtTm>2009-03-27T08:52:30</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>AUSP-MOD-20050127-0001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSAGB2L</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<IntrBk>
+				<OrgnlInstrId>CPAY0123456789</OrgnlInstrId>
+				<OrgnlIntrBkSttlmAmt Ccy="GBP">52317.48</OrgnlIntrBkSttlmAmt>
+				<OrgnlIntrBkSttlmDt>2009-03-27</OrgnlIntrBkSttlmDt>
+			</IntrBk>
+		</Undrlyg>
+		<Inf>
+			<RmtInf>
+				<Ustrd>/INV/20090212/GBP23257./20090300104712//20090324/29060.48/20090300204712/</Ustrd>
+			</RmtInf>
+		</Inf>
+	</AddtlPmtInf>
+</Document>

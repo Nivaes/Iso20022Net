@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?For ISO submission?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:seev.038.001.01">
+	<CorpActnNrrtv>
+		<Id>
+			<Id>1997189-023</Id>
+		</Id>
+		<AcctDtls>
+			<AcctsListAndBalDtls>
+				<SfkpgAcct>98-0112441-05</SfkpgAcct>
+				<ConfdBal>
+					<Bal>
+						<ShrtLngPos>LONG</ShrtLngPos>
+						<QtyChc>
+							<Qty>
+								<Unit>80000</Unit>
+							</Qty>
+						</QtyChc>
+					</Bal>
+				</ConfdBal>
+			</AcctsListAndBalDtls>
+		</AcctDtls>
+		<UndrlygScty>
+			<SctyId>
+				<Id>
+					<ISIN>GB0007123466</ISIN>
+				</Id>
+				<Desc>GLAXO HOLDINGS</Desc>
+			</SctyId>
+		</UndrlygScty>
+		<CorpActnGnlInf>
+			<CorpActnEvtId>DIVGLAX123</CorpActnEvtId>
+			<OffclCorpActnEvtId>BI01593212345</OffclCorpActnEvtId>
+			<NrrtvTp>
+				<Cd>REGI</Cd>
+			</NrrtvTp>
+		</CorpActnGnlInf>
+		<AddtlInf>
+			<AddtlInf>Registration information are described extensively here.</AddtlInf>
+		</AddtlInf>
+	</CorpActnNrrtv>
+</Document>

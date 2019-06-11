@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Standards Smart Test Messages for SEPA Credit Transfer Scheme product version 3.0?>
+<?valid true?>
+<?description On 20 October 2010, AAAAFRPP agrees on a foreign exchange deal with BBBBITTT: 100 million SEK is sold against 10,621,575.00 EUR (exchange rate 9.4148). The deal is confirmed with common reference BBBBTT4148AAAAPP. 
+On the same day AAAAFRPP sends a FinancialInstitutionCreditTransfer message to its SEK correspondent CCCCSESS. They instruct CCCCSESS to debit their account 123456789 with value date 22 October 2010 to
+pay 100 million SEK to BBBBITTT. BBBBITTT has communicated the following settlement instructions: the SEK amount is to be credited to the SEK sub-account of their account 995566ZZ876 with DDDDLULL. DDDDLULL owns a SEK account 24538877443 with FFFF Bank (FFFFSESS).
+?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.009.001.03">
+	<FinInstnCdtTrf>
+		<GrpHdr>
+			<MsgId>AAAA/121020-SEK/005</MsgId>
+			<CreDtTm>2012-10-20T11:03:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<SttlmInf>
+				<SttlmMtd>INDA</SttlmMtd>
+				<SttlmAcct>
+					<Id>
+						<Othr>
+							<Id>123456789</Id>
+						</Othr>
+					</Id>
+				</SttlmAcct>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BICFI>AAAAFRPP</BICFI>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BICFI>CCCCSESS</BICFI>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>AAAA/121020-SEK/005/1</InstrId>
+				<EndToEndId>BBBBTT4148AAAAPP</EndToEndId>
+				<TxId>AAAA/121020-SEK/005/1</TxId>
+			</PmtId>
+			<IntrBkSttlmAmt Ccy="SEK">100000000</IntrBkSttlmAmt>
+			<IntrmyAgt1>
+				<FinInstnId>
+					<BICFI>FFFFSESS</BICFI>
+				</FinInstnId>
+			</IntrmyAgt1>
+			<Dbtr>
+				<FinInstnId>
+					<BICFI>AAAAFRPP</BICFI>
+				</FinInstnId>
+			</Dbtr>
+			<CdtrAgt>
+				<FinInstnId>
+					<BICFI>DDDDLULL</BICFI>
+				</FinInstnId>
+			</CdtrAgt>
+			<CdtrAgtAcct>
+				<Id>
+					<Othr>
+						<Id>24538877443</Id>
+					</Othr>
+				</Id>
+			</CdtrAgtAcct>
+			<Cdtr>
+				<FinInstnId>
+					<BICFI>BBBBITTT</BICFI>
+				</FinInstnId>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<Othr>
+						<Id>995566ZZ876</Id>
+					</Othr>
+				</Id>
+				<Ccy>SEK</Ccy>
+			</CdtrAcct>
+		</CdtTrfTxInf>
+	</FinInstnCdtTrf>
+</Document>

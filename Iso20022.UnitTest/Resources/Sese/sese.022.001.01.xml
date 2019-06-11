@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Business sampke for ISO submission?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:sese.022.001.01">
+	<SctiesStsOrStmtQryStsAdvc>
+		<Id>
+			<Id>FTRDGR45789</Id>
+		</Id>
+		<QryRef>
+			<Id>FRTJ456DEL2</Id>
+		</QryRef>
+		<SfkpgAcct>
+			<Id>222S</Id>
+		</SfkpgAcct>
+		<StsOrStmtReqd>
+			<StsAdvc>
+				<Nb>
+					<LngNb>sese.024.001.01</LngNb>
+				</Nb>
+				<Refs>
+					<AcctOwnrTxId>FRTJ123DEL2</AcctOwnrTxId>
+				</Refs>
+			</StsAdvc>
+		</StsOrStmtReqd>
+		<PrcgSts>
+			<AckdAccptd>
+				<NoSpcfdRsn>NORE</NoSpcfdRsn>
+			</AckdAccptd>
+		</PrcgSts>
+	</SctiesStsOrStmtQryStsAdvc>
+</Document>

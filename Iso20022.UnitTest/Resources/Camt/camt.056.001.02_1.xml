@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.056.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<FIToFIPmtCxlReq>
+		<Assgnmt>
+			<Id>UTA1030123456789-CANC</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BICFI>CCCCGB2L</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BICFI>MMMMGB2L</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2012-03-24T11:22:59</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSBGB2L-20120323-001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>CUSBGB2L</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+			<ReopCaseIndctn>true</ReopCaseIndctn>
+		</Case>
+		<Undrlyg>
+			<TxInf>
+				<OrgnlGrpInf>
+					<OrgnlMsgId>1030123456789</OrgnlMsgId>
+					<OrgnlMsgNmId>MT103</OrgnlMsgNmId>
+				</OrgnlGrpInf>
+				<OrgnlInstrId>1030123456789</OrgnlInstrId>
+				<OrgnlIntrBkSttlmAmt Ccy="GBP">52317.48</OrgnlIntrBkSttlmAmt>
+				<OrgnlIntrBkSttlmDt>2012-03-23</OrgnlIntrBkSttlmDt>
+				<CxlRsnInf>
+					<Rsn>
+						<Cd>UPAY</Cd>
+					</Rsn>
+				</CxlRsnInf>
+			</TxInf>
+		</Undrlyg>
+	</FIToFIPmtCxlReq>
+</Document>

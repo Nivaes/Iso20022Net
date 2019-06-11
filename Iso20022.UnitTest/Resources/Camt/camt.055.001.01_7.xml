@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.055.001.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrPmtCxlReq>
+		<Assgnmt>
+			<Id>ABC/100928/PCR001</Id>
+			<Assgnr>
+				<Pty>
+					<Nm>ABC Corporation</Nm>
+					<PstlAdr>
+						<StrtNm>Times Square</StrtNm>
+						<BldgNb>7</BldgNb>
+						<PstCd>NY 10036</PstCd>
+						<TwnNm>New York</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+				</Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BIC>BBBBUS33</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2010-09-28T15:07:00</CreDtTm>
+		</Assgnmt>
+		<CtrlData>
+			<NbOfTxs>1</NbOfTxs>
+		</CtrlData>
+		<Undrlyg>
+			<OrgnlGrpInfAndCxl>
+				<OrgnlMsgId>ABC/100928/CCT001</OrgnlMsgId>
+				<OrgnlMsgNmId>pain.001.001.03</OrgnlMsgNmId>
+				<OrgnlCreDtTm>2010-09-28T14:07:00</OrgnlCreDtTm>
+				<GrpCxl>false</GrpCxl>
+			</OrgnlGrpInfAndCxl>
+			<OrgnlPmtInfAndCxl>
+				<OrgnlPmtInfId>ABC/086</OrgnlPmtInfId>
+				<TxInf>
+					<CxlId>ABC/100928/PCR001/1</CxlId>
+					<OrgnlInstrId>ABC/100928/CCT001/3</OrgnlInstrId>
+					<OrgnlEndToEndId>ABC/987-AC/2010-09-27</OrgnlEndToEndId>
+					<OrgnlInstdAmt Ccy="USD">1000000</OrgnlInstdAmt>
+					<CxlRsnInf>
+						<Orgtr>
+							<Nm>ABC Corporation</Nm>
+						</Orgtr>
+						<Rsn>
+							<Cd>UPAY</Cd>
+						</Rsn>
+					</CxlRsnInf>
+					<OrgnlTxRef>
+						<Amt>
+							<InstdAmt Ccy="USD">1000000</InstdAmt>
+						</Amt>
+						<ReqdExctnDt>2010-09-29</ReqdExctnDt>
+						<CdtrAgt>
+							<FinInstnId>
+								<BIC>BBBBUS66</BIC>
+							</FinInstnId>
+						</CdtrAgt>
+						<Cdtr>
+							<Nm>ABC Corporation</Nm>
+							<PstlAdr>
+								<StrtNm>Times Square</StrtNm>
+								<BldgNb>7</BldgNb>
+								<PstCd>NY 10036</PstCd>
+								<TwnNm>New York</TwnNm>
+								<Ctry>US</Ctry>
+							</PstlAdr>
+						</Cdtr>
+						<CdtrAcct>
+							<Id>
+								<Othr>
+									<Id>4895623</Id>
+								</Othr>
+							</Id>
+						</CdtrAcct>
+					</OrgnlTxRef>
+				</TxInf>
+			</OrgnlPmtInfAndCxl>
+		</Undrlyg>
+	</CstmrPmtCxlReq>
+</Document>

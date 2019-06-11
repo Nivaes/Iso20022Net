@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:auth.011.001.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RgltryTxRptCxlStsV01>
+		<Id>
+			<Id>124</Id>
+		</Id>
+		<RptgInstn>
+			<BICOrBEI>SGABLULL</BICOrBEI>
+		</RptgInstn>
+		<IndvTxCxlSts>
+			<RltdRef>222</RltdRef>
+			<TradRef>Trade789</TradRef>
+			<Sts>PDNG</Sts>
+		</IndvTxCxlSts>
+	</RgltryTxRptCxlStsV01>
+</Document>

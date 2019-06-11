@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?BusExample camt.060?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:camt.060.001.02">
+	<AcctRptgReq>
+		<GrpHdr>
+			<MsgId>EXAMPLE camt.060</MsgId>
+			<CreDtTm>2011-01-06T17:15:00</CreDtTm>
+		</GrpHdr>
+		<RptgReq>
+			<ReqdMsgNmId>camt.052.001.02</ReqdMsgNmId>
+			<Acct>
+				<Id>
+					<Othr>
+						<Id>310141014141</Id>
+					</Othr>
+				</Id>
+			</Acct>
+			<AcctOwnr>
+				<Agt>
+					<FinInstnId>
+						<BICFI>AAAABEBB</BICFI>
+					</FinInstnId>
+				</Agt>
+			</AcctOwnr>
+			<RptgPrd>
+				<FrToDt>
+					<FrDt>2011-01-10</FrDt>
+				</FrToDt>
+				<FrToTm>
+					<FrTm>07:30:00</FrTm>
+				</FrToTm>
+				<Tp>ALLL</Tp>
+			</RptgPrd>
+		</RptgReq>
+	</AcctRptgReq>
+</Document>

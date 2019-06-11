@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.02">
+	<FIToFICstmrCdtTrf>
+		<GrpHdr>
+			<MsgId>AAAA/101109-CCT/EUR/443</MsgId>
+			<CreDtTm>2010-11-09T10:09:13</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<SttlmInf>
+				<SttlmMtd>INDA</SttlmMtd>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BIC>AAAAGB2L</BIC>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BIC>BBBBIE2D</BIC>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>AAAA/101109-CCT/EUR/443/1</InstrId>
+				<EndToEndId>CROPS/SX-25T/2010-10-13</EndToEndId>
+				<TxId>AAAA/101109-CCT/EUR/443/1</TxId>
+			</PmtId>
+			<IntrBkSttlmAmt Ccy="EUR">750000</IntrBkSttlmAmt>
+			<IntrBkSttlmDt>2010-11-09</IntrBkSttlmDt>
+			<InstdAmt Ccy="EUR">75000</InstdAmt>
+			<ChrgBr>SHAR</ChrgBr>
+			<UltmtDbtr>
+				<Nm>Biogenetics - CROPS</Nm>
+				<PstlAdr>
+					<StrtNm>Growth Street</StrtNm>
+					<BldgNb>17</BldgNb>
+					<PstCd>G5 OTW</PstCd>
+					<TwnNm>Glasgow</TwnNm>
+					<Ctry>GB</Ctry>
+				</PstlAdr>
+			</UltmtDbtr>
+			<Dbtr>
+				<Nm>Biogenetics - HQ</Nm>
+				<PstlAdr>
+					<StrtNm>Corn Street</StrtNm>
+					<BldgNb>13</BldgNb>
+					<PstCd>W6 8DR</PstCd>
+					<TwnNm>London</TwnNm>
+					<Ctry>GB</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>46373892034012</Id>
+					</Othr>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>AAAAGB2L</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtrAgt>
+				<FinInstnId>
+					<BIC>CCCCIE2D</BIC>
+				</FinInstnId>
+			</CdtrAgt>
+			<Cdtr>
+				<Nm>Seed Inc.</Nm>
+				<PstlAdr>
+					<StrtNm>Grain Lane</StrtNm>
+					<BldgNb>27</BldgNb>
+					<TwnNm>Dublin</TwnNm>
+					<Ctry>IE</Ctry>
+				</PstlAdr>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<IBAN>IE29CCCC93115212345678</IBAN>
+				</Id>
+			</CdtrAcct>
+			<Purp>
+				<Cd>GDDS</Cd>
+			</Purp>
+			<RmtInf>
+				<Strd>
+					<RfrdDocInf>
+						<Tp>
+							<CdOrPrtry>
+								<Cd>CINV</Cd>
+							</CdOrPrtry>
+						</Tp>
+						<Nb>SX-25T</Nb>
+						<RltdDt>2010-10-13</RltdDt>
+					</RfrdDocInf>
+				</Strd>
+			</RmtInf>
+		</CdtTrfTxInf>
+	</FIToFICstmrCdtTrf>
+</Document>

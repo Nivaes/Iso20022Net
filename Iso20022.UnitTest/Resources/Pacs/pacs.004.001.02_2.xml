@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.004.001.02">
+	<PmtRtr>
+		<GrpHdr>
+			<MsgId>BBBB/101122-PR05</MsgId>
+			<CreDtTm>2010-11-22T11:15:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<SttlmInf>
+				<SttlmMtd>INGA</SttlmMtd>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BIC>BBBBIE2D</BIC>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BIC>AAAAGB2L</BIC>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<OrgnlGrpInf>
+			<OrgnlMsgId>AAAA/101109-CCT/EUR443</OrgnlMsgId>
+			<OrgnlMsgNmId>pacs.008.001.02</OrgnlMsgNmId>
+			<OrgnlCreDtTm>2010-11-09T10:03:13</OrgnlCreDtTm>
+		</OrgnlGrpInf>
+		<TxInf>
+			<RtrId>BBBB/101122-PR05/1</RtrId>
+			<OrgnlInstrId>AAAA/101109-CCT/EUR443/1</OrgnlInstrId>
+			<OrgnlEndToEndId>CROPS/SX-25T/2010-10-13</OrgnlEndToEndId>
+			<OrgnlTxId>AAAA/101109-CCT/EUR443/1</OrgnlTxId>
+			<OrgnlIntrBkSttlmAmt Ccy="EUR">75000</OrgnlIntrBkSttlmAmt>
+			<RtrdIntrBkSttlmAmt Ccy="EUR">74650</RtrdIntrBkSttlmAmt>
+			<IntrBkSttlmDt>2010-11-22</IntrBkSttlmDt>
+			<RtrdInstdAmt Ccy="EUR">74850</RtrdInstdAmt>
+			<ChrgBr>CRED</ChrgBr>
+			<ChrgsInf>
+				<Amt Ccy="EUR">100</Amt>
+				<Pty>
+					<FinInstnId>
+						<BIC>CCCCIE2D</BIC>
+					</FinInstnId>
+				</Pty>
+			</ChrgsInf>
+			<ChrgsInf>
+				<Amt Ccy="EUR">100</Amt>
+				<Pty>
+					<FinInstnId>
+						<BIC>BBBBIE2D</BIC>
+					</FinInstnId>
+				</Pty>
+			</ChrgsInf>
+			<RtrRsnInf>
+				<Orgtr>
+					<Nm>Seed Inc.</Nm>
+				</Orgtr>
+				<Rsn>
+					<Cd>NARR</Cd>
+				</Rsn>
+				<AddtlInf>RETURN AFTER ACCEPTED FITOFI PAYMENT CANCELLATION REQUEST</AddtlInf>
+			</RtrRsnInf>
+		</TxInf>
+	</PmtRtr>
+</Document>

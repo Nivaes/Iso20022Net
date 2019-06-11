@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.036.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<DbtAuthstnRspn>
+		<Assgnmt>
+			<Id>REP103KKKKSUPPLIES12345678901</Id>
+			<Assgnr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>ASUPGB2L</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BIC>KKKKGB2L</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2009-03-27T10:55:23</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSTA200903001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSAGB2L</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Conf>
+			<DbtAuthstn>true</DbtAuthstn>
+		</Conf>
+	</DbtAuthstnRspn>
+</Document>

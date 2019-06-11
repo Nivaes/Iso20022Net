@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Business sample for ISO delivery?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:semt.016.001.04">
+	<IntraPosMvmntPstngRpt>
+		<Pgntn>
+			<PgNb>1</PgNb>
+			<LastPgInd>true</LastPgInd>
+		</Pgntn>
+		<StmtGnlDtls>
+			<RptNb>
+				<Shrt>125</Shrt>
+			</RptNb>
+			<StmtPrd>
+				<FrDtToDt>
+					<FrDt>2010-01-14</FrDt>
+					<ToDt>2010-01-15</ToDt>
+				</FrDtToDt>
+			</StmtPrd>
+			<Frqcy>
+				<Cd>DAIL</Cd>
+			</Frqcy>
+			<UpdTp>
+				<Cd>COMP</Cd>
+			</UpdTp>
+			<ActvtyInd>true</ActvtyInd>
+		</StmtGnlDtls>
+		<SfkpgAcct>
+			<Id>222S</Id>
+		</SfkpgAcct>
+		<FinInstrm>
+			<FinInstrmId>
+				<ISIN>GB0987654321</ISIN>
+			</FinInstrmId>
+			<SubBal>
+				<BalFr>
+					<Cd>AVAI</Cd>
+				</BalFr>
+				<IntraPosMvmnt>
+					<Id>
+						<AcctOwnrTxId>FRTJ123REG1</AcctOwnrTxId>
+					</Id>
+					<SttldQty>
+						<FaceAmt>4000000</FaceAmt>
+					</SttldQty>
+					<BalTo>
+						<Cd>RSTR</Cd>
+					</BalTo>
+					<SttlmDt>
+						<Dt>2010-01-15</Dt>
+					</SttlmDt>
+				</IntraPosMvmnt>
+			</SubBal>
+		</FinInstrm>
+	</IntraPosMvmntPstngRpt>
+</Document>

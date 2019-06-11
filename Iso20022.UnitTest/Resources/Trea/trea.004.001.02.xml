@@ -1,0 +1,54 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:trea.004.001.02" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<CretNDFValtnV02>
+		<TradInf>
+			<TradDt>2007-04-02</TradDt>
+			<NtfctnId>ND789</NtfctnId>
+		</TradInf>
+		<TradgSdId>
+			<SubmitgPty>
+				<BICOrBEI>
+					<BICOrBEI>BANAGB2L</BICOrBEI>
+				</BICOrBEI>
+			</SubmitgPty>
+			<TradPty>
+				<BICOrBEI>
+					<BICOrBEI>BANAGB2L</BICOrBEI>
+				</BICOrBEI>
+			</TradPty>
+		</TradgSdId>
+		<CtrPtySdId>
+			<FndInf>
+				<FndId>XYZ</FndId>
+				<AcctIdWthCtdn>123456</AcctIdWthCtdn>
+			</FndInf>
+			<SubmitgPty>
+				<BICOrBEI>
+					<BICOrBEI>CSTCUS33</BICOrBEI>
+				</BICOrBEI>
+			</SubmitgPty>
+			<TradPty>
+				<BICOrBEI>
+					<BICOrBEI>FUMBUS33</BICOrBEI>
+				</BICOrBEI>
+			</TradPty>
+		</CtrPtySdId>
+		<TradAmts>
+			<TradgSdBuyAmt Ccy = "THB">100000000</TradgSdBuyAmt>
+			<TradgSdSellAmt Ccy = "GBP">1440000</TradgSdSellAmt>
+			<SttlmDt>2007-04-04</SttlmDt>
+		</TradAmts>
+		<ValtnInf>
+			<ValtnRef>ND456</ValtnRef>
+			<SttlmCcy>GBP</SttlmCcy>
+			<SttlmPty>
+				<BICOrBEI>
+					<BICOrBEI>BANAGB2L</BICOrBEI>
+				</BICOrBEI>
+			</SttlmPty>
+		</ValtnInf>
+		<ValtnRate>
+			<XchgRate>0.0144</XchgRate>
+		</ValtnRate>
+	</CretNDFValtnV02>
+</Document>

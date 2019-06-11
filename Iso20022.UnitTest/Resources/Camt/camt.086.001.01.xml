@@ -1,0 +1,807 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.086.001.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <BkSvcsBllgStmt>
+    <RptHdr>
+      <RptId>Sample ISO BSB Billing Statement, C</RptId>
+    </RptHdr>
+    <BllgStmtGrp>
+      <GrpId>Group 1 of 1</GrpId>
+      <Sndr>
+        <Nm>TWIST BANK</Nm>
+        <LglNm>London Branch</LglNm>
+        <PstlAdr>
+          <AdrTp>BIZZ</AdrTp>
+          <Dept>Cash Management</Dept>
+          <SubDept>Billing</SubDept>
+          <StrtNm>123 First Street</StrtNm>
+          <BldgNb>CMBL</BldgNb>
+          <PstCd>0987-1234567890</PstCd>
+          <TwnNm>London</TwnNm>
+          <CtrySubDvsn>England</CtrySubDvsn>
+          <Ctry>GB</Ctry>
+          <AdrLine>123 First Street</AdrLine>
+          <AdrLine>London TW1 St</AdrLine>
+          <AdrLine>United Kingdom</AdrLine>
+          <AdrLine>Northern Hemisphere</AdrLine>
+          <AdrLine>Earth</AdrLine>
+          <Flr>14</Flr>
+          <PstBx>11111-2222</PstBx>
+          <BldgNm>Ramsey House</BldgNm>
+          <Room>1408</Room>
+        </PstlAdr>
+        <Id>
+          <OrgId>
+            <AnyBIC>MIKEUSB0</AnyBIC>
+          </OrgId>
+        </Id>
+      </Sndr>
+      <SndrIndvCtct>
+        <NmPrfx>MIST</NmPrfx>
+        <Nm>Ronald Ramsey</Nm>
+        <PhneNb>+144-207-555-1234</PhneNb>
+        <MobNb>+144-207-987-5432</MobNb>
+        <FaxNb>+144-207-555-4321</FaxNb>
+        <EmailAdr>info@twiststandards.org</EmailAdr>
+        <Othr>
+          <ChanlTp>AIM</ChanlTp>
+          <Id>glaxine@rosamund.com</Id>
+        </Othr>
+        <PrefrdMtd>MAIL</PrefrdMtd>
+      </SndrIndvCtct>
+      <Rcvr>
+        <Nm>ABC Corporation</Nm>
+        <LglNm>Corporate Headquarters</LglNm>
+        <PstlAdr>
+          <AdrTp>BIZZ</AdrTp>
+          <Dept>Accounting</Dept>
+          <SubDept>Billing</SubDept>
+          <StrtNm>74 High Road</StrtNm>
+          <BldgNb>Building 3</BldgNb>
+          <PstCd>PO 12345-1234</PstCd>
+          <TwnNm>London</TwnNm>
+          <CtrySubDvsn>England</CtrySubDvsn>
+          <Ctry>GB</Ctry>
+          <AdrLine>International Computer House</AdrLine>
+          <AdrLine>74 High Road</AdrLine>
+          <AdrLine>LONDON AB1 2CD</AdrLine>
+          <AdrLine>United Kingdom</AdrLine>
+          <AdrLine>Europe</AdrLine>
+          <Flr>25</Flr>
+          <PstBx>AB1 2CD</PstBx>
+          <BldgNm>International Custom House</BldgNm>
+          <Room>Room 214A</Room>
+        </PstlAdr>
+        <Id>
+          <OrgId>
+            <AnyBIC>OSIBSBB0</AnyBIC>
+          </OrgId>
+        </Id>
+      </Rcvr>
+      <RcvrIndvCtct>
+        <NmPrfx>MIST</NmPrfx>
+        <Nm>James Johnson</Nm>
+        <PhneNb>+144-220-232-1234</PhneNb>
+        <MobNb>+144-220-687-5432</MobNb>
+        <FaxNb>+144-220-909-4321</FaxNb>
+        <EmailAdr>j.johnson@twiststandards.org</EmailAdr>
+        <Othr>
+          <ChanlTp>AIM</ChanlTp>
+          <Id>robocall@btyebit.com</Id>
+        </Othr>
+        <PrefrdMtd>MAIL</PrefrdMtd>
+      </RcvrIndvCtct>
+      <BllgStmt>
+        <StmtId>Billing statement for acct D-666777</StmtId>
+        <FrToDt>
+          <FrDt>2003-05-01</FrDt>
+          <ToDt>2003-05-31</ToDt>
+        </FrToDt>
+        <CreDtTm>2003-05-31T08:35:30</CreDtTm>
+        <Sts>ORGN</Sts>
+        <AcctChrtcs>
+          <AcctLvl>DETL</AcctLvl>
+          <CshAcct>
+            <Id>
+              <Othr>
+			    <Id>666777</Id>
+				<Issr>Twist Bank</Issr>
+			  </Othr>
+            </Id>
+            <Tp>
+              <Cd>SACC</Cd>
+            </Tp>
+            <Nm>Demonstration Account Method C</Nm>
+          </CshAcct>
+          <AcctSvcr>
+            <FinInstnId>
+              <BICFI>ISOBSBD0</BICFI>
+            </FinInstnId>
+          </AcctSvcr>
+          <CompstnMtd>DDBT</CompstnMtd>
+          <DbtAcct>
+            <Othr>
+              <Id>333222111</Id>
+              <Issr>Twist Bank</Issr>
+            </Othr>
+          </DbtAcct>
+          <DelydDbtDt>2003-06-15</DelydDbtDt>
+          <SttlmAdvc>Account 12344321 will be automatically debited for charges due on 2003-06-15</SttlmAdvc>
+          <AcctBalCcyCd>USD</AcctBalCcyCd>
+          <SttlmCcyCd>GBP</SttlmCcyCd>
+          <HstCcyCd>GBP</HstCcyCd>
+          <Tax>
+            <ClctnMtd>MTDC</ClctnMtd>
+            <Rgn>GB2121234</Rgn>
+            <NonResCtry>
+              <Ctry>GB</Ctry>
+            </NonResCtry>
+          </Tax>
+          <AcctSvcrCtct>
+            <Nm>Joe Pedestrian</Nm>
+          </AcctSvcrCtct>
+        </AcctChrtcs>
+        <RateData>
+          <Id>
+            <Cd>WFG</Cd>
+          </Id>
+          <Val>1.456</Val>
+          <DaysInPrd>30</DaysInPrd>
+          <DaysInYr>365</DaysInYr>
+        </RateData>
+        <CcyXchg>
+          <SrcCcy>DKK</SrcCcy>
+          <TrgtCcy>GBP</TrgtCcy>
+          <XchgRate>0.16</XchgRate>
+          <Desc>Denmark Kroner to Pound Sterling</Desc>
+          <UnitCcy>GBP</UnitCcy>
+          <Cmnts>Denmark Host to Settlement currency translation</Cmnts>
+          <QtnDt>2003-06-01T09:00:00</QtnDt>
+        </CcyXchg>
+        <CcyXchg>
+          <SrcCcy>EUR</SrcCcy>
+          <TrgtCcy>DKK</TrgtCcy>
+          <XchgRate>4.2</XchgRate>
+          <Desc>Euro to Denmark Kroner</Desc>
+          <UnitCcy>DKK</UnitCcy>
+          <Cmnts>Euro Price to Denmark Host</Cmnts>
+          <QtnDt>2003-06-01T09:00:00</QtnDt>
+        </CcyXchg>
+        <CcyXchg>
+          <SrcCcy>EUR</SrcCcy>
+          <TrgtCcy>GBP</TrgtCcy>
+          <XchgRate>0.66</XchgRate>
+          <Desc>Euro to Pounds Sterling</Desc>
+          <UnitCcy>GBP</UnitCcy>
+          <Cmnts>Euro Price to Pound Sterling Settle</Cmnts>
+          <QtnDt>2003-06-01T09:00:00</QtnDt>
+        </CcyXchg>
+        <CcyXchg>
+          <SrcCcy>GBP</SrcCcy>
+          <TrgtCcy>USD</TrgtCcy>
+          <XchgRate>1.8</XchgRate>
+          <Desc>Pounds Sterling to USD</Desc>
+          <UnitCcy>USD</UnitCcy>
+          <Cmnts>GBP Settle to USA Balance</Cmnts>
+          <QtnDt>2003-06-01T09:00:00</QtnDt>
+        </CcyXchg>
+        <CcyXchg>
+          <SrcCcy>DKK</SrcCcy>
+          <TrgtCcy>USD</TrgtCcy>
+          <XchgRate>0.288</XchgRate>
+          <Desc>Denmark Kroner to USD</Desc>
+          <UnitCcy>USD</UnitCcy>
+          <Cmnts>Denmark Host to USA Balance</Cmnts>
+          <QtnDt>2003-06-01T09:00:00</QtnDt>
+        </CcyXchg>
+        <Bal>
+          <Tp>
+            <Cd>LBNM</Cd>
+          </Tp>
+          <Val>
+            <Amt Ccy="USD">337935.48</Amt>
+            <Sgn>true</Sgn>
+          </Val>
+          <CcyTp>ACCT</CcyTp>
+        </Bal>
+        <Bal>
+          <Tp>
+            <Cd>CBAN</Cd>
+          </Tp>
+          <Val>
+            <Amt Ccy="USD">266096.77</Amt>
+            <Sgn>true</Sgn>
+          </Val>
+          <CcyTp>ACCT</CcyTp>
+        </Bal>
+        <Compstn>
+          <Tp>
+            <Cd>TXSC</Cd>
+          </Tp>
+          <Val>
+            <Amt Ccy="GBP">235.60</Amt>
+            <Sgn>true</Sgn>
+          </Val>
+          <CcyTp>STLM</CcyTp>
+        </Compstn>
+        <Compstn>
+          <Tp>
+            <Cd>SCCP</Cd>
+          </Tp>
+          <Val>
+            <Amt Ccy="GBP">325.6</Amt>
+            <Sgn>true</Sgn>
+          </Val>
+          <CcyTp>STLM</CcyTp>
+        </Compstn>
+        <Compstn>
+          <Tp>
+            <Cd>SCBT</Cd>
+          </Tp>
+          <Val>
+            <Amt Ccy="GBP">325.60</Amt>
+            <Sgn>true</Sgn>
+          </Val>
+          <CcyTp>STLM</CcyTp>
+        </Compstn>
+        <Compstn>
+          <Tp>
+            <Cd>TXTS</Cd>
+          </Tp>
+          <Val>
+            <Amt Ccy="GBP">38.30</Amt>
+            <Sgn>true</Sgn>
+          </Val>
+          <CcyTp>STLM</CcyTp>
+        </Compstn>
+        <Compstn>
+          <Tp>
+            <Cd>TXTS</Cd>
+          </Tp>
+          <Val>
+            <Amt Ccy="USD">68.94</Amt>
+            <Sgn>true</Sgn>
+          </Val>
+          <CcyTp>STLM</CcyTp>
+        </Compstn>
+        <Compstn>
+          <Tp>
+            <Cd>CTND</Cd>
+          </Tp>
+          <Val>
+            <Amt Ccy="GBP">363.90</Amt>
+            <Sgn>true</Sgn>
+          </Val>
+          <CcyTp>STLM</CcyTp>
+        </Compstn>
+        <Compstn>
+          <Tp>
+            <Cd>NBCS</Cd>
+          </Tp>
+          <Val>
+            <Amt Ccy="GBP">325.6</Amt>
+            <Sgn>true</Sgn>
+          </Val>
+          <CcyTp>STLM</CcyTp>
+        </Compstn>
+        <Svc>
+          <SvcDtl>
+            <BkSvc>
+              <Id>NY12345</Id>
+              <SubSvc>
+                <Issr>
+                  <Cd>STOR</Cd>
+                </Issr>
+                <Id>100000</Id>
+              </SubSvc>
+              <Desc>GENERAL SRVS</Desc>
+            </BkSvc>
+            <Vol>1</Vol>
+          </SvcDtl>
+          <Pric>
+            <Ccy>GBP</Ccy>
+            <UnitPric>
+              <Amt Ccy="GBP">150.000000</Amt>
+              <Sgn>true</Sgn>
+            </UnitPric>
+            <Mtd>UPRC</Mtd>
+          </Pric>
+          <PmtMtd>INVS</PmtMtd>
+          <OrgnlChrgPric>
+            <Amt Ccy="GBP">150.00</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgPric>
+          <OrgnlChrgSttlmAmt>
+            <Amt Ccy="GBP">150.00</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgSttlmAmt>
+          <TaxDsgnt>
+            <Cd>TAXE</Cd>
+            <Rgn>GB2121234</Rgn>
+            <TaxRsn>
+              <Cd>RSN990</Cd>
+              <Expltn>Always taxed in this region</Expltn>
+            </TaxRsn>
+          </TaxDsgnt>
+        </Svc>
+        <Svc>
+          <SvcDtl>
+            <BkSvc>
+              <Id>0110</Id>
+              <Desc>Maintenance Fee</Desc>
+              <SvcTp>GENERAL SRVS</SvcTp>
+            </BkSvc>
+            <Vol>1</Vol>
+          </SvcDtl>
+          <Pric>
+            <Ccy>GBP</Ccy>
+            <UnitPric>
+              <Amt Ccy="GBP">27.000000</Amt>
+              <Sgn>true</Sgn>
+            </UnitPric>
+            <Mtd>UPRC</Mtd>
+          </Pric>
+          <PmtMtd>INVS</PmtMtd>
+          <OrgnlChrgPric>
+            <Amt Ccy="GBP">27.00</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgPric>
+          <OrgnlChrgSttlmAmt>
+            <Amt Ccy="GBP">27.00</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgSttlmAmt>
+          <TaxDsgnt>
+            <Cd>TAXE</Cd>
+            <Rgn>GB2121234</Rgn>
+          </TaxDsgnt>
+        </Svc>
+        <Svc>
+          <SvcDtl>
+            <BkSvc>
+              <Id>0330</Id>
+              <Desc>Wire Transfer</Desc>
+              <CmonCd>
+                <Issr>AFP</Issr>
+                <Id>350300</Id>
+              </CmonCd>
+              <SvcTp>WIRE SRVS</SvcTp>
+            </BkSvc>
+            <Vol>1</Vol>
+          </SvcDtl>
+          <Pric>
+            <Ccy>DKK</Ccy>
+            <UnitPric>
+              <Amt Ccy="DKK">40.000000</Amt>
+              <Sgn>true</Sgn>
+            </UnitPric>
+            <Mtd>UPRC</Mtd>
+            <Rule>Large WTO</Rule>
+          </Pric>
+          <PmtMtd>INVS</PmtMtd>
+          <OrgnlChrgPric>
+            <Amt Ccy="DKK">40.00</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgPric>
+          <OrgnlChrgSttlmAmt>
+            <Amt Ccy="GBP">6.4</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgSttlmAmt>
+          <TaxDsgnt>
+            <Cd>TAXE</Cd>
+            <Rgn>DKK123456</Rgn>
+          </TaxDsgnt>
+        </Svc>
+        <Svc>
+          <SvcDtl>
+            <BkSvc>
+              <Id>0003</Id>
+              <Desc>Checks</Desc>
+              <CmonCd>
+                <Issr>AFP</Issr>
+                <Id>100220</Id>
+              </CmonCd>
+              <SvcTp>DEBIT SRVS</SvcTp>
+            </BkSvc>
+            <Vol>1000</Vol>
+          </SvcDtl>
+          <Pric>
+            <Ccy>GBP</Ccy>
+            <UnitPric>
+              <Amt Ccy="GBP">.085000</Amt>
+              <Sgn>true</Sgn>
+            </UnitPric>
+            <Mtd>UPRC</Mtd>
+            <Rule>Large WTO</Rule>
+          </Pric>
+          <PmtMtd>INVS</PmtMtd>
+          <OrgnlChrgPric>
+            <Amt Ccy="GBP">85.00</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgPric>
+          <OrgnlChrgSttlmAmt>
+            <Amt Ccy="GBP">85.00</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgSttlmAmt>
+          <TaxDsgnt>
+            <Cd>TAXE</Cd>
+            <Rgn>GB2121234</Rgn>
+          </TaxDsgnt>
+        </Svc>
+        <Svc>
+          <SvcDtl>
+            <BkSvc>
+              <Id>101021</Id>
+              <Desc>GENERAL SRVS</Desc>
+            </BkSvc>
+            <Vol>1</Vol>
+          </SvcDtl>
+          <Pric>
+            <Ccy>EUR</Ccy>
+            <UnitPric>
+              <Amt Ccy="EUR">20.000000</Amt>
+              <Sgn>true</Sgn>
+            </UnitPric>
+            <Mtd>DPRC</Mtd>
+          </Pric>
+          <PmtMtd>BCMP</PmtMtd>
+          <OrgnlChrgPric>
+            <Amt Ccy="DKK">20.00</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgPric>
+          <OrgnlChrgSttlmAmt>
+            <Amt Ccy="GBP">13.2</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgSttlmAmt>
+          <BalReqrdAcctAmt>
+            <Amt Ccy="GBP">2500.34</Amt>
+            <Sgn>true</Sgn>
+          </BalReqrdAcctAmt>
+          <TaxDsgnt>
+            <Cd>TAXE</Cd>
+            <Rgn>DKK123456</Rgn>
+          </TaxDsgnt>
+        </Svc>
+        <Svc>
+          <SvcDtl>
+            <BkSvc>
+              <Id>101060</Id>
+              <Desc>Snapshot Statement</Desc>
+              <CmonCd>
+                <Issr>AFP</Issr>
+                <Id>100000</Id>
+              </CmonCd>
+            </BkSvc>
+            <Vol>3</Vol>
+          </SvcDtl>
+          <Pric>
+            <Ccy>GBP</Ccy>
+            <UnitPric>
+              <Amt Ccy="GBP">13.000000</Amt>
+              <Sgn>true</Sgn>
+            </UnitPric>
+            <Mtd>UPRC</Mtd>
+          </Pric>
+          <PmtMtd>PVCH</PmtMtd>
+          <OrgnlChrgPric>
+            <Amt Ccy="GBP">39.00</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgPric>
+          <OrgnlChrgSttlmAmt>
+            <Amt Ccy="GBP">39.00</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgSttlmAmt>
+          <TaxDsgnt>
+            <Cd>XMPT</Cd>
+          </TaxDsgnt>
+        </Svc>
+        <Svc>
+          <SvcDtl>
+            <BkSvc>
+              <Id>101101</Id>
+              <Desc>Bank Originated Debit</Desc>
+              <CmonCd>
+                <Issr>AFP</Issr>
+                <Id>100000</Id>
+              </CmonCd>
+            </BkSvc>
+            <Vol>1</Vol>
+          </SvcDtl>
+          <Pric>
+            <Ccy>GBP</Ccy>
+            <UnitPric>
+              <Amt Ccy="GBP">1.230000</Amt>
+              <Sgn>true</Sgn>
+            </UnitPric>
+            <Mtd>UPRC</Mtd>
+          </Pric>
+          <PmtMtd>BCMP</PmtMtd>
+          <OrgnlChrgPric>
+            <Amt Ccy="GBP">1.23</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgPric>
+          <OrgnlChrgSttlmAmt>
+            <Amt Ccy="GBP">1.23</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgSttlmAmt>
+          <TaxDsgnt>
+            <Cd>XMPT</Cd>
+          </TaxDsgnt>
+        </Svc>
+        <TaxRgn>
+          <RgnNb>DKK123456</RgnNb>
+          <RgnNm>Denmark</RgnNm>
+          <CstmrTaxId>989812222324590</CstmrTaxId>
+          <PtDt>2007-06-30</PtDt>
+          <SndgFI>
+            <VATRegnNb>DK111222333</VATRegnNb>
+            <TaxRegnNb>DKVAT-099</TaxRegnNb>
+            <TaxCtct>
+              <NmPrfx>MIST</NmPrfx>
+              <Nm>Bjorn Bigsby</Nm>
+              <PhneNb>+140-207-333-4444</PhneNb>
+              <MobNb>+140-207-333-5555</MobNb>
+              <FaxNb>+140-207-098-7654</FaxNb>
+              <EmailAdr>BJB@SWIFT.com</EmailAdr>
+              <Othr>
+                <ChanlTp>MAIL</ChanlTp>
+                <Id>sjw.gamil.com</Id>
+              </Othr>
+              <PrefrdMtd>MAIL</PrefrdMtd>
+            </TaxCtct>
+          </SndgFI>
+          <InvcNb>DKNOT-12114</InvcNb>
+          <MtdC>
+            <SvcDtl>
+              <BkSvc>
+                <Id>0330</Id>
+                <Desc>Wire Transfer</Desc>
+              </BkSvc>
+              <Vol>1</Vol>
+              <UnitPric>
+                <Amt Ccy="DKK">40.00</Amt>
+                <Sgn>true</Sgn>
+              </UnitPric>
+              <SvcChrgAmt>
+                <Amt Ccy="DKK">40.00</Amt>
+                <Sgn>true</Sgn>
+              </SvcChrgAmt>
+            </SvcDtl>
+            <SvcDtl>
+              <BkSvc>
+                <Id>101021</Id>
+                <Desc>Account Maintenance</Desc>
+              </BkSvc>
+              <Vol>1</Vol>
+              <UnitPric>
+                <Amt Ccy="EUR">20.00</Amt>
+                <Sgn>true</Sgn>
+              </UnitPric>
+              <SvcChrgAmt>
+                <Amt Ccy="EUR">20.00</Amt>
+                <Sgn>true</Sgn>
+              </SvcChrgAmt>
+            </SvcDtl>
+            <TaxClctn>
+              <HstCcy>DKK</HstCcy>
+              <TaxblSvcChrgConvs>
+                <SrcAmt>
+                  <Amt Ccy="DKK">40.00</Amt>
+                  <Sgn>true</Sgn>
+                </SrcAmt>
+                <HstAmt>
+                  <Amt Ccy="DKK">40.00</Amt>
+                  <Sgn>true</Sgn>
+                </HstAmt>
+              </TaxblSvcChrgConvs>
+              <TaxblSvcChrgConvs>
+                <SrcAmt>
+                  <Amt Ccy="EUR">20.00</Amt>
+                  <Sgn>true</Sgn>
+                </SrcAmt>
+                <HstAmt>
+                  <Amt Ccy="DKK">84.00</Amt>
+                  <Sgn>true</Sgn>
+                </HstAmt>
+              </TaxblSvcChrgConvs>
+              <TtlTaxblSvcChrgHstAmt>
+                <Amt Ccy="DKK">124.00</Amt>
+                <Sgn>true</Sgn>
+              </TtlTaxblSvcChrgHstAmt>
+              <TaxId>
+                <Nb>DENVAT213243</Nb>
+                <Desc>Denmark VAT Tax</Desc>
+                <Rate>0.05</Rate>
+                <TtlTaxAmt>
+                  <Amt Ccy="DKK">6.20</Amt>
+                  <Sgn>true</Sgn>
+                </TtlTaxAmt>
+              </TaxId>
+              <TtlTax>
+                <Amt Ccy="DKK">6.20</Amt>
+                <Sgn>true</Sgn>
+              </TtlTax>
+            </TaxClctn>
+          </MtdC>
+          <SttlmAmt>
+            <Amt Ccy="GBP">0.99</Amt>
+            <Sgn>true</Sgn>
+          </SttlmAmt>
+          <TaxDueToRgn>
+            <Amt Ccy="DKK">6.20</Amt>
+            <Sgn>true</Sgn>
+          </TaxDueToRgn>
+        </TaxRgn>
+        <TaxRgn>
+          <RgnNb>GB2121234</RgnNb>
+          <RgnNm>Great Britain</RgnNm>
+          <CstmrTaxId>CUSNUMOVERRIDE</CstmrTaxId>
+          <PtDt>2007-06-30</PtDt>
+          <SndgFI>
+            <VATRegnNb>GB-879009</VATRegnNb>
+            <TaxRegnNb>INV#4455GB</TaxRegnNb>
+            <TaxCtct>
+              <Nm>Reginald Dentin</Nm>
+              <PhneNb>+144-289-123-4567</PhneNb>
+              <MobNb>+144-289-321-7654</MobNb>
+              <FaxNb>+144-289-123-4599</FaxNb>
+              <EmailAdr>reginald.dentin@twistbank.org</EmailAdr>
+              <PrefrdMtd>MAIL</PrefrdMtd>
+            </TaxCtct>
+          </SndgFI>
+          <InvcNb>INV#4455GB</InvcNb>
+          <MtdC>
+            <SvcDtl>
+              <BkSvc>
+                <Id>0004</Id>
+                <Desc>Deposits</Desc>
+              </BkSvc>
+              <Vol>1</Vol>
+              <UnitPric>
+                <Amt Ccy="GBP">150.00</Amt>
+                <Sgn>true</Sgn>
+              </UnitPric>
+              <SvcChrgAmt>
+                <Amt Ccy="GBP">150.00</Amt>
+                <Sgn>true</Sgn>
+              </SvcChrgAmt>
+            </SvcDtl>
+            <SvcDtl>
+              <BkSvc>
+                <Id>0110</Id>
+                <Desc>Maintenance Fee</Desc>
+              </BkSvc>
+              <Vol>1</Vol>
+              <UnitPric>
+                <Amt Ccy="GBP">27.00</Amt>
+                <Sgn>true</Sgn>
+              </UnitPric>
+              <SvcChrgAmt>
+                <Amt Ccy="GBP">27.00</Amt>
+                <Sgn>true</Sgn>
+              </SvcChrgAmt>
+            </SvcDtl>
+            <SvcDtl>
+              <BkSvc>
+                <Id>0003</Id>
+                <Desc>Checks</Desc>
+              </BkSvc>
+              <Vol>1000</Vol>
+              <UnitPric>
+                <Amt Ccy="GBP">0.085</Amt>
+                <Sgn>true</Sgn>
+              </UnitPric>
+              <SvcChrgAmt>
+                <Amt Ccy="GBP">85.00</Amt>
+                <Sgn>true</Sgn>
+              </SvcChrgAmt>
+            </SvcDtl>
+            <TaxClctn>
+              <HstCcy>GBP</HstCcy>
+              <TaxblSvcChrgConvs>
+                <SrcAmt>
+                  <Amt Ccy="GBP">191.32</Amt>
+                  <Sgn>true</Sgn>
+                </SrcAmt>
+                <HstAmt>
+                  <Amt Ccy="GBP">191.32</Amt>
+                  <Sgn>true</Sgn>
+                </HstAmt>
+              </TaxblSvcChrgConvs>
+              <TtlTaxblSvcChrgHstAmt>
+                <Amt Ccy="GBP">191.32</Amt>
+                <Sgn>true</Sgn>
+              </TtlTaxblSvcChrgHstAmt>
+              <TaxId>
+                <Nb>GBVAT</Nb>
+                <Desc>United Kingdom VAT</Desc>
+                <Rate>0.1750000000</Rate>
+                <TtlTaxAmt>
+                  <Amt Ccy="GBP">33.48</Amt>
+                  <Sgn>true</Sgn>
+                </TtlTaxAmt>
+              </TaxId>
+              <TaxId>
+                <Nb>LCTYGBVAT</Nb>
+                <Desc>London City Tax</Desc>
+                <Rate>0.02</Rate>
+                <TtlTaxAmt>
+                  <Amt Ccy="GBP">3.83</Amt>
+                  <Sgn>true</Sgn>
+                </TtlTaxAmt>
+              </TaxId>
+              <TtlTax>
+                <Amt Ccy="GBP">37.31</Amt>
+                <Sgn>true</Sgn>
+              </TtlTax>
+            </TaxClctn>
+          </MtdC>
+          <SttlmAmt>
+            <Amt Ccy="GBP">37.31</Amt>
+            <Sgn>true</Sgn>
+          </SttlmAmt>
+          <TaxDueToRgn>
+            <Amt Ccy="GBP">37.31</Amt>
+            <Sgn>true</Sgn>
+          </TaxDueToRgn>
+        </TaxRgn>
+        <BalAdjstmnt>
+          <Tp>FLOT</Tp>
+          <Desc>Adjustment</Desc>
+          <BalAmt>
+            <Amt Ccy="GBP">234.56</Amt>
+            <Sgn>false</Sgn>
+          </BalAmt>
+          <ErrDt>2003-05-15</ErrDt>
+          <PstngDt>2003-06-02</PstngDt>
+          <Days>18</Days>
+          <EarngsAdjstmntAmt>
+            <Amt Ccy="GBP">12.34</Amt>
+            <Sgn>false</Sgn>
+          </EarngsAdjstmntAmt>
+        </BalAdjstmnt>
+        <SvcAdjstmnt>
+          <Tp>COMP</Tp>
+          <Desc>Error Correction</Desc>
+          <Amt>
+            <Amt Ccy="GBP">43.21</Amt>
+            <Sgn>true</Sgn>
+          </Amt>
+          <BalReqrdAmt>
+            <Amt Ccy="GBP">1.02</Amt>
+            <Sgn>true</Sgn>
+          </BalReqrdAmt>
+          <ErrDt>2003-05-31</ErrDt>
+          <AdjstmntId>0004</AdjstmntId>
+          <SubSvc>
+            <Issr>
+              <Cd>STOR</Cd>
+            </Issr>
+            <Id>NY12345</Id>
+          </SubSvc>
+          <PricChng>
+            <Amt Ccy="GBP">10</Amt>
+            <Sgn>true</Sgn>
+          </PricChng>
+          <OrgnlPric>
+            <Amt Ccy="GBP">20</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlPric>
+          <NewPric>
+            <Amt Ccy="GBP">30</Amt>
+            <Sgn>true</Sgn>
+          </NewPric>
+          <VolChng>20</VolChng>
+          <OrgnlVol>5</OrgnlVol>
+          <NewVol>25</NewVol>
+          <OrgnlChrgAmt>
+            <Amt Ccy="GBP">100</Amt>
+            <Sgn>true</Sgn>
+          </OrgnlChrgAmt>
+          <NewChrgAmt>
+            <Amt Ccy="GBP">750</Amt>
+            <Sgn>true</Sgn>
+          </NewChrgAmt>
+        </SvcAdjstmnt>
+      </BllgStmt>
+    </BllgStmtGrp>
+  </BkSvcsBllgStmt>
+</Document>

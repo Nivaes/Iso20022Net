@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?SWIFTStandards Smart Test Messages for Proxy Voting product version 1.1?>
+<?valid true?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:seev.001.001.04" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:seev.001.001.04 ..\..\..\..\gen\Injection\seev.001.001.04.xsd">
+	<MtgNtfctn>
+		<Id>
+			<Id>ABC002</Id>
+			<CreDtTm>2007-04-04T15:00:00</CreDtTm>
+		</Id>
+		<NtfctnSts>
+			<Sts>ECON</Sts>
+		</NtfctnSts>
+		<Mtg>
+			<MtgId>AGM4528</MtgId>
+			<IssrMtgId>LS001</IssrMtgId>
+			<Tp>GMET</Tp>
+			<Clssfctn>
+				<Cd>AMET</Cd>
+			</Clssfctn>
+			<AttndncReqrd>false</AttndncReqrd>
+			<PrxyChc>
+				<Prxy>
+					<STPDdln>
+						<Dt>2007-04-25T18:00:00</Dt>
+					</STPDdln>
+					<AuthrsdPrxy>
+						<PrxyTp>DISC</PrxyTp>
+					</AuthrsdPrxy>
+				</Prxy>
+			</PrxyChc>
+			<CtctPrsnDtls>
+				<CtctPrsn>
+					<Nm>Jones</Nm>
+					<NmPrfx>MIST</NmPrfx>
+					<GvnNm>John</GvnNm>
+					<PhneNb>+44-207-1234455</PhneNb>
+				</CtctPrsn>
+				<EmplngPty>
+					<NmAndAdr>
+						<Nm>Big Corp PLC</Nm>
+					</NmAndAdr>
+				</EmplngPty>
+			</CtctPrsnDtls>
+			<RsltPblctnDt>
+				<Dt>2007-05-09</Dt>
+			</RsltPblctnDt>
+		</Mtg>
+		<MtgDtls>
+			<DtAndTm>
+				<Dt>2007-04-28T11:00:00</Dt>
+			</DtAndTm>
+			<DtSts>CNFR</DtSts>
+			<QrmReqrd>false</QrmReqrd>
+			<Lctn>
+				<Adr>
+					<AdrLine>Great Hall at Kensington Town Hall</AdrLine>
+					<StrtNm>Hornton Street</StrtNm>
+					<PstCd>W87NX</PstCd>
+					<TwnNm>London</TwnNm>
+					<Ctry>GB</Ctry>
+				</Adr>
+			</Lctn>
+			<Lctn>
+				<Adr>
+					<AdrLine>Globe Arena</AdrLine>
+					<TwnNm>Stockholm</TwnNm>
+					<Ctry>SE</Ctry>
+				</Adr>
+			</Lctn>
+		</MtgDtls>
+		<NtifngPty>
+			<BICOrBEI>LOCAGB2L</BICOrBEI>
+		</NtifngPty>
+		<Issr>
+			<Id>
+				<NmAndAdr>
+					<Nm>Big Corp PLC</Nm>
+					<Adr>
+						<AdrLine>7th floor</AdrLine>
+						<AdrLine>The Corn Exchange</AdrLine>
+						<StrtNm>Mark Lane</StrtNm>
+						<BldgNb>55</BldgNb>
+						<PstCd>EC3R7NE</PstCd>
+						<TwnNm>London</TwnNm>
+						<Ctry>GB</Ctry>
+					</Adr>
+				</NmAndAdr>
+			</Id>
+		</Issr>
+		<IssrAgt>
+			<Id>
+				<BICOrBEI>AGNTGB2L</BICOrBEI>
+			</Id>
+		</IssrAgt>
+		<Scty>
+			<Id>
+				<Id>
+					<ISIN>GB4444A53L22</ISIN>
+				</Id>
+			</Id>
+		</Scty>
+		<Rsltn>
+			<IssrLabl>1</IssrLabl>
+			<Desc>To approve the company's accounts and the reports of the directors and auditor for the year ended 31 December 2005.</Desc>
+			<Tp>ORDI</Tp>
+			<ForInfOnly>false</ForInfOnly>
+			<Sts>ACTV</Sts>
+			<SubmittdBySctyHldr>false</SubmittdBySctyHldr>
+		</Rsltn>
+		<Rsltn>
+			<IssrLabl>2</IssrLabl>
+			<Desc>To confirm as final dividend for 2005 the dividend of $0.295 (16.0 pence, SEK2.2).</Desc>
+			<Tp>ORDI</Tp>
+			<ForInfOnly>false</ForInfOnly>
+			<Sts>ACTV</Sts>
+			<SubmittdBySctyHldr>false</SubmittdBySctyHldr>
+		</Rsltn>
+		<Rsltn>
+			<IssrLabl>3</IssrLabl>
+			<Desc>To re-appoint ZIAUDIT PLC, London as auditor.</Desc>
+			<Tp>ORDI</Tp>
+			<ForInfOnly>false</ForInfOnly>
+			<Sts>ACTV</Sts>
+			<SubmittdBySctyHldr>false</SubmittdBySctyHldr>
+		</Rsltn>
+		<Vote>
+			<PrtlVoteAllwd>true</PrtlVoteAllwd>
+			<SpltVoteAllwd>true</SpltVoteAllwd>
+			<VoteSTPDdln>
+				<Dt>2007-04-28T09:00:00</Dt>
+			</VoteSTPDdln>
+			<VoteMthds>
+				<VoteThrghNtwk>LOCAGB2L</VoteThrghNtwk>
+			</VoteMthds>
+			<BnfclOwnrDsclsr>true</BnfclOwnrDsclsr>
+		</Vote>
+		<EntitlmntSpcfctn>
+			<EntitlmntFxgDt>
+				<Dt>2007-04-25</Dt>
+			</EntitlmntFxgDt>
+		</EntitlmntSpcfctn>
+	</MtgNtfctn>
+</Document>

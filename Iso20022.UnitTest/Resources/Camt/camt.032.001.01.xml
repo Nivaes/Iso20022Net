@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "urn:iso:std:iso:20022:tech:xsd:camt.032.001.01">
+	<camt.032.001.01>
+		<Assgnmt>
+			<Id>CANCCHAS20050527004</Id>
+			<Assgnr>CHASUS33</Assgnr>
+			<Assgne>CITIUS33</Assgne>
+			<CreDtTm>2005-05-27T09:07:35</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSE20050525001</Id>
+			<Cretr>CUSEUS33</Cretr>
+		</Case>
+	</camt.032.001.01>
+</Document>

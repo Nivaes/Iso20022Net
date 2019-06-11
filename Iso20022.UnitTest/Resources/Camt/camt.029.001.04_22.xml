@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.029.001.04" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RsltnOfInvstgtn>
+		<Assgnmt>
+			<Id>CANCROI/100928/ROI002</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BICFI>BBBBUS33</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Pty>
+					<Nm>ABC Corporation</Nm>
+					<PstlAdr>
+						<StrtNm>Times Square</StrtNm>
+						<BldgNb>7</BldgNb>
+						<PstCd>NY</PstCd>
+						<TwnNm>New York</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+					<Id>
+						<OrgId>
+							<AnyBIC>ABCCUS33</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgne>
+			<CreDtTm>2010-09-08T16:10:30</CreDtTm>
+		</Assgnmt>
+		<RslvdCase>
+			<Id>ACBCORPCANC20100908</Id>
+			<Cretr>
+				<Pty>
+					<Nm>ABC Corporation</Nm>
+					<PstlAdr>
+						<StrtNm>Times Square</StrtNm>
+						<BldgNb>7</BldgNb>
+						<PstCd>NY</PstCd>
+						<TwnNm>New York</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+					<Id>
+						<OrgId>
+							<AnyBIC>ABCCUS33</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</RslvdCase>
+		<Sts>
+			<Conf>PECR</Conf>
+		</Sts>
+		<CxlDtls>
+			<OrgnlGrpInfAndSts>
+				<OrgnlMsgId>ABC/100928/CCT01</OrgnlMsgId>
+				<OrgnlMsgNmId>pacs.001.001.03</OrgnlMsgNmId>
+				<OrgnlCreDtTm>2010-09-28T14:07:00</OrgnlCreDtTm>
+				<OrgnlNbOfTxs>3</OrgnlNbOfTxs>
+			</OrgnlGrpInfAndSts>
+			<OrgnlPmtInfAndSts>
+				<OrgnlPmtInfId>ABC/086</OrgnlPmtInfId>
+				<NbOfTxsPerCxlSts>
+					<DtldNbOfTxs>2</DtldNbOfTxs>
+					<DtldSts>ACCR</DtldSts>
+				</NbOfTxsPerCxlSts>
+				<NbOfTxsPerCxlSts>
+					<DtldNbOfTxs>1</DtldNbOfTxs>
+					<DtldSts>PDCR</DtldSts>
+				</NbOfTxsPerCxlSts>
+				<TxInfAndSts>
+					<RslvdCase>
+						<Id>ACBCORPCANC20100908/1</Id>
+						<Cretr>
+							<Pty>
+								<Nm>ABC Corporation</Nm>
+								<PstlAdr>
+									<StrtNm>Times Square</StrtNm>
+									<BldgNb>7</BldgNb>
+									<PstCd>NY</PstCd>
+									<TwnNm>New York</TwnNm>
+									<Ctry>US</Ctry>
+								</PstlAdr>
+								<Id>
+									<OrgId>
+										<AnyBIC>ABCCUS33</AnyBIC>
+									</OrgId>
+								</Id>
+							</Pty>
+						</Cretr>
+					</RslvdCase>
+					<OrgnlInstrId>ABC/100928/CCT01/1</OrgnlInstrId>
+					<TxCxlSts>PDCR</TxCxlSts>
+					<OrgnlInstdAmt Ccy="JPY">1000000.00</OrgnlInstdAmt>
+					<OrgnlReqdExctnDt>2010-09-29</OrgnlReqdExctnDt>
+				</TxInfAndSts>
+				<TxInfAndSts>
+					<RslvdCase>
+						<Id>ACBCORPCANC20100908/2</Id>
+						<Cretr>
+							<Pty>
+								<Nm>ABC Corporation</Nm>
+								<PstlAdr>
+									<StrtNm>Times Square</StrtNm>
+									<BldgNb>7</BldgNb>
+									<PstCd>NY</PstCd>
+									<TwnNm>New York</TwnNm>
+									<Ctry>US</Ctry>
+								</PstlAdr>
+								<Id>
+									<OrgId>
+										<AnyBIC>ABCCUS33</AnyBIC>
+									</OrgId>
+								</Id>
+							</Pty>
+						</Cretr>
+					</RslvdCase>
+					<OrgnlInstrId>ABC/100928/CCT01/2</OrgnlInstrId>
+					<TxCxlSts>ACCR</TxCxlSts>
+					<OrgnlInstdAmt Ccy="EUR">500000.00</OrgnlInstdAmt>
+					<OrgnlReqdExctnDt>2010-09-29</OrgnlReqdExctnDt>
+				</TxInfAndSts>
+				<TxInfAndSts>
+					<RslvdCase>
+						<Id>ACBCORPCANC20100908/3</Id>
+						<Cretr>
+							<Pty>
+								<Nm>ABC Corporation</Nm>
+								<PstlAdr>
+									<StrtNm>Times Square</StrtNm>
+									<BldgNb>7</BldgNb>
+									<PstCd>NY</PstCd>
+									<TwnNm>New York</TwnNm>
+									<Ctry>US</Ctry>
+								</PstlAdr>
+								<Id>
+									<OrgId>
+										<AnyBIC>ABCCUS33</AnyBIC>
+									</OrgId>
+								</Id>
+							</Pty>
+						</Cretr>
+					</RslvdCase>
+					<OrgnlInstrId>ABC/100928/CCT01/3</OrgnlInstrId>
+					<TxCxlSts>ACCR</TxCxlSts>
+					<OrgnlInstdAmt Ccy="EUR">1000000.00</OrgnlInstdAmt>
+					<OrgnlReqdExctnDt>2010-09-29</OrgnlReqdExctnDt>
+				</TxInfAndSts>
+			</OrgnlPmtInfAndSts>
+		</CxlDtls>
+	</RsltnOfInvstgtn>
+</Document>

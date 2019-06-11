@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.056.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<FIToFIPmtCxlReq>
+		<Assgnmt>
+			<Id>NNNNCANC0001200888</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BICFI>NNNNUS33</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BICFI>FFFFUS33</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2012-03-26T09:10:30</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>EEEE20120325001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>EEEEUS33</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<TxInf>
+				<OrgnlInstrId>AFFFFUS4567</OrgnlInstrId>
+				<OrgnlIntrBkSttlmAmt Ccy="USD">10234.56</OrgnlIntrBkSttlmAmt>
+				<OrgnlIntrBkSttlmDt>2012-03-25</OrgnlIntrBkSttlmDt>
+				<CxlRsnInf>
+					<Rsn>
+						<Cd>CUST</Cd>
+					</Rsn>
+				</CxlRsnInf>
+			</TxInf>
+		</Undrlyg>
+	</FIToFIPmtCxlReq>
+</Document>

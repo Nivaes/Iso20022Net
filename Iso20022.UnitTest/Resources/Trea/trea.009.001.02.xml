@@ -1,0 +1,54 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:trea.009.001.02" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<CretFXOptnV02>
+		<TradInf>
+			<TradDt>2007-01-26</TradDt>
+			<NtfctnId>OP123</NtfctnId>
+		</TradInf>
+		<TradgSdId>
+			<BuyrOrSellrInd>BYER</BuyrOrSellrInd>
+			<SubmitgPty>
+				<BICOrBEI>
+					<BICOrBEI>BANADEFF</BICOrBEI>
+				</BICOrBEI>
+			</SubmitgPty>
+			<TradPty>
+				<BICOrBEI>
+					<BICOrBEI>BANADEFF</BICOrBEI>
+				</BICOrBEI>
+			</TradPty>
+		</TradgSdId>
+		<CtrPtySdId>
+			<BuyrOrSellrInd>SLLR</BuyrOrSellrInd>
+			<SubmitgPty>
+				<BICOrBEI>
+					<BICOrBEI>CSTCUS33</BICOrBEI>
+				</BICOrBEI>
+			</SubmitgPty>
+			<TradPty>
+				<BICOrBEI>
+					<BICOrBEI>CSTCUS33</BICOrBEI>
+				</BICOrBEI>
+			</TradPty>
+		</CtrPtySdId>
+		<Optn>
+			<OptnAmts>
+				<CallAmt Ccy = "USD">100000</CallAmt>
+				<PutAmt Ccy = "EUR">116414.40</PutAmt>
+				<FnlSttlmDt>2007-03-29</FnlSttlmDt>
+			</OptnAmts>
+			<StrkPric>
+				<XchgRate>0.859</XchgRate>
+			</StrkPric>
+			<ExrcStyle>AMER</ExrcStyle>
+			<EarlstExrcDt>2007-02-02</EarlstExrcDt>
+			<XpryDtAndTm>2007-03-27T12:00:00</XpryDtAndTm>
+			<XpryLctn>DEFR</XpryLctn>
+			<SttlmTp>PRIN</SttlmTp>
+			<Prm>
+				<Amt Ccy = "USD">2000</Amt>
+				<SttlmDt>2007-01-29</SttlmDt>
+			</Prm>
+		</Optn>
+	</CretFXOptnV02>
+</Document>

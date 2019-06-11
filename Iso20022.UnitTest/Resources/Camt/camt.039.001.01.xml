@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Doc="urn:iso:std:iso:20022:tech:xsd:camt.039.001.01">
+	<camt.039.001.01>
+		<Hdr>
+			<Id>HSBCRCSRRCUSGMOD050527001</Id>
+			<Fr>HSBCHKHH</Fr>
+			<To>CUSGHKHH</To>
+			<CreDtTm>2005-05-28T10:44:12</CreDtTm>
+		</Hdr>
+		<Case>
+			<Id>CUSGMOD050527001</Id>
+			<Cretr>CUSGHKHH</Cretr>
+		</Case>
+		<Sts>
+			<DtTm>2005-05-27T10:23:43</DtTm>
+			<CaseSts>CLOSE</CaseSts>
+			<InvstgtnSts>MODI</InvstgtnSts>
+		</Sts>
+	</camt.039.001.01>
+</Document>

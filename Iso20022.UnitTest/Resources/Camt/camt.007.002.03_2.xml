@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.007.002.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ReqToModfyPmt>
+		<Assgnmt>
+			<Id>CUSGHKHHMODGCOMPAY0123456789</Id>
+			<Assgnr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSGHKHH</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BIC>GGGGHKHH</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2009-03-27T10:18:56</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSGMOD090327001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSGHKHH</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<Initn>
+				<OrgnlGrpInf>
+					<OrgnlMsgId>GCOMPAY0123456789</OrgnlMsgId>
+					<OrgnlMsgNmId>FAX</OrgnlMsgNmId>
+				</OrgnlGrpInf>
+				<OrgnlInstrId>GCOMPAY0123456789</OrgnlInstrId>
+				<OrgnlInstdAmt Ccy="HKD">1267988.00</OrgnlInstdAmt>
+				<ReqdExctnDt>2009-03-29</ReqdExctnDt>
+			</Initn>
+		</Undrlyg>
+		<Mod>
+			<Amt>
+				<InstdAmt Ccy="HKD">1031387.40</InstdAmt>
+			</Amt>
+		</Mod>
+	</ReqToModfyPmt>
+</Document>

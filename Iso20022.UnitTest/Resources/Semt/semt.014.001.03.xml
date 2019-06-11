@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Business samples for ISO submission?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:semt.014.001.03">
+	<IntraPosMvmntStsAdvc>
+		<TxId>
+			<AcctOwnrTxId>FRTJ123REG1</AcctOwnrTxId>
+		</TxId>
+		<PrcgSts>
+			<AckdAccptd>
+				<NoSpcfdRsn>NORE</NoSpcfdRsn>
+			</AckdAccptd>
+		</PrcgSts>
+		<TxDtls>
+			<SfkpgAcct>
+				<Id>222S</Id>
+			</SfkpgAcct>
+			<FinInstrmId>
+				<ISIN>GB0987654321</ISIN>
+			</FinInstrmId>
+			<SttlmQty>
+				<FaceAmt>4000000</FaceAmt>
+			</SttlmQty>
+			<SttlmDt>
+				<Dt>2010-01-15</Dt>
+			</SttlmDt>
+			<BalFr>
+				<Cd>AVAI</Cd>
+			</BalFr>
+			<BalTo>
+				<Cd>RSTR</Cd>
+			</BalTo>
+		</TxDtls>
+	</IntraPosMvmntStsAdvc>
+</Document>

@@ -1,0 +1,112 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<pacs.008.001.01>
+		<GrpHdr>
+			<MsgId>EEEE/060929-EUR/059</MsgId>
+			<CreDtTm>2006-09-29T09:00:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<SttlmInf>
+				<SttlmMtd>CLRG</SttlmMtd>
+				<ClrSys>
+					<Prtry>XYZ</Prtry>
+				</ClrSys>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BIC>EEEEDEFF</BIC>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BIC>DDDDBEBB</BIC>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>EEEE/060929-EUR/059/1</InstrId>
+				<EndToEndId>ABC/ABC-13679/2006-09-15</EndToEndId>
+				<TxId>BBBB/060928-CCT/EUR/912/1</TxId>
+			</PmtId>
+			<PmtTpInf>
+				<InstrPrty>NORM</InstrPrty>
+			</PmtTpInf>
+			<IntrBkSttlmAmt Ccy = "EUR">499250</IntrBkSttlmAmt>
+			<IntrBkSttlmDt>2006-09-29</IntrBkSttlmDt>
+			<InstdAmt Ccy = "EUR">500000</InstdAmt>
+			<ChrgBr>CRED</ChrgBr>
+			<ChrgsInf>
+				<ChrgsAmt Ccy = "EUR">500</ChrgsAmt>
+				<ChrgsPty>
+					<FinInstnId>
+						<BIC>BBBBUS33</BIC>
+					</FinInstnId>
+				</ChrgsPty>
+			</ChrgsInf>
+			<ChrgsInf>
+				<ChrgsAmt Ccy = "EUR">250</ChrgsAmt>
+				<ChrgsPty>
+					<FinInstnId>
+						<BIC>EEEEDEFF</BIC>
+					</FinInstnId>
+				</ChrgsPty>
+			</ChrgsInf>
+			<Dbtr>
+				<Nm>ABC Corporation</Nm>
+				<PstlAdr>
+					<StrtNm>Times Square</StrtNm>
+					<BldgNb>7</BldgNb>
+					<PstCd>NY 10036</PstCd>
+					<TwnNm>New York</TwnNm>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<PrtryAcct>
+						<Id>00125574999</Id>
+					</PrtryAcct>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>BBBBUS33</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtrAgt>
+				<FinInstnId>
+					<BIC>DDDDBEBB</BIC>
+				</FinInstnId>
+			</CdtrAgt>
+			<Cdtr>
+				<Nm>GHI Semiconductors </Nm>
+				<PstlAdr>
+					<StrtNm>Avenue Brugmann</StrtNm>
+					<BldgNb>415</BldgNb>
+					<PstCd>1180</PstCd>
+					<TwnNm>Brussels</TwnNm>
+					<Ctry>BE</Ctry>
+				</PstlAdr>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<IBAN>BE30001216371411</IBAN>
+				</Id>
+			</CdtrAcct>
+			<Purp>
+				<Cd>GDDS</Cd>
+			</Purp>
+			<RmtInf>
+				<Strd>
+					<RfrdDocInf>
+						<RfrdDocTp>
+							<Cd>CINV</Cd>
+						</RfrdDocTp>
+						<RfrdDocNb>ABC-13679</RfrdDocNb>
+					</RfrdDocInf>
+					<RfrdDocRltdDt>2006-09-15</RfrdDocRltdDt>
+				</Strd>
+			</RmtInf>
+		</CdtTrfTxInf>
+	</pacs.008.001.01>
+</Document>

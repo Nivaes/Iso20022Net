@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Smart test message for documentation 1 ?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:sese.021.001.01">
+	<SctiesTxStsQry>
+		<Id>
+			<Id>FRTJ456DEL2</Id>
+		</Id>
+		<StsAdvcReqd>
+			<Nb>
+				<Lng>sese.024.001.01</Lng>
+			</Nb>
+			<Refs>
+				<AcctOwnrTxId>FRTJ123DEL2</AcctOwnrTxId>
+			</Refs>
+		</StsAdvcReqd>
+		<SfkpgAcct>
+			<Id>222S</Id>
+		</SfkpgAcct>
+	</SctiesTxStsQry>
+</Document>

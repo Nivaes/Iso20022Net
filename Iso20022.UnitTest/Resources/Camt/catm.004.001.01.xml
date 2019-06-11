@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:catm.004.001.01">
+ <TermnlMgmtRjctn>
+	<Hdr>
+		<DwnldTrf>true</DwnldTrf>
+		<FrmtVrsn>2.0</FrmtVrsn>
+		<XchgId>378</XchgId>
+		<CreDtTm>2013-08-09T17:29:37.87+02:00</CreDtTm>
+		<InitgPty>
+			<Id>66000001</Id>
+			<Tp>OPOI</Tp>
+			<Issr>TMGT</Issr>
+		</InitgPty>
+		<RcptPty>
+			<Id>epas-acquirer-TM1</Id>
+			<Tp>TMGT</Tp>
+		</RcptPty>
+	</Hdr>
+	<Rjct>
+		<RjctRsn>RCPP</RjctRsn>
+		<AddtlInf>Invalid Message ID </AddtlInf>
+		<MsgInErr>
+	PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48RG9jdW1lbnQgeG1sbnM
+	6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbn
+	M9InVybjppc286c3RkOmlzbzoyMDAyMjp0ZWNoOnhzZDpjYWFhLjAxMy4wMDEuMDIiPjxBY
+	2NwdHJEZ25zdGNSZXE+PEhkcj48TXNnRmN0bj5ER05QPC9Nc2dGY3RuPjxQcnRjb2xWcnNu
+	PjIuMDwvUHJ0Y29sVnJzbj48WGNoZ0lkPjM3ODwvWGNoZ0lkPjxDcmVEdFRtPjIwMTMtMDg
+	tMDlUMTc6Mjk6MzcuODcrMDI6MDA8L0NyZUR0VG0+PEluaXRnUHR5PjxJZD42NjAwMDAwMT
+	wvSWQ+PFRwPk9QT0k8L1RwPjxJc3NyPkFDUVI8L0lzc3I+PC9Jbml0Z1B0eT48UmNwdFB0e
+	T48SWQ+IGJhZC1hY3F1aXJlcjwvSWQ+PFRwPkFDUVI8L1RwPjwvUmNwdFB0eT48L0hkcj48
+	RGduc3RjUmVxPjxFbnZ0PjxBY3FyclBhcmFtc1Zyc24+MjAxMy0wOC0wNyAwODowMDowMDw
+	vQWNxcnJQYXJhbXNWcnNuPjxNcmNobnRJZD48SWQ+RVBBU01FUjAwMTwvSWQ+PC9NcmNobn
+	RJZD48UE9JSWQ+PElkPjY2MDAwMDAxPC9JZD48VHA+T1BPSTwvVHA+PElzc3I+QUNRUjwvS
+	XNzcj48L1BPSUlkPjwvRW52dD48L0RnbnN0Y1JlcT48U2N0eVRybHI+PENudHRUcD5BVVRI
+	PC9DbnR0VHA+PEF1dGhudGNkRGF0YT48UmNwdD48S0VLPjxLRUtJZD48S2V5SWQ+U3BlY1Y
+	xVGVzdEtleTwvS2V5SWQ+PEtleVZyc24+MjAxMDA2MDcxNTwvS2V5VnJzbj48RGVyaXZ0bk
+	lkPk9ZY2xwUUU9PC9EZXJpdnRuSWQ+PC9LRUtJZD48S2V5TmNycHRuQWxnbz48QWxnbz5ES
+	1A5PC9BbGdvPjwvS2V5TmNycHRuQWxnbz48TmNycHRkS2V5PjRwQWdBQmM9PC9OY3JwdGRL
+	ZXk+PC9LRUs+PC9SY3B0PjxNQUNBbGdvPjxBbGdvPk1DQ1M8L0FsZ28+PC9NQUNBbGdvPjx
+	OY3BzbHRkQ250dD48Q250dFRwPkRBVEE8L0NudHRUcD48L05jcHNsdGRDbnR0PjxNQUM+Mk
+	1BekF6alZXVlE9PC9NQUM+PC9BdXRobnRjZERhdGE+PC9TY3R5VHJscj48L0FjY3B0ckRnb
+	nN0Y1JlcT48L0RvY3VtZW50Pg==
+		</MsgInErr>
+	</Rjct>
+ </TermnlMgmtRjctn>
+</Document>

@@ -1,0 +1,106 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<pacs.008.001.01>
+		<GrpHdr>
+			<MsgId>AAAA/061109-CCT/EUR443</MsgId>
+			<CreDtTm>2006-11-09T10:03:13</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<SttlmInf>
+				<SttlmMtd>INDA</SttlmMtd>
+				<SttlmAcct>
+					<Id>
+						<PrtryAcct>
+							<Id>123445</Id>
+						</PrtryAcct>
+					</Id>
+				</SttlmAcct>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BIC>AAAAGB2L</BIC>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BIC>BBBBIE2D</BIC>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>AAAA/061109-CCT/EUR443/1</InstrId>
+				<EndToEndId>CROPS/SX-25T/2006-10-13</EndToEndId>
+				<TxId>AAAA/061109-CCT/EUR443/1</TxId>
+			</PmtId>
+			<IntrBkSttlmAmt Ccy = "EUR">75000</IntrBkSttlmAmt>
+			<IntrBkSttlmDt>2006-11-09</IntrBkSttlmDt>
+			<InstdAmt Ccy = "EUR">75000</InstdAmt>
+			<ChrgBr>SHAR</ChrgBr>
+			<UltmtDbtr>
+				<Nm>Biogenetics – CROPS</Nm>
+				<PstlAdr>
+					<StrtNm>Growth Street </StrtNm>
+					<BldgNb>17</BldgNb>
+					<PstCd>G5 OTW</PstCd>
+					<TwnNm>Glasgow</TwnNm>
+					<Ctry>GB</Ctry>
+				</PstlAdr>
+			</UltmtDbtr>
+			<Dbtr>
+				<Nm>Biogenetics – HQ</Nm>
+				<PstlAdr>
+					<StrtNm>Corn Street</StrtNm>
+					<BldgNb>13</BldgNb>
+					<PstCd>W6 8DR</PstCd>
+					<TwnNm>London</TwnNm>
+					<Ctry>GB</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<PrtryAcct>
+						<Id>46373892034012</Id>
+					</PrtryAcct>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>AAAAGB2L</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtrAgt>
+				<FinInstnId>
+					<BIC>CCCCIE2D</BIC>
+				</FinInstnId>
+			</CdtrAgt>
+			<Cdtr>
+				<Nm>Seed Inc.</Nm>
+				<PstlAdr>
+					<StrtNm>Grain Lane</StrtNm>
+					<BldgNb>27</BldgNb>
+					<TwnNm>Dublin</TwnNm>
+					<Ctry>IE</Ctry>
+				</PstlAdr>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<IBAN>IE29CCCC93115212345678</IBAN>
+				</Id>
+			</CdtrAcct>
+			<Purp>
+				<Cd>GDDS</Cd>
+			</Purp>
+			<RmtInf>
+				<Strd>
+					<RfrdDocInf>
+						<RfrdDocTp>
+							<Cd>CINV</Cd>
+						</RfrdDocTp>
+						<RfrdDocNb>SX-25T</RfrdDocNb>
+					</RfrdDocInf>
+					<RfrdDocRltdDt>2006-10-13</RfrdDocRltdDt>
+				</Strd>
+			</RmtInf>
+		</CdtTrfTxInf>
+	</pacs.008.001.01>
+</Document>

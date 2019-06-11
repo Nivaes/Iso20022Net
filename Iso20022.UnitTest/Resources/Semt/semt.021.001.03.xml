@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Business samples for ISO submission?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:semt.021.001.03">
+	<SctiesStmtQry>
+		<StmtReqd>
+			<Nb>
+				<LngNb>semt.017.001.03</LngNb>
+			</Nb>
+		</StmtReqd>
+		<StmtGnlDtls>
+			<StmtDtOrPrd>
+				<StmtPrd>
+					<FrDtToDt>
+						<FrDt>2010-01-14</FrDt>
+						<ToDt>2010-01-15</ToDt>
+					</FrDtToDt>
+				</StmtPrd>
+			</StmtDtOrPrd>
+			<Frqcy>
+				<Cd>DAIL</Cd>
+			</Frqcy>
+			<UpdTp>
+				<Cd>COMP</Cd>
+			</UpdTp>
+			<StmtBsis>
+				<Cd>SETT</Cd>
+			</StmtBsis>
+		</StmtGnlDtls>
+		<SfkpgAcct>
+			<Id>222S</Id>
+		</SfkpgAcct>
+	</SctiesStmtQry>
+</Document>

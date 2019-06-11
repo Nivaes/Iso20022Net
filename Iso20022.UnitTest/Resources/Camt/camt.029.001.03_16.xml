@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.029.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RsltnOfInvstgtn>
+		<Assgnmt>
+			<Id>UTAMWFW10301123456789</Id>
+			<Assgnr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSBGB2L</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BIC>CCCCGB2L</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2009-03-24T11:13:10</CreDtTm>
+		</Assgnmt>
+		<RslvdCase>
+			<Id>CUSBGB2L-20090323-001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSBGB2L</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</RslvdCase>
+		<Sts>
+			<Conf>MWFW</Conf>
+		</Sts>
+	</RsltnOfInvstgtn>
+</Document>

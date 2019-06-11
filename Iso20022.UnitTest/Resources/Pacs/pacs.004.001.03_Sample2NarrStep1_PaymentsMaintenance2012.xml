@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Standards Smart Test Messages for SEPA Credit Transfer Scheme product version 3.0?>
+<?valid true?>
+<?description On 28 June 2012, upon receipt of a Direct Debit instruction received from ABABUS23 for the collection of USD 1025, and after having checked the instruction, BBBBUS39 realises that the account specified for Debtor Jones does not allow Direct Debits. BBBBUS39 therefore decides to send a PaymentReturn message to ABABUS23, specifying the reason, and taking charges for USD 50.?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.004.001.03">
+	<PmtRtr>
+		<GrpHdr>
+			<MsgId>BBBBUS39-RETURN-0123</MsgId>
+			<CreDtTm>2012-06-29T11:15:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<SttlmInf>
+				<SttlmMtd>INGA</SttlmMtd>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BICFI>BBBBUS39</BICFI>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BICFI>ABABUS23</BICFI>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<OrgnlGrpInf>
+			<OrgnlMsgId>ABABUS23-589cd</OrgnlMsgId>
+			<OrgnlMsgNmId>pacs.003.001.03</OrgnlMsgNmId>
+			<OrgnlCreDtTm>2012-06-28T15:02:00</OrgnlCreDtTm>
+		</OrgnlGrpInf>
+		<TxInf>
+			<RtrId>AB/RETURN765</RtrId>
+			<OrgnlInstrId>VA060327/0123</OrgnlInstrId>
+			<RtrdIntrBkSttlmAmt Ccy="USD">975</RtrdIntrBkSttlmAmt>
+			<IntrBkSttlmDt>2012-07-29</IntrBkSttlmDt>
+			<ChrgBr>CRED</ChrgBr>
+			<ChrgsInf>
+				<Amt Ccy="USD">50</Amt>
+				<Agt>
+					<FinInstnId>
+						<BICFI>BBBBUS39</BICFI>
+					</FinInstnId>
+				</Agt>
+			</ChrgsInf>
+			<RtrRsnInf>
+				<Orgtr>
+					<Id>
+						<OrgId>
+							<AnyBIC>BBBBUS39</AnyBIC>
+						</OrgId>
+					</Id>
+				</Orgtr>
+				<Rsn>
+					<Cd>AG01</Cd>
+				</Rsn>
+			</RtrRsnInf>
+			<OrgnlTxRef>
+				<IntrBkSttlmAmt Ccy="USD">1025</IntrBkSttlmAmt>
+				<IntrBkSttlmDt>2012-06-28</IntrBkSttlmDt>
+				<ReqdColltnDt>2012-07-13</ReqdColltnDt>
+				<MndtRltdInf>
+					<MndtId>VIRGAY123</MndtId>
+				</MndtRltdInf>
+				<Dbtr>
+					<Nm>Jones</Nm>
+					<PstlAdr>
+						<StrtNm>Hudson Street</StrtNm>
+						<BldgNb>19</BldgNb>
+						<PstCd>NJ 07302</PstCd>
+						<TwnNm>Jersey City</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+				</Dbtr>
+				<Cdtr>
+					<Nm>Virgay</Nm>
+					<PstlAdr>
+						<StrtNm>Virginia Lane</StrtNm>
+						<BldgNb>36</BldgNb>
+						<PstCd>NJ 07311</PstCd>
+						<TwnNm>Jersey City</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInf>
+	</PmtRtr>
+</Document>

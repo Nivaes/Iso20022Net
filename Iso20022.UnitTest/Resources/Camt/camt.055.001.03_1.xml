@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.055.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrPmtCxlReq>
+		<Assgnmt>
+			<Id>AB20050417CANC</Id>
+			<Assgnr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>CUSBFRPP</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BICFI>FFFFFRPP</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2012-03-19T10:09:30</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSB201203001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>CUSBFRPP</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<OrgnlPmtInfAndCxl>
+				<OrgnlPmtInfId>CBPAY09876543</OrgnlPmtInfId>
+				<OrgnlGrpInf>
+					<OrgnlMsgId>CBPAY09876543</OrgnlMsgId>
+					<OrgnlMsgNmId>MT103</OrgnlMsgNmId>
+				</OrgnlGrpInf>
+				<TxInf>
+					<OrgnlInstrId>CBPAY09876543</OrgnlInstrId>
+					<OrgnlInstdAmt Ccy="EUR">12347.56</OrgnlInstdAmt>
+					<OrgnlReqdExctnDt>2012-03-17</OrgnlReqdExctnDt>
+					<CxlRsnInf>
+						<Rsn>
+							<Cd>UPAY</Cd>
+						</Rsn>
+					</CxlRsnInf>
+				</TxInf>
+			</OrgnlPmtInfAndCxl>
+		</Undrlyg>
+	</CstmrPmtCxlReq>
+</Document>

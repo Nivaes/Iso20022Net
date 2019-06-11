@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:DRAFT9acmt.010.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<AcctReqAck>
+		<Refs>
+			<ReqTp>OPEN</ReqTp>
+			<MsgId>
+				<Id>BBBBUS/2010/AB14</Id>
+				<CreDtTm>2010-09-28T14:09:00</CreDtTm>
+			</MsgId>
+			<PrcId>
+				<Id>ABC/090928/CCT001</Id>
+				<CreDtTm>2010-09-28T14:07:00</CreDtTm>
+			</PrcId>
+			<AckdMsgId>
+				<Id>ABC/090928/CCT001</Id>
+				<CreDtTm>2010-09-28T14:07:00</CreDtTm>
+			</AckdMsgId>
+		</Refs>
+		<OrgId>
+			<Othr>
+				<Id>01256485-85</Id>
+				<SchmeNm>
+					<Prtry>TAX</Prtry>
+				</SchmeNm>
+			</Othr>
+		</OrgId>
+		<AcctSvcrId>
+			<FinInstnId>
+				<BIC>BBBBUS33</BIC>
+			</FinInstnId>
+		</AcctSvcrId>
+	</AcctReqAck>
+</Document>

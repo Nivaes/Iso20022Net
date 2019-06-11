@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.032.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CclCaseAssgnmt>
+		<Assgnmt>
+			<Id>CANCNNNN20120325001</Id>
+			<Assgnr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>EEEEUS33</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BICFI>NNNNUS33</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2012-03-27T09:07:35</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>EEEE20120325001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>EEEEUS33</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+	</CclCaseAssgnmt>
+</Document>

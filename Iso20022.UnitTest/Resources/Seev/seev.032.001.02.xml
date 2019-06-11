@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?For ISO submission?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:seev.032.001.02">
+	<CorpActnEvtPrcgStsAdvc>
+		<NtfctnId>
+			<Id>1997189-012</Id>
+		</NtfctnId>
+		<OthrDocId>
+			<Id>
+				<AcctSvcrDocId>253147815</AcctSvcrDocId>
+			</Id>
+			<DocNb>
+				<LngNb>seev.035.001.01</LngNb>
+			</DocNb>
+		</OthrDocId>
+		<CorpActnGnlInf>
+			<CorpActnEvtId>DIVGLAX123</CorpActnEvtId>
+			<OffclCorpActnEvtId>BI01593212345</OffclCorpActnEvtId>
+			<EvtTp>
+				<Cd>DVOP</Cd>
+			</EvtTp>
+		</CorpActnGnlInf>
+		<EvtPrcgSts>
+			<Pdg>
+				<Rsn>
+					<RsnCd>
+						<Cd>NSEC</Cd>
+					</RsnCd>
+				</Rsn>
+			</Pdg>
+		</EvtPrcgSts>
+	</CorpActnEvtPrcgStsAdvc>
+</Document>

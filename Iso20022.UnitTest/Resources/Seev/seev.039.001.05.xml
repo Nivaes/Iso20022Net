@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Business sample for ISO submission?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:seev.039.001.05">
+	<CorpActnCxlAdvc>
+		<CxlAdvcGnlInf>
+			<CxlRsnCd>WITH</CxlRsnCd>
+			<PrcgSts>
+					<EvtCmpltnsSts>COMP</EvtCmpltnsSts>
+					<EvtConfSts>CONF</EvtConfSts>
+			</PrcgSts>
+		</CxlAdvcGnlInf>
+		<CorpActnGnlInf>
+			<CorpActnEvtId>DIVGLAX123</CorpActnEvtId>
+			<OffclCorpActnEvtId>BI01593212345</OffclCorpActnEvtId>
+			<EvtTp>
+				<Cd>DVOP</Cd>
+			</EvtTp>
+			<MndtryVlntryEvtTp>
+				<Cd>CHOS</Cd>
+			</MndtryVlntryEvtTp>
+			<FinInstrmId>
+				<ISIN>GB0007123466</ISIN>
+				<Desc>GLAXO HOLDINGS</Desc>
+			</FinInstrmId>
+		</CorpActnGnlInf>
+		<AcctsDtls>
+			<ForAllAccts>
+				<IdCd>GENR</IdCd>
+			</ForAllAccts>
+		</AcctsDtls>
+	</CorpActnCxlAdvc>
+</Document>

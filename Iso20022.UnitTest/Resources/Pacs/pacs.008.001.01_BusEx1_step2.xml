@@ -1,0 +1,162 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<pacs.008.001.01>
+		<GrpHdr>
+			<MsgId>BBBB/060928-CCT/EUR/912</MsgId>
+			<CreDtTm>2006-09-28T16:01:00</CreDtTm>
+			<NbOfTxs>2</NbOfTxs>
+			<TtlIntrBkSttlmAmt Ccy = "EUR">504500.00</TtlIntrBkSttlmAmt>
+			<IntrBkSttlmDt>2006-09-29</IntrBkSttlmDt>
+			<SttlmInf>
+				<SttlmMtd>INDA</SttlmMtd>
+				<SttlmAcct>
+					<Id>
+						<PrtryAcct>
+							<Id>29314569847</Id>
+						</PrtryAcct>
+					</Id>
+				</SttlmAcct>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BIC>BBBBUS33</BIC>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BIC>EEEEDEFF</BIC>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>BBBB/060928-CCT/EUR/912/1</InstrId>
+				<EndToEndId>ABC/ABC-13679/2006-09-15</EndToEndId>
+				<TxId>BBBB/060928-CCT/EUR/912/1</TxId>
+			</PmtId>
+			<PmtTpInf>
+				<InstrPrty>NORM</InstrPrty>
+			</PmtTpInf>
+			<IntrBkSttlmAmt Ccy = "EUR">499500</IntrBkSttlmAmt>
+			<InstdAmt Ccy = "EUR">500000</InstdAmt>
+			<ChrgBr>CRED</ChrgBr>
+			<ChrgsInf>
+				<ChrgsAmt Ccy = "EUR">500</ChrgsAmt>
+				<ChrgsPty>
+					<FinInstnId>
+						<BIC>BBBBUS33</BIC>
+					</FinInstnId>
+				</ChrgsPty>
+			</ChrgsInf>
+			<Dbtr>
+				<Nm>ABC Corporation</Nm>
+				<PstlAdr>
+					<StrtNm>Times Square</StrtNm>
+					<BldgNb>7</BldgNb>
+					<PstCd>NY 10036</PstCd>
+					<TwnNm>New York</TwnNm>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<PrtryAcct>
+						<Id>00125574999</Id>
+					</PrtryAcct>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>BBBBUS33</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtrAgt>
+				<FinInstnId>
+					<BIC>DDDDBEBB</BIC>
+				</FinInstnId>
+			</CdtrAgt>
+			<Cdtr>
+				<Nm>GHI Semiconductors </Nm>
+				<PstlAdr>
+					<StrtNm>Avenue Brugmann</StrtNm>
+					<BldgNb>415</BldgNb>
+					<PstCd>1180</PstCd>
+					<TwnNm>Brussels</TwnNm>
+					<Ctry>BE</Ctry>
+				</PstlAdr>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<IBAN>BE30001216371411</IBAN>
+				</Id>
+			</CdtrAcct>
+			<Purp>
+				<Cd>GDDS</Cd>
+			</Purp>
+			<RmtInf>
+				<Strd>
+					<RfrdDocInf>
+						<RfrdDocTp>
+							<Cd>CINV</Cd>
+						</RfrdDocTp>
+						<RfrdDocNb>ABC-13679</RfrdDocNb>
+					</RfrdDocInf>
+					<RfrdDocRltdDt>2006-09-15</RfrdDocRltdDt>
+				</Strd>
+			</RmtInf>
+		</CdtTrfTxInf>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>BBBB/060928-CCT/EUR/912/2</InstrId>
+				<EndToEndId>BBBB/060928-ZZ/JO/164794</EndToEndId>
+				<TxId>BBBB/060928-CCT/EUR/912/2</TxId>
+			</PmtId>
+			<PmtTpInf>
+				<InstrPrty>NORM</InstrPrty>
+			</PmtTpInf>
+			<IntrBkSttlmAmt Ccy = "EUR">5000.00</IntrBkSttlmAmt>
+			<ChrgBr>SHAR</ChrgBr>
+			<Dbtr>
+				<Nm>Mr. Jones</Nm>
+				<PstlAdr>
+					<StrtNm>16th Street</StrtNm>
+					<BldgNb>30</BldgNb>
+					<PstCd>NY 10023</PstCd>
+					<TwnNm>New York</TwnNm>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<PrtryAcct>
+						<Id>00125583145</Id>
+					</PrtryAcct>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>BBBBUS33</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtrAgt>
+				<FinInstnId>
+					<BIC>EEEEDEFF</BIC>
+				</FinInstnId>
+			</CdtrAgt>
+			<Cdtr>
+				<Nm>ZZ&amp;Z Insurances</Nm>
+				<PstlAdr>
+					<AdrLine>City Haus 1</AdrLine>
+					<StrtNm>Friedrich-Ebert-Anlage</StrtNm>
+					<BldgNb>2-14</BldgNb>
+					<PstCd>D-60 325</PstCd>
+					<TwnNm>Frankfurt am Main</TwnNm>
+					<Ctry>DE</Ctry>
+				</PstlAdr>
+			</Cdtr>
+			<RmtInf>
+				<Ustrd>Contract ZZ/JO/164794</Ustrd>
+			</RmtInf>
+		</CdtTrfTxInf>
+	</pacs.008.001.01>
+</Document>

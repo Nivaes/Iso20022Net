@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.029.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RsltnOfInvstgtn>
+		<Assgnmt>
+			<Id>CANCROI/100928/ROI001</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BIC>BBBBUS33</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Pty>
+					<Nm>ABC Corporation</Nm>
+					<PstlAdr>
+						<StrtNm>Times Square</StrtNm>
+						<BldgNb>7</BldgNb>
+						<PstCd>NY</PstCd>
+						<TwnNm>New York</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+					<Id>
+						<OrgId>
+							<BICOrBEI>ABCCUS33</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgne>
+			<CreDtTm>2010-09-08T16:10:30</CreDtTm>
+		</Assgnmt>
+		<RslvdCase>
+			<Id>ACBCORPCANC20100908</Id>
+			<Cretr>
+				<Pty>
+					<Nm>ABC Corporation</Nm>
+					<PstlAdr>
+						<StrtNm>Times Square</StrtNm>
+						<BldgNb>7</BldgNb>
+						<PstCd>NY</PstCd>
+						<TwnNm>New York</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+					<Id>
+						<OrgId>
+							<BICOrBEI>ABCCUS33</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</RslvdCase>
+		<Sts>
+			<Conf>CNCL</Conf>
+		</Sts>
+	</RsltnOfInvstgtn>
+</Document>

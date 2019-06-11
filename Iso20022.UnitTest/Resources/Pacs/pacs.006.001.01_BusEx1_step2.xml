@@ -1,0 +1,101 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:pacs.006.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<pacs.006.001.01>
+		<GrpHdr>
+			<MsgId>BBBB/061117-PCR001</MsgId>
+			<CreDtTm>2006-11-17T13:59:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<GrpCxl>false</GrpCxl>
+			<InstgAgt>
+				<FinInstnId>
+					<BIC>BBBBIE2D</BIC>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BIC>CCCCIE2D</BIC>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<OrgnlGrpInf>
+			<OrgnlMsgId>BBBB/061109-CBJ056</OrgnlMsgId>
+			<OrgnlMsgNmId>pacs.008.001.01</OrgnlMsgNmId>
+			<OrgnlCreDtTm>2006-11-09T10:13:00</OrgnlCreDtTm>
+		</OrgnlGrpInf>
+		<TxInf>
+			<CxlId>BBBB/061117-PCR001/1</CxlId>
+			<OrgnlInstrId>BBBB/061109-CBJ056/1</OrgnlInstrId>
+			<OrgnlEndToEndId>CROPS/SX-25T/2006-10-13</OrgnlEndToEndId>
+			<OrgnlTxId>AAAA/061109-CCT/EUR443/1</OrgnlTxId>
+			<CxlRsnInf>
+				<CxlOrgtr>
+					<Nm>Biogenetics – HQ</Nm>
+				</CxlOrgtr>
+				<CxlRsn>
+					<Cd>CUST</Cd>
+				</CxlRsn>
+			</CxlRsnInf>
+			<OrgnlTxRef>
+				<IntrBkSttlmAmt Ccy = "EUR">74900</IntrBkSttlmAmt>
+				<IntrBkSttlmDt>2006-11-09</IntrBkSttlmDt>
+				<SttlmInf>
+					<SttlmMtd>CLRG</SttlmMtd>
+					<ClrSys>
+						<ClrSysId>CBJ</ClrSysId>
+					</ClrSys>
+				</SttlmInf>
+				<UltmtDbtr>
+					<Nm>Biogenetics – CROPS</Nm>
+					<PstlAdr>
+						<StrtNm>Growth Street</StrtNm>
+						<BldgNb>17</BldgNb>
+						<PstCd>G5 OTW</PstCd>
+						<TwnNm>Glasgow</TwnNm>
+						<Ctry>GB</Ctry>
+					</PstlAdr>
+				</UltmtDbtr>
+				<Dbtr>
+					<Nm>Biogenetics – HQ</Nm>
+					<PstlAdr>
+						<StrtNm>Corn Street</StrtNm>
+						<BldgNb>13</BldgNb>
+						<PstCd>W6 8DR</PstCd>
+						<TwnNm>London</TwnNm>
+						<Ctry>GB</Ctry>
+					</PstlAdr>
+				</Dbtr>
+				<DbtrAcct>
+					<Id>
+						<PrtryAcct>
+							<Id>46373892034012</Id>
+						</PrtryAcct>
+					</Id>
+				</DbtrAcct>
+				<DbtrAgt>
+					<FinInstnId>
+						<BIC>AAAAGB2L</BIC>
+					</FinInstnId>
+				</DbtrAgt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>CCCCIE2D</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Seed Inc.</Nm>
+					<PstlAdr>
+						<StrtNm>Grain Lane</StrtNm>
+						<BldgNb>27</BldgNb>
+						<TwnNm>Dublin</TwnNm>
+						<Ctry>IE</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>IE29CCCC93115212345678</IBAN>
+					</Id>
+				</CdtrAcct>
+			</OrgnlTxRef>
+		</TxInf>
+	</pacs.006.001.01>
+</Document>

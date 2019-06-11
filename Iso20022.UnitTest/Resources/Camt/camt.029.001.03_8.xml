@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.029.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RsltnOfInvstgtn>
+		<Assgnmt>
+			<Id>R103AAAAKKKK20090327001</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BIC>KKKKGB2L</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BIC>AAAAGB2L</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2009-03-27T10:59:42</CreDtTm>
+		</Assgnmt>
+		<RslvdCase>
+			<Id>CUSTA200903001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSAGB2L</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</RslvdCase>
+		<Sts>
+			<Conf>MODI</Conf>
+		</Sts>
+		<RsltnRltdInf>
+			<IntrBkSttlmAmt Ccy="GBP">3743.52</IntrBkSttlmAmt>
+		</RsltnRltdInf>
+	</RsltnOfInvstgtn>
+</Document>

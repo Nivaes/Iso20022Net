@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.029.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RsltnOfInvstgtn>
+		<Assgnmt>
+			<Id>ENDFWUTA1239876540123090316</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BIC>ZZZZUS33</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BIC>UUUUUS33</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2009-03-16T11:03:48</CreDtTm>
+		</Assgnmt>
+		<RslvdCase>
+			<Id>1239876540123090316001</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CUSBDEMM</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</RslvdCase>
+		<Sts>
+			<Conf>IPAY</Conf>
+		</Sts>
+		<CrrctnTx>
+			<IntrBk>
+				<InstrId>CORR1239876540123</InstrId>
+				<IntrBkSttlmAmt Ccy="EUR">12439.57</IntrBkSttlmAmt>
+				<IntrBkSttlmDt>2009-03-17</IntrBkSttlmDt>
+			</IntrBk>
+		</CrrctnTx>
+	</RsltnOfInvstgtn>
+</Document>

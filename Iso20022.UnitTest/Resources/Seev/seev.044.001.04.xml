@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:seev.044.001.04">
+	<CorpActnMvmntPrlimryAdvcCxlAdvc>
+		<CxlAdvcGnlInf>
+			<EvtSts>
+				<EvtCmpltnsSts>COMP</EvtCmpltnsSts>
+				<EvtConfSts>CONF</EvtConfSts>
+			</EvtSts>
+		</CxlAdvcGnlInf>
+		<MvmntPrlimryAdvcId>
+			<Id>253147815</Id>
+		</MvmntPrlimryAdvcId>
+		<CorpActnGnlInf>
+			<CorpActnEvtId>DIVGLAX123</CorpActnEvtId>
+			<OffclCorpActnEvtId>BI01593212345</OffclCorpActnEvtId>
+			<EvtTp>
+				<Cd>DVOP</Cd>
+			</EvtTp>
+			<MndtryVlntryEvtTp>
+				<Cd>CHOS</Cd>
+			</MndtryVlntryEvtTp>
+			<FinInstrmId>
+				<ISIN>GB0007123466</ISIN>
+				<Desc>GLAXO HOLDINGS</Desc>
+			</FinInstrmId>
+		</CorpActnGnlInf>
+		<AcctDtls>
+			<AcctsList>
+				<SfkpgAcct>98-0112441-05</SfkpgAcct>
+			</AcctsList>
+		</AcctDtls>
+	</CorpActnMvmntPrlimryAdvcCxlAdvc>
+</Document>

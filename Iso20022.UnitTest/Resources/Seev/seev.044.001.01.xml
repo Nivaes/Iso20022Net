@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?For ISO submission?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:seev.044.001.01">
+	<CorpActnMvmntPrlimryAdvcCxlAdvc>
+		<Id>
+			<Id>253147816</Id>
+			<CreDtTm>
+				<Dt>2010-09-25</Dt>
+			</CreDtTm>
+		</Id>
+		<CxlAdvcGnlInf>
+			<EvtSts>
+				<EvtCmpltnsSts>COMP</EvtCmpltnsSts>
+				<EvtConfSts>CONF</EvtConfSts>
+			</EvtSts>
+		</CxlAdvcGnlInf>
+		<MvmntPrlimryAdvcId>
+			<Id>253147815</Id>
+		</MvmntPrlimryAdvcId>
+		<CorpActnGnlInf>
+			<CorpActnEvtId>DIVGLAX123</CorpActnEvtId>
+			<OffclCorpActnEvtId>BI01593212345</OffclCorpActnEvtId>
+			<EvtTp>
+				<Cd>DVOP</Cd>
+			</EvtTp>
+			<MndtryVlntryEvtTp>
+				<Cd>CHOS</Cd>
+			</MndtryVlntryEvtTp>
+			<UndrlygSctyId>
+				<Id>
+					<ISIN>GB0007123466</ISIN>
+				</Id>
+				<Desc>GLAXO HOLDINGS</Desc>
+			</UndrlygSctyId>
+		</CorpActnGnlInf>
+		<AcctDtls>
+			<AcctsList>
+				<SfkpgAcct>98-0112441-05</SfkpgAcct>
+			</AcctsList>
+		</AcctDtls>
+	</CorpActnMvmntPrlimryAdvcCxlAdvc>
+</Document>

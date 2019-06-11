@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.031.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RjctInvstgtn>
+		<Assgnmt>
+			<Id>ABCDEFGHIJKLMNOPQRST123456789012345</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BIC>VVVVJPJT</BIC>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CCCCJPJT</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgne>
+			<CreDtTm>2009-03-25T11:07:38</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>MOD123JPY20090323</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<BICOrBEI>CCCCJPJT</BICOrBEI>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Justfn>
+			<RjctnRsn>NFND</RjctnRsn>
+		</Justfn>
+	</RjctInvstgtn>
+</Document>

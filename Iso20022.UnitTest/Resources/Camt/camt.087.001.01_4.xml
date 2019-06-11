@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.087.001.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ReqToModfyPmt>
+		<Assgnmt>
+			<Id>Q103AAAAKKKK20120327001</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId><BICFI>AAAAGB2L</BICFI></FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId><BICFI>KKKKGB2L</BICFI></FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2012-03-27T08:35:30</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSTA201203001</Id>
+			<Cretr>
+				<Pty><Id>
+						<OrgId><AnyBIC>CUSAGB2L</AnyBIC></OrgId>
+				</Id></Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<IntrBk>
+				<OrgnlGrpInf>
+					<OrgnlMsgId>1030123456789</OrgnlMsgId>
+					<OrgnlMsgNmId>pacs.008.001.02</OrgnlMsgNmId>
+				</OrgnlGrpInf>
+				<OrgnlInstrId>1030123456789</OrgnlInstrId>
+				<OrgnlIntrBkSttlmAmt Ccy="GBP">52317.48</OrgnlIntrBkSttlmAmt>
+				<OrgnlIntrBkSttlmDt>2012-03-27</OrgnlIntrBkSttlmDt>
+			</IntrBk>
+		</Undrlyg>
+		<Mod>
+			<IntrBkSttlmAmt Ccy="GBP">48573.96</IntrBkSttlmAmt>
+			<RmtInf>
+				<Ustrd>/INV/20120223/GBP23257./20120300104712//20120313/29060.48/20120300204712/CRE/20120115/GBP3743.52/20120115304712</Ustrd>
+			</RmtInf>
+		</Mod>
+	</ReqToModfyPmt>
+</Document>

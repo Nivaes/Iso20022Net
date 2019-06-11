@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:caaa.015.001.01">
+	<AccptrRjctn>
+		<Hdr>
+			<MsgFctn>RJCT</MsgFctn>
+			<PrtcolVrsn>01.00</PrtcolVrsn>
+			<XchgId>980</XchgId>
+			<CreDtTm>2010-11-11T17:54:21.18+02:00</CreDtTm>
+			<InitgPty>
+				<Id>epas-acquirer-1</Id>
+				<Tp>ACQR</Tp>
+			</InitgPty>
+			<RcptPty>
+				<Id>66000001</Id>
+				<Tp>OPOI</Tp>
+				<Issr>ACQR</Issr>
+			</RcptPty>
+		</Hdr>
+		<Rjct>
+			<RjctRsn>SECU</RjctRsn>
+			<MsgInErr>
+				PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48RG9jdW1lbnQgeG1sbnM6eHNpPSJo
+				dHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM9InVybjpzd2lmdDp4
+				c2Q6Y2FhYS4wMTMuMDAxLjAxIj48QWNjcHRyRGduc3RjUmVxPjxIZHI+PE1zZ0ZjdG4+REdOUDwvTXNn
+				RmN0bj48UHJ0Y29sVnJzbj4wMS4wMDwvUHJ0Y29sVnJzbj48WGNoZ0lkcj45Nzk8L1hjaGdJZHI+PENy
+				ZUR0VG0+MjAxMC0xMC0xNVQxNzoyMTo0My4wNyswMjowMDwvQ3JlRHRUbT48SW5pdGdQdHk+PElkPjY2
+				MDAwMDAxPC9JZD48VHA+T1BPSTwvVHA+PElzc3I+QUNRUjwvSXNzcj48L0luaXRnUHR5PjxSY3B0UHR5
+				PjxJZD5lcGFzLWFjcXVpcmVyLTE8L0lkPjxUcD5BQ1FSPC9UcD48L1JjcHRQdHk+PC9IZHI+PERnbnN0
+				Y1JlcT48RW52dD48QWNxcnJQYXJhbXNWcnNuPjIwMTAtMDEtMDFUMDg6MDA6MDA8L0FjcXJyUGFyYW1z
+				VnJzbj48TXJjaG50SWQ+PElkPkVQQVNNRVIwMDE8L0lkPjxUcD5NRVJDPC9UcD48L01yY2hudElkPjxQ
+				T0lJZD48SWQ+NjYwMDAwMDE8L0lkPjxUcD5PUE9JPC9UcD48SXNzcj5BQ1FSPC9Jc3NyPjwvUE9JSWQ+
+				PC9FbnZ0PjwvRGduc3RjUmVxPjxTY3R5VHJscj48Q250dFRwPkFVVEg8L0NudHRUcD48QXV0aG50Y2RE
+				YXRhPjxWcnNuPjA8L1Zyc24+PFJjcHQ+PEtFSz48VnJzbj40PC9WcnNuPjxLRUtJZHI+PEtleUlkcj5T
+				cGVjVjFUZXN0TUFDS2V5PC9LZXlJZHI+PEtleVZyc24+MjAxMDA2MDcxNTwvS2V5VnJzbj48RGVyaXZ0
+				bklkcj41WVdWMUphWndmRHc4UER3OFBEdzhRPT08L0Rlcml2dG5JZHI+PC9LRUtJZHI+PEtleU5jcnB0
+				bkFsZ28+PEFsZ28+REtQVDwvQWxnbz48L0tleU5jcnB0bkFsZ28+PE5jcnB0ZEtleT5FUklURkJVV0Z4
+				Z2hJaU1rSlNZbktBPT08L05jcnB0ZEtleT48L0tFSz48L1JjcHQ+PE1BQ0FsZ28+PEFsZ28+TUNDUzwv
+				QWxnbz48UGFyYW0gLz48L01BQ0FsZ28+PE5jcHNsdGRDbnR0PjxDbnR0VHA+REFUQTwvQ250dFRwPjwv
+				TmNwc2x0ZENudHQ+PE1BQz5GN0w0ZnlZUXRYTT08L01BQz48L0F1dGhudGNkRGF0YT48L1NjdHlUcmxy
+				PjwvQWNjcHRyRGduc3RjUmVxPjwvRG9jdW1lbnQ+
+			</MsgInErr>
+		</Rjct>
+	</AccptrRjctn>
+</Document>

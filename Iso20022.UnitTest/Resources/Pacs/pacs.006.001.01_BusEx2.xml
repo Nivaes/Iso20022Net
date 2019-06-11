@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:pacs.006.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<pacs.006.001.01>
+		<GrpHdr>
+			<MsgId>CAN974-206</MsgId>
+			<CreDtTm>2006-06-28T11:00:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<GrpCxl>false</GrpCxl>
+			<InstgAgt>
+				<FinInstnId>
+					<BIC>AAAAUS29</BIC>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BIC>ABABUS23</BIC>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<OrgnlGrpInf>
+			<OrgnlMsgId>AAAA060327-123v</OrgnlMsgId>
+			<OrgnlMsgNmId>Pacs.003.001.01</OrgnlMsgNmId>
+			<OrgnlCreDtTm>2006-06-28T10:05:00</OrgnlCreDtTm>
+		</OrgnlGrpInf>
+		<TxInf>
+			<CxlId>AAAA-060327-CAN-256</CxlId>
+			<OrgnlEndToEndId>VA060327/0123</OrgnlEndToEndId>
+			<OrgnlInstdAmt Ccy = "USD">1025.00</OrgnlInstdAmt>
+			<CxlRsnInf>
+				<CxlRsn>
+					<Cd>DUPL</Cd>
+				</CxlRsn>
+			</CxlRsnInf>
+		</TxInf>
+	</pacs.006.001.01>
+</Document>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?SWIFTStandards Smart Test Messages for Proxy Voting product version 1.1?>
+<?valid true?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:seev.005.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<MtgInstrCxlReq>
+	<Id>
+		<Id>I004</Id>
+		<CreDtTm>2007-04-11T15:01:02</CreDtTm>
+	</Id>
+		<PrvsRef>
+			<Id>I002</Id>
+		</PrvsRef>
+	</MtgInstrCxlReq>
+</Document>

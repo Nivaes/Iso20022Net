@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.033.001.04" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ReqForDplct>
+		<Assgnmt>
+			<Id>REPAB20120317</Id>
+			<Assgnr>
+				<Pty><Id>
+					<OrgId><AnyBIC>FFFFFRPP</AnyBIC></OrgId>
+				</Id></Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId><BICFI>CUSBFRPP</BICFI></FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2012-03-19T11:02:23</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSB201203001</Id>
+			<Cretr>
+				<Pty><Id>
+					<OrgId><AnyBIC>CUSBFRPP</AnyBIC></OrgId>
+				</Id></Pty>
+			</Cretr>
+		</Case>
+	</ReqForDplct>
+</Document>

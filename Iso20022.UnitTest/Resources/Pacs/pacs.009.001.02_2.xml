@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.009.001.02">
+	<FinInstnCdtTrf>
+		<GrpHdr>
+			<MsgId>CCCC/100929-FICT/743</MsgId>
+			<CreDtTm>2010-09-29T08:00:10</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<SttlmInf>
+				<SttlmMtd>INDA</SttlmMtd>
+				<SttlmAcct>
+					<Id>
+						<Othr>
+							<Id>3451571</Id>
+						</Othr>
+					</Id>
+				</SttlmAcct>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BIC>CCCCJPJT</BIC>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BIC>AAAAJPJT</BIC>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>CCCC/100929-FICT/743/1</InstrId>
+				<EndToEndId>BBBB/100928-CCT/JPY/123/1</EndToEndId>
+				<TxId>BBBB/100928-FICT/JPY/430/1</TxId>
+			</PmtId>
+			<IntrBkSttlmAmt Ccy="JPY">10000000</IntrBkSttlmAmt>
+			<IntrBkSttlmDt>2010-09-29</IntrBkSttlmDt>
+			<Dbtr>
+				<FinInstnId>
+					<BIC>BBBBUS33</BIC>
+				</FinInstnId>
+			</Dbtr>
+			<Cdtr>
+				<FinInstnId>
+					<BIC>AAAAGB2L</BIC>
+				</FinInstnId>
+			</Cdtr>
+		</CdtTrfTxInf>
+	</FinInstnCdtTrf>
+</Document>

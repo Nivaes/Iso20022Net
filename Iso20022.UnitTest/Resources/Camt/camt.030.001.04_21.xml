@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.030.001.04" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NtfctnOfCaseAssgnmt>
+		<Hdr>
+			<Id>CANCNOCA/100928/NOCA001</Id>
+			<Fr>
+				<Agt>
+					<FinInstnId>
+						<BICFI>BBBBUS33</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Fr>
+			<To>
+				<Pty>
+					<Nm>ABC Corporation</Nm>
+					<PstlAdr>
+						<StrtNm>Times Square</StrtNm>
+						<BldgNb>7</BldgNb>
+						<PstCd>NY</PstCd>
+						<TwnNm>New York</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+					<Id>
+						<OrgId>
+							<AnyBIC>ABCCUS33</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</To>
+			<CreDtTm>2010-09-08T16:22:05</CreDtTm>
+		</Hdr>
+		<Case>
+			<Id>ACBCORPCANC20100908/1</Id>
+			<Cretr>
+				<Pty>
+					<Nm>ABC Corporation</Nm>
+					<PstlAdr>
+						<StrtNm>Times Square</StrtNm>
+						<BldgNb>7</BldgNb>
+						<PstCd>NY</PstCd>
+						<TwnNm>New York</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+					<Id>
+						<OrgId>
+							<AnyBIC>ABCCUS33</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Assgnmt>
+			<Id>BBBBCCCCCANC20100908/1</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BICFI>BBBBUS33</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BICFI>CCCCUS33</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2010-09-08T16:22:00</CreDtTm>
+		</Assgnmt>
+		<Ntfctn>
+			<Justfn>CANC</Justfn>
+		</Ntfctn>
+	</NtfctnOfCaseAssgnmt>
+</Document>

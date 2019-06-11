@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "urn:iso:std:iso:20022:tech:xsd:camt.037.001.01">
+	<camt.037.001.01>
+		<Assgnmt>
+			<Id>BNPRFDA20050419001</Id>
+			<Assgnr>BNPAFRPP</Assgnr>
+			<Assgne>CUSCFRPP</Assgne>
+			<CreDtTm>2005-04-19T10:19:02</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSB200504001</Id>
+			<Cretr>CUSBFRPP</Cretr>
+		</Case>
+		<Undrlyg>
+			<AssgneInstrId>E20050418027</AssgneInstrId>
+			<CcyAmt Ccy = "EUR">12347.56</CcyAmt>
+			<ValDt>2005-04-18T00:00:00</ValDt>
+		</Undrlyg>
+		<Dtl>
+			<CxlRsn>CUST</CxlRsn>
+			<AmtToDbt Ccy = "EUR">12347.56</AmtToDbt>
+		</Dtl>
+	</camt.037.001.01>
+</Document>

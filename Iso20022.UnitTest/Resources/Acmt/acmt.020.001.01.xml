@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:DRAFT9acmt.020.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<AcctClsgAmdmntReq>
+		<Refs>
+			<MsgId>
+				<Id>ABC/090928/CCT136</Id>
+				<CreDtTm>2011-12-15T16:05:00Z</CreDtTm>
+			</MsgId>
+			<PrcId>
+				<Id>ABC/090928/CCT125</Id>
+				<CreDtTm>2011-12-15T14:05:00Z</CreDtTm>
+			</PrcId>
+		</Refs>
+		<AcctId>
+			<Id>
+				<IBAN>US0223321545986</IBAN>
+			</Id>
+			<Ccy>USD</Ccy>
+		</AcctId>
+		<AcctSvcrId>
+			<FinInstnId>
+				<BIC>BBBBUS33</BIC>
+			</FinInstnId>
+		</AcctSvcrId>
+		<OrgId>
+			<Othr>
+				<Id>01256485-85</Id>
+				<SchmeNm>
+					<Prtry>TAX</Prtry>
+				</SchmeNm>
+			</Othr>
+		</OrgId>
+		<BalTrfAcct>
+			<Id>
+				<IBAN>US3265428953564</IBAN>
+			</Id>
+			<Ccy>USD</Ccy>
+		</BalTrfAcct>
+	</AcctClsgAmdmntReq>
+</Document>

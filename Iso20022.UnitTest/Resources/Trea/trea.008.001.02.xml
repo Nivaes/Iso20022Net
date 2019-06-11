@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:trea.008.001.02" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<trea.008.001.02>
+		<TradData>
+			<NtfctnId>ND456</NtfctnId>
+			<MtchgSysUnqRef>CENT123098</MtchgSysUnqRef>
+			<CurSts>FMTC</CurSts>
+			<PrvsSts>INVA</PrvsSts>
+		</TradData>
+	</trea.008.001.02>
+</Document>

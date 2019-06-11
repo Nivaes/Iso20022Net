@@ -1,0 +1,8 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:admi.004.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<admi.004.001.01>
+		<EvtInf>
+			<EvtCd>C100</EvtCd>
+		</EvtInf>
+	</admi.004.001.01>
+</Document>

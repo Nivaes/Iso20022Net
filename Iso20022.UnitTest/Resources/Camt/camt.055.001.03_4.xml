@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.055.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrPmtCxlReq>
+		<Assgnmt>
+			<Id>CANCINITABC/100928/CCT001</Id>
+			<Assgnr>
+				<Pty>
+					<Nm>ABC Corporation</Nm>
+					<PstlAdr>
+						<StrtNm>Times Square</StrtNm>
+						<BldgNb>7</BldgNb>
+						<PstCd>NY</PstCd>
+						<TwnNm>New York</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+					<Id>
+						<OrgId>
+							<AnyBIC>ABCCUS33</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BICFI>BBBBUS33</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2010-09-08T16:05:30</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>ACBCORPCANC20100908</Id>
+			<Cretr>
+				<Pty>
+					<Nm>ABC Corporation</Nm>
+					<PstlAdr>
+						<StrtNm>Times Square</StrtNm>
+						<BldgNb>7</BldgNb>
+						<PstCd>NY</PstCd>
+						<TwnNm>New York</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+					<Id>
+						<OrgId>
+							<AnyBIC>ABCCUS33</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<OrgnlGrpInfAndCxl>
+				<OrgnlMsgId>ABC/100928/CCT001</OrgnlMsgId>
+				<OrgnlMsgNmId>pain.001.001.03</OrgnlMsgNmId>
+				<OrgnlCreDtTm>2010-09-28T14:07:00</OrgnlCreDtTm>
+				<NbOfTxs>3</NbOfTxs>
+				<CtrlSum>11500000</CtrlSum>
+				<GrpCxl>true</GrpCxl>
+				<CxlRsnInf>
+					<Rsn>
+						<Cd>CUST</Cd>
+					</Rsn>
+				</CxlRsnInf>
+			</OrgnlGrpInfAndCxl>
+		</Undrlyg>
+	</CstmrPmtCxlReq>
+</Document>

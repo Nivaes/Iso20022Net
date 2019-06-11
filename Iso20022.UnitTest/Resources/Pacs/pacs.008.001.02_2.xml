@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.02">
+	<FIToFICstmrCdtTrf>
+		<GrpHdr>
+			<MsgId>BBBB/100928-CT/EUR/912</MsgId>
+			<CreDtTm>2010-09-28T16:01:00</CreDtTm>
+			<NbOfTxs>2</NbOfTxs>
+			<TtlIntrBkSttlmAmt Ccy="EUR">504500</TtlIntrBkSttlmAmt>
+			<IntrBkSttlmDt>2010-09-29</IntrBkSttlmDt>
+			<SttlmInf>
+				<SttlmMtd>INDA</SttlmMtd>
+				<SttlmAcct>
+					<Id>
+						<Othr>
+							<Id>29314569847</Id>
+						</Othr>
+					</Id>
+				</SttlmAcct>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BIC>BBBBUS33</BIC>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BIC>EEEEDEFF</BIC>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>BBBB/100928-CCT/EUR/912/1</InstrId>
+				<EndToEndId>ABC/ABC-13679/2010-09-15</EndToEndId>
+				<TxId>BBBB/100928-CCT/EUR/912/1</TxId>
+			</PmtId>
+			<PmtTpInf>
+				<InstrPrty>NORM</InstrPrty>
+			</PmtTpInf>
+			<IntrBkSttlmAmt Ccy="EUR">499500</IntrBkSttlmAmt>
+			<ChrgBr>CRED</ChrgBr>
+			<ChrgsInf>
+				<Amt Ccy="EUR">500</Amt>
+				<Pty>
+					<FinInstnId>
+						<BIC>BBBBUS33</BIC>
+					</FinInstnId>
+				</Pty>
+			</ChrgsInf>
+			<Dbtr>
+				<Nm>ABC Corporation</Nm>
+				<PstlAdr>
+					<StrtNm>Times Square</StrtNm>
+					<BldgNb>7</BldgNb>
+					<PstCd>NY 10036</PstCd>
+					<TwnNm>New York</TwnNm>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>00125574999</Id>
+					</Othr>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>BBBBUS33</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtrAgt>
+				<FinInstnId>
+					<BIC>DDDDBEBB</BIC>
+				</FinInstnId>
+			</CdtrAgt>
+			<Cdtr>
+				<Nm>GHI Semiconductors</Nm>
+				<PstlAdr>
+					<StrtNm>Avenue Brugmann</StrtNm>
+					<BldgNb>415</BldgNb>
+					<PstCd>1180</PstCd>
+					<TwnNm>Brussels</TwnNm>
+					<Ctry>BE</Ctry>
+				</PstlAdr>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<IBAN>BE30001216371411</IBAN>
+				</Id>
+			</CdtrAcct>
+			<Purp>
+				<Cd>GDDS</Cd>
+			</Purp>
+			<RmtInf>
+				<Strd>
+					<RfrdDocInf>
+						<Tp>
+							<CdOrPrtry>
+								<Cd>CINV</Cd>
+							</CdOrPrtry>
+						</Tp>
+						<Nb>ABC-13679</Nb>
+						<RltdDt>2010-09-15</RltdDt>
+					</RfrdDocInf>
+				</Strd>
+			</RmtInf>
+		</CdtTrfTxInf>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>BBBB/100928-CCT/EUR/912/2</InstrId>
+				<EndToEndId>BBBB/100928-ZZ/JO/164794</EndToEndId>
+				<TxId>BBBB/100928-CCT/EUR/912/2</TxId>
+			</PmtId>
+			<PmtTpInf>
+				<InstrPrty>NORM</InstrPrty>
+			</PmtTpInf>
+			<IntrBkSttlmAmt Ccy="EUR">5000</IntrBkSttlmAmt>
+			<ChrgBr>SHAR</ChrgBr>
+			<Dbtr>
+				<Nm>Mr. Jones</Nm>
+				<PstlAdr>
+					<StrtNm>16th Street</StrtNm>
+					<BldgNb>30</BldgNb>
+					<PstCd>NY10023</PstCd>
+					<TwnNm>New York</TwnNm>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>00125583145</Id>
+					</Othr>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>BBBBUS33</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtrAgt>
+				<FinInstnId>
+					<BIC>EEEEDEFF</BIC>
+				</FinInstnId>
+			</CdtrAgt>
+			<Cdtr>
+				<Nm>ZZ Insurances</Nm>
+				<PstlAdr>
+					<StrtNm>Friedrich-Ebert-Anlage</StrtNm>
+					<BldgNb>2-14</BldgNb>
+					<PstCd>D-60 325</PstCd>
+					<TwnNm>Frankfurt am Main</TwnNm>
+					<Ctry>DE</Ctry>
+					<AdrLine>City Haus 1 10th Floor</AdrLine>
+				</PstlAdr>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<IBAN>DE89370400440532013000</IBAN>
+				</Id>
+			</CdtrAcct>
+			<RmtInf>
+				<Ustrd>Contract ZZ/JO/164794</Ustrd>
+			</RmtInf>
+		</CdtTrfTxInf>
+	</FIToFICstmrCdtTrf>
+</Document>

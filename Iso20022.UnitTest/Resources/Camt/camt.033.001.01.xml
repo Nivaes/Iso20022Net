@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns ="urn:iso:std:iso:20022:tech:xsd:camt.033.001.01">
+	<camt.033.001.01>
+		<Assgnmt>
+			<Id>REPAB20050417</Id>
+			<Assgnr>SOGEFRPP</Assgnr>
+			<Assgne>CUSBFRPP</Assgne>
+			<CreDtTm>2005-04-19T11:02:23</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSB200504001</Id>
+			<Cretr>CUSBFRPP</Cretr>
+		</Case>
+	</camt.033.001.01>
+</Document>

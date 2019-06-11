@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.027.001.04" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ClmNonRct>
+		<Assgnmt>
+			<Id>CNRVVVVGB2L201203020001</Id>
+			<Assgnr>
+				<Agt>
+					<FinInstnId>
+						<BICFI>FFFFFRPP</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId>
+						<BICFI>UUUUGB2L</BICFI>
+					</FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2012-03-06T10:35:23</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CNR0903PAY09876543</Id>
+			<Cretr>
+				<Pty>
+					<Id>
+						<OrgId>
+							<AnyBIC>CUSAFRPP</AnyBIC>
+						</OrgId>
+					</Id>
+				</Pty>
+			</Cretr>
+		</Case>
+		<Undrlyg>
+			<IntrBk>
+				<OrgnlGrpInf>
+					<OrgnlMsgId>345601234</OrgnlMsgId>
+					<OrgnlMsgNmId>MT103</OrgnlMsgNmId>
+				</OrgnlGrpInf>
+				<OrgnlInstrId>345601234</OrgnlInstrId>
+				<OrgnlIntrBkSttlmAmt Ccy="GBP">13498.52</OrgnlIntrBkSttlmAmt>
+				<OrgnlIntrBkSttlmDt>2012-03-01</OrgnlIntrBkSttlmDt>
+			</IntrBk>
+		</Undrlyg>
+	</ClmNonRct>
+</Document>

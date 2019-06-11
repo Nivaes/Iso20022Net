@@ -1,0 +1,82 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:DRAFT9acmt.014.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<AcctRpt>
+		<Refs>
+			<ReqTp>OPEN</ReqTp>
+			<MsgId>
+				<Id>BBBBUS/2010/AB16</Id>
+				<CreDtTm>2010-10-01T16:09:00</CreDtTm>
+			</MsgId>
+			<PrcId>
+				<Id>ABC/090928/CCT001</Id>
+				<CreDtTm>2010-09-28T14:07:00</CreDtTm>
+			</PrcId>
+		</Refs>
+		<AcctSvcrId>
+			<FinInstnId>
+				<BIC>BBBBUS33</BIC>
+			</FinInstnId>
+		</AcctSvcrId>
+		<Org>
+			<FullLglNm>ABC Corporation</FullLglNm>
+			<CtryOfOpr>US</CtryOfOpr>
+			<RegnDt>1999-09-01</RegnDt>
+			<LglAdr>
+				<StrtNm>Times Square</StrtNm>
+				<BldgNb>7</BldgNb>
+				<PstCd>NY 10036</PstCd>
+				<TwnNm>New York</TwnNm>
+				<Ctry>US</Ctry>
+			</LglAdr>
+			<OrgId>
+				<Othr>
+					<Id>01256485-85</Id>
+					<SchmeNm>
+						<Prtry>TAX</Prtry>
+					</SchmeNm>
+				</Othr>
+			</OrgId>
+			<MainMndtHldr>
+				<Nm>Richard Jones</Nm>
+				<PstlAdr>
+					<AdrTp>HOME</AdrTp>
+					<StrtNm>La Guardia Drive</StrtNm>
+					<BldgNb>12</BldgNb>
+					<PstCd>NJ 07054</PstCd>
+					<TwnNm>Parsippany</TwnNm>
+					<Ctry>US</Ctry>
+				</PstlAdr>
+				<Id>
+					<DtAndPlcOfBirth>
+						<BirthDt>1960-05-01</BirthDt>
+						<CityOfBirth>New york</CityOfBirth>
+						<CtryOfBirth>US</CtryOfBirth>
+					</DtAndPlcOfBirth>
+				</Id>
+			</MainMndtHldr>
+		</Org>
+		<Rpt>
+			<Acct>
+				<Id>
+					<IBAN>US0223321545986</IBAN>
+				</Id>
+				<Tp>
+					<Cd>CASH</Cd>
+				</Tp>
+				<Ccy>USD</Ccy>
+				<MnthlyRcvdVal>200000</MnthlyRcvdVal>
+				<MnthlyTxNb>100</MnthlyTxNb>
+				<AvrgBal>10000</AvrgBal>
+				<StmtCycl>WEEK</StmtCycl>
+			</Acct>
+			<UndrlygMstrAgrmt>
+				<Ref>ABC/Acct/BBBBUS33</Ref>
+				<Vrsn>1.0</Vrsn>
+			</UndrlygMstrAgrmt>
+			<CtrctDts>
+				<TrgtGoLiveDt>2010-10-02</TrgtGoLiveDt>
+				<GoLiveDt>2010-10-01</GoLiveDt>
+			</CtrctDts>
+		</Rpt>
+	</AcctRpt>
+</Document>

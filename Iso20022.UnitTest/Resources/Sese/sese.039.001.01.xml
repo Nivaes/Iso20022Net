@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Business Samples for ISO submission?>
+<?valid true?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:sese.039.001.01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SctiesSttlmTxModReqStsAdvc>
+		<ModReqRef>
+			<Id>sese.038.001.01</Id>
+		</ModReqRef>
+		<AcctOwnr>
+			<AnyBIC>DRESDEFF</AnyBIC>
+		</AcctOwnr>
+		<SfkpgAcct>
+			<Id>222S</Id>
+		</SfkpgAcct>
+		<TxId>
+			<AcctOwnrTxId>FRTJ123DEL</AcctOwnrTxId>
+		</TxId>
+		<ModPrcgSts>
+			<AckdAccptd>
+				<NoSpcfdRsn>NORE</NoSpcfdRsn>
+			</AckdAccptd>
+		</ModPrcgSts>
+	</SctiesSttlmTxModReqStsAdvc>
+</Document>

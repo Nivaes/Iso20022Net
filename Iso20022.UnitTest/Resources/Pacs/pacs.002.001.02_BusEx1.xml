@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:pacs.002.001.02" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<pacs.002.001.02>
+		<GrpHdr>
+			<MsgId>BBBB/061117-PSR013</MsgId>
+			<CreDtTm>2006-11-17T14:01:00</CreDtTm>
+			<InstgAgt>
+				<FinInstnId>
+					<BIC>BBBBIE2D</BIC>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BIC>AAAAGB2L</BIC>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<OrgnlGrpInfAndSts>
+			<OrgnlMsgId>AAAA/061117-PCR/011</OrgnlMsgId>
+			<OrgnlMsgNmId>pacs.006.001.01</OrgnlMsgNmId>
+			<OrgnlCreDtTm>2006-11-17T13:07:00</OrgnlCreDtTm>
+			<OrgnlNbOfTxs>1</OrgnlNbOfTxs>
+		</OrgnlGrpInfAndSts>
+		<TxInfAndSts>
+			<StsId>BBBB/061117-PSR013/1</StsId>
+			<TxSts>PDNG</TxSts>
+		</TxInfAndSts>
+	</pacs.002.001.02>
+</Document>

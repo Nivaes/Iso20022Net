@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "urn:iso:std:iso:20022:tech:xsd:camt.027.001.01">
+	<camt.027.001.01>
+		<Assgnmt>
+			<Id>CNRCFRAGB2L200506020001</Id>
+			<Assgnr>MARIFRPP</Assgnr>
+			<Assgne>SOGEFRPP</Assgne>
+			<CreDtTm>2005-06-06T10:35:23</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CNR0505PAY09876543</Id>
+			<Cretr>MARIFRPP</Cretr>
+		</Case>
+		<Undrlyg>
+			<AssgnrInstrId>0505PAY09876543</AssgnrInstrId>
+			<CcyAmt Ccy = "GBP">13498.52</CcyAmt>
+			<ValDt>2005-06-01T00:00:00</ValDt>
+		</Undrlyg>
+	</camt.027.001.01>
+</Document>

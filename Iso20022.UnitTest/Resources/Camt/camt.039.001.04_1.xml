@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.039.001.04" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CaseStsRpt>
+		<Hdr>
+			<Id>CSRRCUSGMOD090327001</Id>
+			<Fr>
+				<Agt>
+					<FinInstnId><BICFI>GGGGHKHH</BICFI></FinInstnId>
+				</Agt>
+			</Fr>
+			<To>
+				<Pty><Id>
+					<OrgId><AnyBIC>CUSGHKHH</AnyBIC></OrgId>
+				</Id></Pty>
+			</To>
+			<CreDtTm>2012-03-28T10:44:12</CreDtTm>
+		</Hdr>
+		<Case>
+			<Id>CUSGMOD090327001</Id>
+			<Cretr>
+				<Pty><Id>
+					<OrgId><AnyBIC>CUSGHKHH</AnyBIC></OrgId>
+				</Id></Pty>
+			</Cretr>
+		</Case>
+		<Sts>
+			<DtTm>2012-03-27T10:23:43</DtTm>
+			<CaseSts>CLSD</CaseSts>
+		</Sts>
+	</CaseStsRpt>
+</Document>

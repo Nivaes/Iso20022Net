@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Business samples for ISO submission?>
+<?valid true?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:sese.034.001.01">
+	<SctiesFincgStsAdvc>
+		<Id>
+			<Id>ACCSERVSTAT1</Id>
+		</Id>
+		<TxId>
+			<AcctOwnrTxId>REPOINSTR123</AcctOwnrTxId>
+		</TxId>
+		<MtchgSts>
+			<Umtchd>
+				<Rsn>
+					<Cd>
+						<Cd>DEPT</Cd>
+					</Cd>
+				</Rsn>
+			</Umtchd>
+		</MtchgSts>
+		<TxDtls>
+			<SctiesFincgTradId>REPO12345</SctiesFincgTradId>
+			<SfkpgAcct>
+				<Id>111111111</Id>
+			</SfkpgAcct>
+			<FinInstrmId>
+				<Id>
+					<ISIN>FR0000294034</ISIN>
+				</Id>
+			</FinInstrmId>
+			<SttlmQty>
+				<Qty>
+					<FaceAmt>100050000</FaceAmt>
+				</Qty>
+			</SttlmQty>
+			<OpngSttlmAmt>
+				<Amt Ccy="EUR">9900000</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+			</OpngSttlmAmt>
+			<TermntnTxAmt>
+				<Amt Ccy="EUR">9910780</Amt>
+			</TermntnTxAmt>
+			<OpngSttlmDt>
+				<Dt>
+					<Dt>2010-03-08</Dt>
+				</Dt>
+			</OpngSttlmDt>
+			<TermntnDt>
+				<Dt>
+					<Dt>2010-03-15</Dt>
+				</Dt>
+			</TermntnDt>
+			<TradDt>
+				<Dt>
+					<Dt>2010-03-05</Dt>
+				</Dt>
+			</TradDt>
+			<SctiesFincgTxTp>REPU</SctiesFincgTxTp>
+			<SctiesMvmntTp>DELI</SctiesMvmntTp>
+			<Pmt>APMT</Pmt>
+		</TxDtls>
+	</SctiesFincgStsAdvc>
+</Document>

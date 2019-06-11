@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.034.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Dplct>
+		<Assgnmt>
+			<Id>DUPLAB20090317CANC</Id>
+			<Assgnr>
+				<Pty><Id>
+					<OrgId><BICOrBEI>CUSBFRPP</BICOrBEI></OrgId>
+				</Id></Pty>
+			</Assgnr>
+			<Assgne>
+				<Agt>
+					<FinInstnId><BIC>FFFFFRPP</BIC></FinInstnId>
+				</Agt>
+			</Assgne>
+			<CreDtTm>2009-03-19T11:08:32</CreDtTm>
+		</Assgnmt>
+		<Case>
+			<Id>CUSB200903001</Id>
+			<Cretr>
+				<Pty><Id>
+					<OrgId><BICOrBEI>CUSBFRPP</BICOrBEI></OrgId>
+				</Id></Pty>
+			</Cretr>
+		</Case>
+		<Dplct>
+			<Tp>MT103</Tp>
+			<Data>
+				<Contnt>:20:CBPAY09876543//:32A:0903417EUR12347.56//:33B:EUR12347.56//:50A:CUSBFRPP//:59:Tristan
+					Recording Studios //239 Bld Haussmann//75009 Paris//:71A:SHA				
+				</Contnt> 
+			</Data>
+		</Dplct>
+	</Dplct>
+</Document>

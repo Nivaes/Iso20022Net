@@ -1,0 +1,8 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:trea.013.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<WdrwlNtfctnV01>
+		<MtchgSysUnqRef>
+			<Ref>ND185</Ref>
+		</MtchgSysUnqRef>
+	</WdrwlNtfctnV01>
+</Document>

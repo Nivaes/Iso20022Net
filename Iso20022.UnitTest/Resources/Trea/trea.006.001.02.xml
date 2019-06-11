@@ -1,0 +1,10 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:trea.006.001.02" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+	<CclNDFValtnV02>
+		<TradInf>
+			<TradDt>2007-04-02</TradDt>
+			<NtfctnId>ND456</NtfctnId>
+			<RltdRef>ND789</RltdRef>
+		</TradInf>
+	</CclNDFValtnV02>
+</Document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?Standards Smart Test Messages for SEPA Credit Transfer Scheme product version 3.0?>
+<?valid true?>
+<?description On 22 October 2010 CCCC forwards the FinancialInstitutionCreditTransfer to the next party in the chain FFFF through the Swedish RTGS system RIX.?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.009.001.03">
+	<FinInstnCdtTrf>
+		<GrpHdr>
+			<MsgId>CCCC/121022-SSK/075</MsgId>
+			<CreDtTm>2012-10-22T09:00:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<SttlmInf>
+				<SttlmMtd>CLRG</SttlmMtd>
+				<ClrSys>
+					<Cd>SSK</Cd>
+				</ClrSys>
+			</SttlmInf>
+			<InstgAgt>
+				<FinInstnId>
+					<BICFI>CCCCSESS</BICFI>
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<BICFI>FFFFSESS</BICFI>
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<CdtTrfTxInf>
+			<PmtId>
+				<InstrId>CCCC/121022-SSK/075/1</InstrId>
+				<EndToEndId>BBBBTT4148AAAAPP</EndToEndId>
+				<TxId>AAAA/121020-SEK/005/1</TxId>
+			</PmtId>
+			<IntrBkSttlmAmt Ccy="SEK">100000000</IntrBkSttlmAmt>
+			<IntrBkSttlmDt>2012-10-22</IntrBkSttlmDt>
+			<Dbtr>
+				<FinInstnId>
+					<BICFI>AAAAFRPP</BICFI>
+				</FinInstnId>
+			</Dbtr>
+			<CdtrAgt>
+				<FinInstnId>
+					<BICFI>DDDDLULL</BICFI>
+				</FinInstnId>
+			</CdtrAgt>
+			<CdtrAgtAcct>
+				<Id>
+					<Othr>
+						<Id>24538877443</Id>
+					</Othr>
+				</Id>
+			</CdtrAgtAcct>
+			<Cdtr>
+				<FinInstnId>
+					<BICFI>BBBBITTT</BICFI>
+				</FinInstnId>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<Othr>
+						<Id>995566ZZ876</Id>
+					</Othr>
+				</Id>
+				<Ccy>SEK</Ccy>
+			</CdtrAcct>
+		</CdtTrfTxInf>
+	</FinInstnCdtTrf>
+</Document>
