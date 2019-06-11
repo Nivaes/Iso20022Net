@@ -16,7 +16,7 @@
     <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
     <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' and '$(IsTestProject)' != 'true'">true</GeneratePackageOnBuild>
     <Description>Data Contracts for (de)serialize ISO20022 XML messages</Description>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <PackageTags>Iso20022, iso20022.org, Acmt, admi, Auth, Caaa, Camt, Catm, Catm, Catp, Colr, Fxtr, Pacs, Pain, Reda, Remt, Seev, Semt, Sese, Setr, Trea, Tsin, Tsmt</PackageTags>
     <PackageReleaseNotes>https://www.iso20022.org/</PackageReleaseNotes>
   </PropertyGroup>
