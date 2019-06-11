@@ -1,5 +1,5 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
-<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:DRAFT9acmt.020.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+<Document xmlns = "urn:iso:std:iso:20022:tech:xsd:acmt.020.001.01" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
 	<AcctClsgAmdmntReq>
 		<Refs>
 			<MsgId>

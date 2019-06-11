@@ -3,7 +3,7 @@ using System.IO;
 using System.Xml.Serialization;
 using Xunit;
 
-namespace Iso20022.Test
+namespace Iso20022.Pain.Test
 {
     public class PainM014SerializeTest
     {
