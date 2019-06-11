@@ -18,8 +18,4 @@
     <ProjectReference Include="..\Iso20022\Iso20022.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UnitTest\" />
-  </ItemGroup>
-
 </Project>
