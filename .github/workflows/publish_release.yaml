@@ -1,0 +1,63 @@
+name: Publish Release
+
+on:
+  release:
+    #types:[edited]
+    #types: [published]
+    types:
+      - released
+      - prereleased
+    #types: [deleted]
+
+jobs:
+  publish_release:
+    runs-on: ubuntu-18.04
+
+    steps:
+
+    - name: Get Version
+      uses: nivaes/get-version@master
+      id: get_version
+
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
+
+    - name: release
+      if: github.event.action == 'released'
+      run: echo Release
+
+    - name: prereleased
+      if: github.event.action == 'prereleased'
+      run: echo Prereleased
+
+    - name: Setup .NET Core 3.1.x
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.x
+
+    - name: Setup .NET Core 5.0.x
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Build
+      run: dotnet build --configuration Release -p:Version=${{ steps.get_version.outputs.version }} 
+
+    - name: Test
+      run: dotnet test --configuration Release --no-build --verbosity normal
+
+    - name: Pack
+      run: dotnet pack --configuration Release --no-build --verbosity normal --output ./Artifacts/ -p:Version=${{ steps.get_version.outputs.version }} 
+
+    #- name: Download Release Asset
+    #  env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #  uses: nivaes/download-release-assets@master
+
+    - name: Publish packages
+      run: dotnet nuget push ./**/*.nupkg --skip-duplicate --source nuget.org --api-key ${{secrets.NIVAES_NUGET_TOKEN}}

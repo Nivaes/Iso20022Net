@@ -1,0 +1,78 @@
+name: Build Release
+
+on:
+  #create:
+  #  branches:              # Not filter wiht branches name of chreate.
+  #  - 'release/**'
+  push:
+    branches:
+    - 'release/**'
+    paths-ignore:
+    - '**/*.md'
+  #pull_request:
+  #  types: [opened, synchronize, reopened]
+  #  branches: [ master ]
+  #  paths-ignore:
+  #  - '**/*.md'
+
+jobs:
+  build_release:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+
+    - name: Get Version
+      uses: nivaes/get-version@master
+      id: get_version
+
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
+
+    - name: Setup .NET Core 3.1.x
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.x
+
+    - name: Setup .NET Core 5.0.x
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Build
+      run: dotnet build --configuration Release -p:Version=${{ steps.get_version.outputs.version }}
+
+    - name: Test
+      run: dotnet test --configuration Release --no-build --verbosity normal
+
+    - name: Pack
+      if: github.event_name == 'push' || (github.event_name != 'pull_request')
+      run: dotnet pack --configuration Release --no-build --verbosity normal --output ./Artifacts/ -p:Version=${{ steps.get_version.outputs.version }}
+
+    - name: Create Release
+      if: github.event_name == 'push' || (github.event_name != 'pull_request')
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: release/v${{ steps.get_version.outputs.version }}
+        release_name: Release Version ${{ steps.get_version.outputs.version }}
+        body: |
+          Automatic Release ${{ steps.get_version.outputs.version }}   
+          - Release automatically generated.
+        draft: true
+        prerelease: false
+
+    - name: Upload Release Asset
+      uses: nivaes/upload-release-assets@master
+      env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+         upload_url: ${{ steps.create_release.outputs.upload_url }}
+         targets: ./Artifacts/*.nupkg

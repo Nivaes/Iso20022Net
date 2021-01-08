@@ -1,0 +1,49 @@
+﻿<Project>
+  
+  <PropertyGroup>
+    <Copyright>Copyright (c) Nivaes Systems</Copyright>
+    <PackageProject>https://github.com/Nivaes</PackageProject>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+    <Authors>Nivaes Systems</Authors>
+    <Company>Nivaes Systems</Company>
+    <Owners>Nivaes</Owners>
+    <PackageReleaseNotes>https://www.nivaes.com</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/Nivaes/Iso20022Net</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Product>$(AssemblyName) ($(TargetFramework))</Product>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Version>0.0.0-dev</Version>
+
+    <RepoRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</RepoRoot>
+    <BaseOutputPath>$(RepoRoot)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(RepoRoot)Artifacts\$(Configuration)\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    
+    <LangVersion>latest</LangVersion>
+    <NoWarn>$(NoWarn);1591;1701;1702;1705;VSX1000</NoWarn>
+    <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' and '$(IsTestProject)' != 'true'">true</GeneratePackageOnBuild>
+
+    <Platform>AnyCPU</Platform>
+    <DebugType>full</DebugType>
+    <IsTestProject>$(MSBuildProjectName.Contains('UnitTest'))</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Roslynator.Analyzers" Version="2.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="AsyncFixer" Version="1.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+
+</Project>

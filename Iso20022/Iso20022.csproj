@@ -1,24 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    
-    <Copyright>Copyright (c) Nivaes Systems</Copyright>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/Nivaes/Iso20022Net</PackageProjectUrl>
-    <PackageIconUrl>https://i.imgur.com/D3CfFea.png</PackageIconUrl>
-    <Owners>Nivaes</Owners>
-    <Authors>Nivaes Systems</Authors>
-    <Company>Nivaes Systems</Company>
-    <RepositoryUrl>https://github.com/Nivaes/Iso20022Net</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-
-    <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
-    <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' and '$(IsTestProject)' != 'true'">true</GeneratePackageOnBuild>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0</TargetFrameworks>
+    <PackageId>Nivaes.Iso2022</PackageId>
+    <Title>Nivaes Iso2022</Title>
+    <AssemblyName>Nivaes.Iso20022</AssemblyName>
+    <RootNamespace>Nivaes.Iso20022</RootNamespace>
+    <GeneratePackageOnBuild Condition="'$(Configuration)' == 'Release'">true</GeneratePackageOnBuild>
+    <Product>Nivaes Iso20022</Product>
     <Description>Data Contracts for (de)serialize ISO20022 XML messages</Description>
-    <Version>1.0.6</Version>
+    <Version>0.0.0-dev</Version>
     <PackageTags>Iso20022, iso20022.org, Acmt, admi, Auth, Caaa, Camt, Catm, Catm, Catp, Colr, Fxtr, Pacs, Pain, Reda, Remt, Seev, Semt, Sese, Setr, Trea, Tsin, Tsmt</PackageTags>
     <PackageReleaseNotes>https://www.iso20022.org/</PackageReleaseNotes>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Images\icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>
