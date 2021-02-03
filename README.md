@@ -16,3 +16,11 @@ xsd.exe /c /l:CS pain.001.001.01.xsd /eld /n:Iso20022.Contracts.PainM001V00101
         var document = (Iso20022.Contracts.PainM001V00101.Document)serializder.Deserialize(file);
         Assert.NotNull(document);
     }
+
+### Actions
+
+![CI](https://github.com/Nivaes/Iso20022Net/workflows/CI/badge.svg)
+
+![Build Release](https://github.com/Nivaes/Iso20022Net/workflows/Build%20Release/badge.svg)
+
+![Publish Release](https://github.com/Nivaes/Iso20022Net/workflows/Publish%20Release/badge.svg)
