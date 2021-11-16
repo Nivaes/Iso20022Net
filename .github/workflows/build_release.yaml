@@ -9,6 +9,7 @@ on:
     - 'release/**'
     paths-ignore:
     - '**/*.md'
+    - '**/*.sln'
   #pull_request:
   #  types: [opened, synchronize, reopened]
   #  branches: [ master ]

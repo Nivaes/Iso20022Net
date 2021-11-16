@@ -6,10 +6,12 @@ on:
     - 'release/**'
     paths-ignore:
     - '**/*.md'
+    - '**/*.sln'
   pull_request:
     types: [opened, synchronize, reopened]
     paths-ignore:
     - '**/*.md'
+    - '**/*.sln'
 
 jobs:
   build:
