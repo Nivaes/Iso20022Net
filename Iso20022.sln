@@ -16,12 +16,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions items", "Solution
 		Directory.Build.targets = Directory.Build.targets
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{473A6438-A71D-4CBD-BAC2-CC3C723B30D3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{92C2D41E-061F-47B4-A97E-3096660CBA12}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{44BDE288-6FBF-49CA-B66D-B64DD7D03CC7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{E7A5A030-9A9B-4EBB-981D-95F3F5E7D133}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{543BFA1C-491A-4B53-9A51-3906182240A6}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build_release.yaml = .github\workflows\build_release.yaml
+		.github\workflows\ci.yaml = .github\workflows\ci.yaml
+		.github\workflows\publish_release.yaml = .github\workflows\publish_release.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,7 +49,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{44BDE288-6FBF-49CA-B66D-B64DD7D03CC7} = {473A6438-A71D-4CBD-BAC2-CC3C723B30D3}
+		{E7A5A030-9A9B-4EBB-981D-95F3F5E7D133} = {92C2D41E-061F-47B4-A97E-3096660CBA12}
+		{543BFA1C-491A-4B53-9A51-3906182240A6} = {148DAD3D-5E80-4EFB-9414-61B7EF2165EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE7D303A-C2A3-4711-A10D-47BF4A9CE893}
