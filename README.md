@@ -23,7 +23,7 @@ xsd.exe /c /l:CS pain.001.001.01.xsd /eld /n:Iso20022.Contracts.PainM001V00101
 
 | NuGet Package | Latest Versions |
 | --- | --- |
-| [Nivaes.Guid](https://www.nuget.org/packages/Iso20022) | [![latest stable version](https://img.shields.io/nuget/v/Iso20022.svg)](https://www.nuget.org/packages/Iso20022) |
+| [Iso20022](https://www.nuget.org/packages/Iso20022) | [![latest stable version](https://img.shields.io/nuget/v/Iso20022.svg)](https://www.nuget.org/packages/Iso20022) |
 
 ## Integration
 
