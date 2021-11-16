@@ -21,11 +21,10 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-
     - name: Get Version
-      uses: nivaes/get-version@master
-      id: get_version
-
+      uses: nivaes/version-run-number@develop
+      id: version_run_number
+      
     - name: Dump GitHub context
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
@@ -45,14 +44,14 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build
-      run: dotnet build --configuration Release -p:Version=${{ steps.get_version.outputs.version }}
+      run: dotnet build --configuration Release -p:Version=${{ steps.version_run_number.outputs.version }} 
 
     - name: Test
       run: dotnet test --configuration Release --no-build --verbosity normal
 
     - name: Pack
       if: github.event_name == 'push' || (github.event_name != 'pull_request')
-      run: dotnet pack --configuration Release --no-build --verbosity normal --output ./Artifacts/ -p:Version=${{ steps.get_version.outputs.version }}
+      run: dotnet pack --configuration Release --no-build --verbosity normal --output ./Artifacts/ -p:Version=${{ steps.version_run_number.outputs.version }} 
 
     - name: Create Release
       if: github.event_name == 'push' || (github.event_name != 'pull_request')
@@ -61,10 +60,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: release/v${{ steps.get_version.outputs.version }}
-        release_name: Release Version ${{ steps.get_version.outputs.version }}
+        tag_name: release/v${{ steps.version_run_number.outputs.version }}
+        release_name: Release Version ${{ steps.version_run_number.outputs.version }}
         body: |
-          Automatic Release ${{ steps.get_version.outputs.version }}   
+          Automatic Release ${{ steps.version_run_number.outputs.version }}  
           - Release automatically generated.
         draft: true
         prerelease: false
