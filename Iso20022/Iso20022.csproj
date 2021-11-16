@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0;net6.0</TargetFrameworks>
     <PackageId>Iso20022</PackageId>
     <Title>Nivaes Iso20022</Title>
     <AssemblyName>Nivaes.Iso20022</AssemblyName>
