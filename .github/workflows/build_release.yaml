@@ -19,7 +19,7 @@ on:
 jobs:
   build_release:
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Get Version
@@ -31,23 +31,16 @@ jobs:
         GITHUB_CONTEXT: ${{ toJson(github) }}
       run: echo "$GITHUB_CONTEXT"
 
-    - name: Setup .NET Core 3.1.x
-      uses: actions/setup-dotnet@v1
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 3.1.x
-
-    - name: Setup .NET Core 5.0.x
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 5.0.x
-        
-    - name: Setup .NET Core 6.0.x
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 6.0.x
-
+        dotnet-version: |
+          3.1.x
+          5.0.x
+          6.0.x
+          
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Build
       run: dotnet build --configuration Release -p:Version=${{ steps.version_run_number.outputs.version }} 
