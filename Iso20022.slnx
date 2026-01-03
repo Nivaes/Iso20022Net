@@ -1,0 +1,26 @@
+<Solution>
+  <Folder Name="/Documentation/">
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/Documentation/docs/" />
+  <Folder Name="/Solutions items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+  </Folder>
+  <Folder Name="/Solutions items/.github/">
+    <File Path=".github/dependabot.yml" />
+  </Folder>
+  <Folder Name="/Solutions items/.github/workflows/">
+    <File Path=".github/workflows/build_release.yaml" />
+    <File Path=".github/workflows/ci.yaml" />
+    <File Path=".github/workflows/delete-old-runs.yaml" />
+    <File Path=".github/workflows/publish_release.yaml" />
+  </Folder>
+  <Project Path="Iso20022.UnitTest/Iso20022.UnitTest.csproj" />
+  <Project Path="Iso20022/Iso20022.csproj" />
+</Solution>

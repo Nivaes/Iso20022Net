@@ -1,76 +1,52 @@
-name: Build Release
+name: Publish Release
 
 on:
-  #create:
-  #  branches:              # Not filter wiht branches name of chreate.
-  #  - 'release/**'
-  push:
-    branches:
-    - 'release/**'
-    paths-ignore:
-    - '**/*.md'
-    - '**/*.sln'
-  #pull_request:
-  #  types: [opened, synchronize, reopened]
-  #  branches: [ master ]
-  #  paths-ignore:
-  #  - '**/*.md'
+  release:
+    types:
+      - released
+      - prereleased
+
+permissions:
+  contents: read
 
 jobs:
-  build_release:
-
-    runs-on: ubuntu-22.04
+  publish_release:
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Get Version
-      uses: nivaes/version-run-number@develop
-      id: version_run_number
-      
     - name: Dump GitHub context
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
       run: echo "$GITHUB_CONTEXT"
 
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: |
-          3.1.x
-          5.0.x
-          6.0.x
-          
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v5
+      with:
+          fetch-depth: 0
 
-    - name: Build
-      run: dotnet build --configuration Release -p:Version=${{ steps.version_run_number.outputs.version }} 
+    - name: release
+      if: github.event.action == 'released'
+      run: echo Release
 
-    - name: Test
-      run: dotnet test --configuration Release --no-build --verbosity normal
+    - name: prereleased
+      if: github.event.action == 'prereleased'
+      run: echo Prereleased
 
-    - name: Pack
-      if: github.event_name == 'push' || (github.event_name != 'pull_request')
-      run: dotnet pack --configuration Release --no-build --verbosity normal --output ./Artifacts/ -p:Version=${{ steps.version_run_number.outputs.version }} 
+    - name: Release
+      run: |
+        echo "Tag: ${{ github.event.release.tag_name }}"
 
-    - name: Create Release
-      if: github.event_name == 'push' || (github.event_name != 'pull_request')
-      id: create_release
-      uses: actions/create-release@v1
+    - name: Download attach assets 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: release/v${{ steps.version_run_number.outputs.version }}
-        release_name: Release Version ${{ steps.version_run_number.outputs.version }}
-        body: |
-          Automatic Release ${{ steps.version_run_number.outputs.version }}  
-          - Release automatically generated.
-        draft: true
-        prerelease: false
+      run: |
+        gh release download "${{ github.event.release.tag_name }}" --dir ./Artifacts
+       
+    - name: Show downloaded files
+      run: ls -lh ./Artifacts
 
-    - name: Upload Release Asset
-      uses: nivaes/upload-release-assets@master
-      env:
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-         upload_url: ${{ steps.create_release.outputs.upload_url }}
-         targets: ./Artifacts/*.nupkg
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v5   
+
+    - name: Publish packages
+      run: dotnet nuget push ./Artifacts/*.nupkg --skip-duplicate --source nuget.org --api-key ${{ secrets.NIVAES_NUGET_TOKEN }}

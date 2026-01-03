@@ -3,20 +3,20 @@ name: CI
 on:
   push:
     branches-ignore:
-    - 'release/**'
+    - 'release/v**'  
     paths-ignore:
     - '**/*.md'
-    - '**/*.sln'
+    - '**/*.slnx'
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [synchronize]
     paths-ignore:
     - '**/*.md'
-    - '**/*.sln'
+    - '**/*.slnx'
 
 jobs:
   build:
 
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Dump GitHub context
@@ -25,18 +25,27 @@ jobs:
       run: echo "$GITHUB_CONTEXT"
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v5
 
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v5
       with:
-        dotnet-version: |
-          3.1.x
-          5.0.x
-          6.0.x
+        global-json-file: ./global.json
+        source-url: https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+    - name: Restore Dependencies
+      run: |
+          dotnet restore
 
     - name: Build
-      run: dotnet build --configuration Release
+      run: dotnet build --configuration Release --no-restore
 
     - name: Test
-      run: dotnet test --configuration Release --no-build --verbosity normal 
+      run: dotnet test --configuration Release --no-build --verbosity normal --no-restore --no-build --collect:"XPlat Code Coverage"
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v4.0.1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
