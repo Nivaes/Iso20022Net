@@ -1,16 +1,11 @@
-name: Publish Release
+name: Build Release
 
 on:
-  release:
-    types:
-      - released
-      - prereleased
-
-permissions:
-  contents: read
+  workflow_dispatch:
 
 jobs:
-  publish_release:
+  build_release:
+
     runs-on: ubuntu-latest
 
     steps:
@@ -24,29 +19,42 @@ jobs:
       with:
           fetch-depth: 0
 
-    - name: release
-      if: github.event.action == 'released'
-      run: echo Release
-
-    - name: prereleased
-      if: github.event.action == 'prereleased'
-      run: echo Prereleased
-
-    - name: Release
-      run: |
-        echo "Tag: ${{ github.event.release.tag_name }}"
-
-    - name: Download attach assets 
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v5
+      with:
+        global-json-file: ./global.json
+        source-url: https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+    - name: Get Version
+      uses: nivaes/version-pack@v3
+      id: version_pack
+
+    - name: Restore Dependencies
       run: |
-        gh release download "${{ github.event.release.tag_name }}" --dir ./Artifacts
-       
-    - name: Show downloaded files
-      run: ls -lh ./Artifacts
+          dotnet restore
 
-    - name: Setup .NET SDK
-      uses: actions/setup-dotnet@v5   
+    - name: Build
+      run: dotnet build --configuration Release -p:Version=${{ steps.version_pack.outputs.version-pack }} --no-restore
 
-    - name: Publish packages
-      run: dotnet nuget push ./Artifacts/*.nupkg --skip-duplicate --source nuget.org --api-key ${{ secrets.NIVAES_NUGET_TOKEN }}
+    - name: Test
+      run: dotnet test --configuration Release --no-build --verbosity normal --no-restore --no-build
+
+    - name: Pack
+      if: github.event_name == 'push' || (github.event_name != 'pull_request')
+      run: dotnet pack --configuration Release --no-build --verbosity normal --output ./Artifacts/ -p:Version=${{ steps.version_pack.outputs.version-pack }} --no-restore
+
+    - name: Create Release
+      id: create_release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: ${{ steps.version_pack.outputs.version-release }}
+        name: "Release ${{ steps.version_pack.outputs.version-number }}"
+        body: |
+          Automatic release generated from GitHub Actions.
+        draft: true
+        target_commitish: ${{ github.ref_name }}
+        prerelease: false
+        files: |
+          ./Artifacts/*.{nupkg,snupkg}

@@ -2,27 +2,27 @@ name: Publish Release
 
 on:
   release:
-    #types:[edited]
-    #types: [published]
     types:
       - released
       - prereleased
-    #types: [deleted]
+
+permissions:
+  contents: read
 
 jobs:
   publish_release:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
-
-    - name: Get Version
-      uses: nivaes/version-run-number@develop
-      id: version_run_number
-
     - name: Dump GitHub context
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
       run: echo "$GITHUB_CONTEXT"
+
+    - name: Checkout
+      uses: actions/checkout@v5
+      with:
+          fetch-depth: 0
 
     - name: release
       if: github.event.action == 'released'
@@ -32,30 +32,21 @@ jobs:
       if: github.event.action == 'prereleased'
       run: echo Prereleased
 
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: |
-          3.1.x
-          5.0.x
-          6.0.x
+    - name: Release
+      run: |
+        echo "Tag: ${{ github.event.release.tag_name }}"
 
-    - name: Checkout
-      uses: actions/checkout@v3
+    - name: Download attach assets 
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh release download "${{ github.event.release.tag_name }}" --dir ./Artifacts
+       
+    - name: Show downloaded files
+      run: ls -lh ./Artifacts
 
-    - name: Build
-      run: dotnet build --configuration Release -p:Version=${{ steps.version_run_number.outputs.version }} 
-
-    - name: Test
-      run: dotnet test --configuration Release --no-build --verbosity normal
-
-    - name: Pack
-      run: dotnet pack --configuration Release --no-build --verbosity normal --output ./Artifacts/ -p:Version=${{ steps.version_run_number.outputs.version }} 
-
-    #- name: Download Release Asset
-    #  env:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #  uses: nivaes/download-release-assets@master
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v5   
 
     - name: Publish packages
-      run: dotnet nuget push ./**/*.nupkg --skip-duplicate --source nuget.org --api-key ${{secrets.NIVAES_NUGET_TOKEN}}
+      run: dotnet nuget push ./Artifacts/*.nupkg --skip-duplicate --source nuget.org --api-key ${{ secrets.NIVAES_NUGET_TOKEN }}
