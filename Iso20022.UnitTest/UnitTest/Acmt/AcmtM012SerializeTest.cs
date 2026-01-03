@@ -14,7 +14,7 @@ namespace Iso20022.Acmt.Test
             var serializder = new XmlSerializer(typeof(Iso20022.Contracts.AcmtM012V00101.Document));
             using (var file = File.OpenRead(fileName))
             {
-                var document = (Iso20022.Contracts.AcmtM012V00101.Document)serializder.Deserialize(file);
+                var document = (Iso20022.Contracts.AcmtM012V00101.Document?)serializder?.Deserialize(file);
                 Assert.NotNull(document);
             }
         }

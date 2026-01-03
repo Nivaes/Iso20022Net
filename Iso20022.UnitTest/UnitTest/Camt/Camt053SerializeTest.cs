@@ -17,7 +17,7 @@ namespace Iso20022.UnitTest.UnitTest.Camt
             var serializder = new XmlSerializer(typeof(Iso20022.Contracts.Camt05300103.Document));
             using (var file = File.OpenRead(fileName))
             {
-                var document = (Iso20022.Contracts.Camt05300103.Document)serializder.Deserialize(file);
+                var document = (Iso20022.Contracts.Camt05300103.Document?)serializder?.Deserialize(file);
                 Assert.NotNull(document);
             }
         }

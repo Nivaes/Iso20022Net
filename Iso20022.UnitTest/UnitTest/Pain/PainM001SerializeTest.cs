@@ -15,7 +15,7 @@ namespace Iso20022.Pain.Test
             var serializder = new XmlSerializer(typeof(Iso20022.Contracts.PainM001V00101.Document));
             using (var file = File.OpenRead(fileName))
             {
-                var document = (Iso20022.Contracts.PainM001V00101.Document)serializder.Deserialize(file);
+                var document = (Iso20022.Contracts.PainM001V00101.Document?)serializder?.Deserialize(file);
                 Assert.NotNull(document);
             }
         }
@@ -27,7 +27,7 @@ namespace Iso20022.Pain.Test
             var serializder = new XmlSerializer(typeof(Iso20022.Contracts.PainM001V00102.Document));
             using (var file = File.OpenRead(fileName))
             {
-                var document = (Iso20022.Contracts.PainM001V00102.Document)serializder.Deserialize(file);
+                var document = (Iso20022.Contracts.PainM001V00102.Document?)serializder?.Deserialize(file);
                 Assert.NotNull(document);
             }
         }
@@ -39,7 +39,7 @@ namespace Iso20022.Pain.Test
             var serializder = new XmlSerializer(typeof(Iso20022.Contracts.PainM001V00103.Document));
             using (var file = File.OpenRead(fileName))
             {
-                var document = (Iso20022.Contracts.PainM001V00103.Document)serializder.Deserialize(file);
+                var document = (Iso20022.Contracts.PainM001V00103.Document?)serializder?.Deserialize(file);
                 Assert.NotNull(document);
             }
         }
@@ -51,7 +51,7 @@ namespace Iso20022.Pain.Test
             var serializder = new XmlSerializer(typeof(Iso20022.Contracts.PainM001V00104.Document));
             using (var file = File.OpenRead(fileName))
             {
-                var document = (Iso20022.Contracts.PainM001V00104.Document)serializder.Deserialize(file);
+                var document = (Iso20022.Contracts.PainM001V00104.Document?)serializder?.Deserialize(file);
                 Assert.NotNull(document);
             }
         }
@@ -63,7 +63,7 @@ namespace Iso20022.Pain.Test
             var serializder = new XmlSerializer(typeof(Iso20022.Contracts.PainM001V00105.Document));
             using (var file = File.OpenRead(fileName))
             {
-                var document = (Iso20022.Contracts.PainM001V00105.Document)serializder.Deserialize(file);
+                var document = (Iso20022.Contracts.PainM001V00105.Document?)serializder?.Deserialize(file);
                 Assert.NotNull(document);
             }
         }
@@ -75,7 +75,7 @@ namespace Iso20022.Pain.Test
             var serializder = new XmlSerializer(typeof(Iso20022.Contracts.PainM001V00201.Document));
             using (var file = File.OpenRead(fileName))
             {
-                var document = (Iso20022.Contracts.PainM001V00201.Document)serializder.Deserialize(file);
+                var document = (Iso20022.Contracts.PainM001V00201.Document?)serializder?.Deserialize(file);
                 Assert.NotNull(document);
             }
         }
@@ -87,7 +87,7 @@ namespace Iso20022.Pain.Test
             var serializder = new XmlSerializer(typeof(Iso20022.Contracts.PainM001V00301.Document));
             using (var file = File.OpenRead(fileName))
             {
-                var document = (Iso20022.Contracts.PainM001V00301.Document)serializder.Deserialize(file);
+                var document = (Iso20022.Contracts.PainM001V00301.Document?)serializder?.Deserialize(file);
                 Assert.NotNull(document);
             }
         }
