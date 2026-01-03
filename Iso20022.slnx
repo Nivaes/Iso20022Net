@@ -13,7 +13,7 @@
     <File Path="global.json" />
   </Folder>
   <Folder Name="/Solutions items/.github/">
-    <File Path=".github/dependabot.yml" />
+    <File Path=".github/dependabot.yaml" />
   </Folder>
   <Folder Name="/Solutions items/.github/workflows/">
     <File Path=".github/workflows/build_release.yaml" />
