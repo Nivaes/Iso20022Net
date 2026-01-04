@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <None Include="Images\icon.png" Pack="true" PackagePath="\" />
-    <None Include="Docs\Readme.md" Pack="true" PackagePath="\" />
+    <None Include="Docs\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,7 +26,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
 
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" >
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp">
        <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -38,10 +38,6 @@
     <PackageReference Update="SonarAnalyzer.CSharp">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Docs\" />
   </ItemGroup>
 
 </Project>
