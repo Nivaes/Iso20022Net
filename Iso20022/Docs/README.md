@@ -1,4 +1,4 @@
-# Iso20022Net
+# Iso20022
 
 Implements .Net classes for the handling of files that comply with the ISO20022 standard, intended for banking transactions.
 
