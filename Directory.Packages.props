@@ -1,7 +1,7 @@
 <Project>
   <ItemGroup>
     <PackageVersion Update="Microsoft.NET.Test.Sdk" Version="17.11.1" />
-    <PackageVersion Include="coverlet.collector" Version="6.0.4" />
+    <PackageVersion Include="coverlet.collector" Version="8.0.1" />
     <PackageVersion Update="xunit" Version="2.9.2" />
     <PackageVersion Update="xunit.runner.visualstudio" Version="2.8.2" />
     <PackageVersion Include="AsyncFixer" Version="2.1.0" />
