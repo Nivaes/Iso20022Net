@@ -2,59 +2,21 @@ name: Build Release
 
 on:
   workflow_dispatch:
+    inputs:
+      prerelease:
+        description: "Prerelease identifier"
+        type: choice
+        required: false
+        options:
+          - ""
+          - Alpha
+          - Beta
+          - RC  
+          - Release
+        default: ""
 
 jobs:
   build_release:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Dump GitHub context
-      env:
-        GITHUB_CONTEXT: ${{ toJson(github) }}
-      run: echo "$GITHUB_CONTEXT"
-
-    - name: Checkout
-      uses: actions/checkout@v5
-      with:
-          fetch-depth: 0
-
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v5
-      with:
-        global-json-file: ./global.json
-        source-url: https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
-      env:
-        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-    - name: Get Version
-      uses: nivaes/version-pack@v3
-      id: version_pack
-
-    - name: Restore Dependencies
-      run: |
-          dotnet restore
-
-    - name: Build
-      run: dotnet build --configuration Release -p:Version=${{ steps.version_pack.outputs.version-pack }} --no-restore
-
-    - name: Test
-      run: dotnet test --configuration Release --no-build --verbosity normal --no-restore --no-build
-
-    - name: Pack
-      if: github.event_name == 'push' || (github.event_name != 'pull_request')
-      run: dotnet pack --configuration Release --no-build --verbosity normal --output ./Artifacts/ -p:Version=${{ steps.version_pack.outputs.version-pack }} --no-restore
-
-    - name: Create Release
-      id: create_release
-      uses: softprops/action-gh-release@v2
-      with:
-        tag_name: ${{ steps.version_pack.outputs.version-release }}
-        name: "Release ${{ steps.version_pack.outputs.version-number }}"
-        body: |
-          Automatic release generated from GitHub Actions.
-        draft: true
-        target_commitish: ${{ github.ref_name }}
-        prerelease: false
-        files: |
-          ./Artifacts/*.{nupkg,snupkg}
+    uses: Nivaes/Nivaes.Workflows/.github/workflows/basic_lib_build_release.yaml@develop
+    with:
+      prerelease: ${{ github.event.inputs.prerelease }} 

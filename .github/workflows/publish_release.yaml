@@ -3,50 +3,56 @@ name: Publish Release
 on:
   release:
     types:
-      - released
-      - prereleased
+      - published
 
 permissions:
-  contents: read
+  contents: write
+  packages: write
+  id-token: write
 
 jobs:
-  publish_release:
+  build_release:
+    uses: Nivaes/Nivaes.Workflows/.github/workflows/basic_lib_publish_release.yaml@develop
+    with:
+      nuget_source: nuget.org
+      nuget_user: ${{ vars.NUGET_USER }}
+
+  publish_nuget:
+    name: Publish packages to NuGet.org
+    needs: build_release
     runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      contents: read
+      id-token: write
 
     steps:
-    - name: Dump GitHub context
-      env:
-        GITHUB_CONTEXT: ${{ toJson(github) }}
-      run: echo "$GITHUB_CONTEXT"
-
-    - name: Checkout
-      uses: actions/checkout@v5
+    - name: Download NuGet packages
+      uses: actions/download-artifact@v8
       with:
-          fetch-depth: 0
+        name: nuget-packages
+        path: ./Artifacts
 
-    - name: release
-      if: github.event.action == 'released'
-      run: echo Release
-
-    - name: prereleased
-      if: github.event.action == 'prereleased'
-      run: echo Prereleased
-
-    - name: Release
-      run: |
-        echo "Tag: ${{ github.event.release.tag_name }}"
-
-    - name: Download attach assets 
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        gh release download "${{ github.event.release.tag_name }}" --dir ./Artifacts
-       
-    - name: Show downloaded files
-      run: ls -lh ./Artifacts
-
-    - name: Setup .NET SDK
-      uses: actions/setup-dotnet@v5   
+    - name: NuGet login (OIDC)
+      uses: NuGet/login@v1.2.0
+      id: login
+      with:
+        user: ${{ vars.NUGET_USER }}
 
     - name: Publish packages
-      run: dotnet nuget push ./Artifacts/*.nupkg --skip-duplicate --source nuget.org --api-key ${{ secrets.NIVAES_NUGET_TOKEN }}
+      shell: bash
+      env:
+        NUGET_API_KEY: ${{ steps.login.outputs.NUGET_API_KEY }}
+      run: |
+        shopt -s nullglob
+        packages=(./Artifacts/*.nupkg)
+
+        if (( ${#packages[@]} == 0 )); then
+        echo "No se encontraron paquetes .nupkg en ./Artifacts"
+        exit 1
+        fi
+
+        dotnet nuget push "${packages[@]}" \
+        --source https://api.nuget.org/v3/index.json \
+        --skip-duplicate \
+        --api-key "$NUGET_API_KEY"
