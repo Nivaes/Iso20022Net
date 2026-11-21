@@ -1,8 +1,5 @@
 # Iso20022
 
-[![NuGet](https://img.shields.io/nuget/v/Iso20022.svg)](https://www.nuget.org/packages/Iso20022)
-[![CI](https://github.com/Nivaes/Iso20022Net/workflows/CI/badge.svg)](https://github.com/Nivaes/Iso20022Net/actions/workflows/ci.yaml)
-
 .NET library providing C# contracts for reading and writing XML messages based on the [ISO 20022](https://www.iso20022.org/) standard. The contracts are used with `System.Xml.Serialization.XmlSerializer`.
 
 The library provides data models; it does not validate business rules, SEPA rules, or document conformance against an XSD. To validate a message, separately apply the XSD and business rules for the relevant schema and version.
