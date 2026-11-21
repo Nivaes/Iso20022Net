@@ -78,3 +78,13 @@ xsd.exe /c /l:CS /eld /n:Iso20022.Contracts.PainM001V00101 pain.001.001.01.xsd
 - [Iso20022 on NuGet](https://www.nuget.org/packages/Iso20022)
 - [Source code and repository](https://github.com/Nivaes/Iso20022Net)
 - [MIT license](LICENSE)
+
+| NuGet Package | Latest Versions |
+| --- | --- |
+| [Iso20022](https://www.nuget.org/packages/Iso20022) | [![latest stable version](https://img.shields.io/nuget/v/Iso20022.svg)](https://www.nuget.org/packages/Iso20022) |
+
+## Integration
+
+![CI](https://github.com/Nivaes/Iso20022Net/workflows/CI/badge.svg)
+![Build Release](https://github.com/Nivaes/Iso20022Net/workflows/Build%20Release/badge.svg)
+![Publish Release](https://github.com/Nivaes/Iso20022Net/workflows/Publish%20Release/badge.svg)
